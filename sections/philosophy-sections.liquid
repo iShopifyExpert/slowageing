@@ -1636,6 +1636,91 @@
       "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" list. [View customers](/admin/customers?query=&accepts_marketing=1)"
     }
   ]
+},
+{
+  "name": "Testimonials",
+  "type": "quotes",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background color",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "autoplay_speed",
+      "label": "Change slides every",
+      "options": [
+        {
+          "value": "3000",
+          "label": "3 seconds"
+        },
+        {
+          "value": "4000",
+          "label": "4 seconds"
+        },
+        {
+          "value": "5000",
+          "label": "5 seconds"
+        },
+        {
+          "value": "6000",
+          "label": "6 seconds"
+        }
+      ],
+      "default": "4000"
+    }
+  ]
+},
+{
+  "name": "Rich text",
+  "type": "rtext",
+  "settings": [
+    {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Wide display"
+    },
+    {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading",
+        "default": "Talk about your brand"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+    },
+    {
+        "type": "select",
+        "id": "text_size",
+        "label": "Size",
+        "default": "medium",
+        "options": [
+            {
+            "label": "Small",
+            "value": "small"
+            },
+            {
+            "label": "Medium",
+            "value": "medium"
+            },
+            {
+            "label": "Large",
+            "value": "large"
+            }
+        ]
+    }
+  ]
 }
 
 
