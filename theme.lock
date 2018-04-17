@@ -98,7 +98,7 @@ sections/password-footer.liquid:
 sections/password-header.liquid:
   development: 2018-04-12T10:41:15+01:00   75c2f28653bbb373eac3cac397ffba9e
 sections/philosophy-sections.liquid:
-  development: 2018-04-17T10:18:43+01:00   1c29f52219c4940d6ebc553d39c746a7
+  development: 2018-04-17T10:20:25+01:00   a99245c925b76f543e3a26a6eb46896f
 sections/product-featured-slider.liquid:
   development: 2018-04-12T10:41:15+01:00   4b82ee8b914e3bb4e9ec78a7fb5fb6ab
 sections/product-gallery.liquid:
@@ -319,6 +319,8 @@ snippets/sec-cart-template.liquid:
   development: 2018-04-17T09:05:35+01:00   7a9cd62557a444cb54ed42be100faf75
 snippets/sec-collection-list.liquid:
   development: 2018-04-17T10:15:30+01:00   679732cdb633416f442d60d50e1ec3bc
+snippets/sec-collection-template.liquid:
+  development: 2018-04-17T10:20:12+01:00   e8a773e55fa633d1436926975a431d44
 snippets/sec-feature-row.liquid:
   development: 2018-04-17T08:17:37+01:00   ed0941d72c8f6b44710ea13f3c65efd2
 snippets/sec-featured-collection.liquid:
