@@ -98,7 +98,7 @@ sections/password-footer.liquid:
 sections/password-header.liquid:
   development: 2018-04-12T10:41:15+01:00   75c2f28653bbb373eac3cac397ffba9e
 sections/philosophy-sections.liquid:
-  development: 2018-04-17T11:14:36+01:00   d7ce3870d2cd46399bda55df0d37e43d
+  development: 2018-04-17T11:16:11+01:00   2917a794f5ea76fa6cb1973d9e60be1d
 sections/product-featured-slider.liquid:
   development: 2018-04-12T10:41:15+01:00   4b82ee8b914e3bb4e9ec78a7fb5fb6ab
 sections/product-gallery.liquid:

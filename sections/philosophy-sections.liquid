@@ -80,9 +80,6 @@
     {% when 'video' %}
     {% include 'sec-video' %}
 
-    {% when 'sociall' %}
-    {% include 'social-links' %}
-
     {% when 'pfslider' %}
     {% include 'sec-product-featured-slider' %}
 
@@ -97,6 +94,9 @@
 
     {% when 'productvp' %}
     {% include 'sec-product-video-popup' %}
+
+    {% when 'sociall' %}
+    {% include 'social-links' %}
 
 
     {% endcase %}
@@ -2411,6 +2411,12 @@
         }
       ]
     }
+  ]
+},
+{
+  "name": "Social Links",
+  "type": "sociall",
+  "settings": [
   ]
 }
 
