@@ -1901,6 +1901,109 @@
       ]
     }
   ]
+},
+{
+  "name": "Video",
+  "type": "video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cover_text",
+      "label": "Heading"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "Video link",
+      "accept": ["youtube", "vimeo"],
+      "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "type": "header",
+      "content": "Cover"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "cover_image_position",
+      "label": "Image position",
+      "default": "center center",
+      "options": [
+        {
+          "label": "Top left",
+          "value": "top left"
+        },
+        {
+          "label": "Top center",
+          "value": "top center"
+        },
+        {
+          "label": "Top right",
+          "value": "top right"
+        },
+        {
+          "label": "Middle left",
+          "value": "center left"
+        },
+        {
+          "label": "Middle center",
+          "value": "center center"
+        },
+        {
+          "label": "Middle right",
+          "value": "center right"
+        },
+        {
+          "label": "Bottom left",
+          "value": "bottom left"
+        },
+        {
+          "label": "Bottom center",
+          "value": "bottom center"
+        },
+        {
+          "label": "Bottom right",
+          "value": "bottom right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "overlay_text",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Opacity",
+      "default": 30
+    }
+  ]
 }
 
 
