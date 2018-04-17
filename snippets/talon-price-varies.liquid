@@ -1,0 +1,11 @@
+{% assign variants_available = 0 %}
+{% for variant in talon_product.variants %}
+    {% for tag in customer.tags %}
+        {% if variant.metafields.member_pricing == nil or variant.metafields.member_pricing.level contains tag %}
+            {% increment variants_available %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+{% if variants_available > 1 %}
+True
+{% endif %}

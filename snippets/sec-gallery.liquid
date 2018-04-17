@@ -1,0 +1,67 @@
+{% if block.settings.show_overlay %}
+  <style>
+    .image-bar--{{ block.id }} .image-bar__caption {
+      color: {{ block.settings.overlay_text }}
+    }
+
+    .image-bar--{{ block.id }} .image-bar__overlay::after {
+      background-color: {{ block.settings.overlay_color }};
+      opacity: {{ block.settings.overlay_opacity }};
+    }
+  </style>
+{% endif %}
+
+<div class="image-bar image-bar--{{ block.id }} image-bar--{{ block.settings.section_height }}" data-section-id="{{ block.id }}" data-section-type="gallery">
+  {% for block in block.blocks %}
+    <div class="image-bar__flex image-bar__{{ block.blocks.size }}-column">
+
+      {% if block.settings.image != blank %}
+
+        <style>
+          .image-bar__item--{{ block.id }} {
+            background-position: {{ block.settings.alignment }};
+          }
+        </style>
+
+        {% if block.settings.link != blank %}
+          <a href="{{ block.settings.link }}" class="image-bar__item image-bar__link" {{ block.shopify_attributes }}>
+            <div class="image-bar__item image-bar__item--{{ block.id }} lazyload" data-bgset="{% include 'bgset', image: block.settings.image %}">
+        {% else %}
+          <div class="image-bar__item image-bar__item--{{ block.id }} lazyload" {{ block.shopify_attributes }} data-bgset="{% include 'bgset', image: block.settings.image %}">
+        {% endif %}
+
+      {% else %}
+        <div class="image-bar__item" {{ block.shopify_attributes }}>
+      {% endif %}
+
+        <div class="image-bar__content{% if block.settings.show_overlay %} image-bar__overlay{% endif %}">
+          {% if block.settings.image == blank %}
+            <div class="image-bar__placeholder">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+          {% endif %}
+        </div>
+
+      {% if block.settings.link != blank %}
+          </div>
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.cta_label != blank or block.settings.icon != 'none' %}
+        <div class="image-bar__text" data-animate>
+          {% if block.settings.icon != 'none' %}
+            {%- assign icon = 'icon-' | append: block.settings.icon -%}
+            {% include icon %}
+          {% endif %}
+          {% if block.settings.cta_label != blank %}
+            <h3 class="h2 text-title image-bar__caption">{{ block.settings.cta_label | escape }}</h2>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% if block.blocks.size == 0 %}
+  {% include 'no-blocks' %}
+{% endif %}

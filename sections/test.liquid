@@ -1,0 +1,1081 @@
+<style>
+.custom-content-wrapper--{{ section.id }} .custom-content__section-header  {
+  color: {{ section.settings.heading_color }};
+}
+
+{% if section.settings.background_color != blank %}
+.custom-content-wrapper--{{ section.id }} {
+  background-color: {{ section.settings.background_color }};
+}
+{% endif %}
+</style>
+<div>
+  {% for block in section.blocks %}
+  <div class="im-grid-item" {{ block.shopify_attributes }}>
+    {% case block.type %}
+
+    {% when 'hero' %}
+    {% include 'sec-hero' %}
+
+    {% when 'feature' %}
+    {% include 'sec-feature-row' %}
+
+    {% when 'posts' %}
+    {% include 'sec-article-template' %}
+
+    {% when 'blog' %}
+    {% include 'sec-blog-template' %}
+
+    {% when 'collection' %}
+    {% include 'sec-featured-collection' %}
+
+    {% when 'fproduct' %}
+    {% include 'sec-featured-product' %}
+
+    {% when 'fslider' %}
+    {% include 'sec-featured-slider' %}
+
+    {% when 'gallery' %}
+    {% include 'sec-gallery' %}
+
+    {% when 'cart' %}
+    {% include 'sec-cart-template' %}
+
+    {% when 'collection' %}
+    {% include 'sec-featured-collection' %}
+
+    {% endcase %}
+  </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "TEST content area",
+  "class": "index-section index-section--custom-content",
+  "settings": [
+  {
+    "type": "text",
+    "id": "heading_text",
+    "label": "Heading",
+    "default": "Custom content"
+  },
+  {
+    "type": "color",
+    "id": "heading_color",
+    "label": "Heading color",
+    "default": "#3a3a3a"
+
+  },
+  {
+    "type": "color",
+    "id": "background_color",
+    "label": "Background color"
+  },
+  {
+    "type": "checkbox",
+    "id": "top_margin",
+    "label": "Top margin",
+    "default": true
+  },
+  {
+    "type": "checkbox",
+    "id": "bottom_margin",
+    "label": "Bottom margin",
+    "default": true
+  }
+  ],
+  "blocks": [
+  {
+    "type": "hero",
+    "name": "Image with text overlay",
+    "settings": [
+    {
+      "type": "select",
+      "id": "hero_size",
+      "label": "Section spacing",
+      "default": "medium",
+      "options": [
+      {
+        "label": "Small",
+        "value": "small"
+      },
+      {
+        "label": "Medium",
+        "value": "medium"
+      },
+      {
+        "label": "Large",
+        "value": "large"
+      },
+      {
+        "label": "Extra Large",
+        "value": "x-large"
+      }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Image alignment",
+      "default": "center center",
+      "options": [
+      {
+        "label": "Top left",
+        "value": "top left"
+      },
+      {
+        "label": "Top center",
+        "value": "top center"
+      },
+      {
+        "label": "Top right",
+        "value": "top right"
+      },
+      {
+        "label": "Middle left",
+        "value": "center left"
+      },
+      {
+        "label": "Middle center",
+        "value": "center center"
+      },
+      {
+        "label": "Middle right",
+        "value": "center right"
+      },
+      {
+        "label": "Bottom left",
+        "value": "bottom left"
+      },
+      {
+        "label": "Bottom center",
+        "value": "bottom center"
+      },
+      {
+        "label": "Bottom right",
+        "value": "bottom right"
+      }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Talk about your brand"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "medium",
+        "options": [
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "value": "large"
+        }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "use_second_button",
+        "label": "Use secondary button style",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "header",
+        "content": "Overlay"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_overlay",
+        "label": "Show overlay",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "overlay_color",
+        "label": "Overlay Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "overlay_text",
+        "label": "Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "select",
+        "id": "overlay_opacity",
+        "label": "Opacity",
+        "default": "0.5",
+        "options": [
+        {
+          "label": "100%",
+          "value": "1"
+        },
+        {
+          "label": "95%",
+          "value": "0.95"
+        },
+        {
+          "label": "90%",
+          "value": "0.9"
+        },
+        {
+          "label": "85%",
+          "value": "0.85"
+        },
+        {
+          "label": "80%",
+          "value": "0.8"
+        },
+        {
+          "label": "75%",
+          "value": "0.75"
+        },
+        {
+          "label": "70%",
+          "value": "0.7"
+        },
+        {
+          "label": "65%",
+          "value": "0.65"
+        },
+        {
+          "label": "60%",
+          "value": "0.6"
+        },
+        {
+          "label": "55%",
+          "value": "0.55"
+        },
+        {
+          "label": "50%",
+          "value": "0.5"
+        },
+        {
+          "label": "45%",
+          "value": "0.45"
+        },
+        {
+          "label": "40%",
+          "value": "0.4"
+        },
+        {
+          "label": "35%",
+          "value": "0.35"
+        },
+        {
+          "label": "30%",
+          "value": "0.3"
+        },
+        {
+          "label": "25%",
+          "value": "0.25"
+        },
+        {
+          "label": "20%",
+          "value": "0.2"
+        },
+        {
+          "label": "0%",
+          "value": "0"
+        }
+        ]
+      }
+      ]
+    },
+
+{
+  "name": "Image with text",
+  "type": "feature",
+  "settings": [
+    {
+      "type": "select",
+      "id": "size",
+      "label": "Section height",
+      "default": "medium",
+      "options": [
+        {
+          "label": "Small",
+          "value": "small"
+        },
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "value": "large"
+        },
+        {
+          "label": "Extra Large",
+          "value": "x-large"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#faf9f6"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_crop",
+      "label": "Image style",
+      "default": "none",
+      "options": [
+        {
+          "label": "None",
+          "value": "none"
+        },
+        {
+          "label": "Circle",
+          "value": "circle"
+        },
+        {
+          "label": "Square",
+          "value": "square"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Image position",
+      "default": "center center",
+      "options": [
+        {
+          "label": "Top left",
+          "value": "top left"
+        },
+        {
+          "label": "Top center",
+          "value": "top center"
+        },
+        {
+          "label": "Top right",
+          "value": "top right"
+        },
+        {
+          "label": "Middle left",
+          "value": "center left"
+        },
+        {
+          "label": "Middle center",
+          "value": "center center"
+        },
+        {
+          "label": "Middle right",
+          "value": "center right"
+        },
+        {
+          "label": "Bottom left",
+          "value": "bottom left"
+        },
+        {
+          "label": "Bottom center",
+          "value": "bottom center"
+        },
+        {
+          "label": "Bottom right",
+          "value": "bottom right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "content-title",
+      "label": "Heading",
+      "default": "default heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_second_button",
+      "label": "Use secondary button style",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Image alignment"
+    },
+    {
+      "type": "select",
+      "id": "desktop_layout",
+      "label": "Desktop",
+      "default": "right",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile",
+      "default": "top",
+      "options": [
+        {
+          "label": "Top",
+          "value": "top"
+        },
+        {
+          "label": "Bottom",
+          "value": "bottom"
+        }
+      ]
+    }
+  ]
+},
+{
+  "name": "Posts",
+  "type": "posts",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "image_parallax",
+      "label": "Show image parallax animation",
+      "info": "Only shows on desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_share_buttons",
+      "label": "Enable sharing for blog articles",
+      "info": "Make sure you have enabled social sharing in general settings",
+      "default": true
+    }
+  ]
+},
+{
+  "name": "Blog",
+  "type": "blog",
+  "settings": [
+    {
+      "type": "select",
+      "id": "grid_style",
+      "label": "Grid style",
+      "default": "collage",
+      "options": [
+        {
+          "value": "collage",
+          "label": "Collage"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "articles",
+      "label": "Articles per row",
+      "default": "2",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "rows",
+      "label": "Rows per page",
+      "default": "4",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "label": "Show date",
+      "default": true
+    }
+  ]
+},
+{
+  "name": "Featured collection",
+  "type": "collection",
+  "settings": [
+    {
+      "id": "collection",
+      "type": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_spacing",
+      "label": "Enable image spacing"
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Featured collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show product vendors",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View all' button",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "use_second_button",
+      "label": "Use secondary button style",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "grid_style",
+      "label": "Grid style",
+      "default": "collage",
+      "options": [
+        {
+          "value": "collage",
+          "label": "Collage"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "products",
+      "label": "Products per row",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "Rows",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 2
+    }
+  ]
+},
+{
+    "name": "Featured product",
+    "type": "fproduct",
+    "settings": [
+      {
+        "type": "product",
+        "id": "featured_product",
+        "label": "Product"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "square",
+        "options": [
+          {
+            "value": "square",
+            "label": "Square"
+          },
+          {
+            "value": "full",
+            "label": "Full-width"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Image layout",
+        "default": "cover",
+        "options": [
+          {
+            "value": "cover",
+            "label": "Fill"
+          },
+          {
+            "value": "contain",
+            "label": "Contain"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Image background",
+        "default": "transparent"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity_selector",
+        "label": "Show quantity selector",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_variant_labels",
+        "label": "Show variant labels",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_share_buttons",
+        "label": "Show social sharing buttons",
+        "default": true
+      }
+    ]
+},
+{
+  "name": "Featured slider",
+  "type": "fslider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_second_button",
+      "label": "Use secondary button style",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Slide heading color",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "header",
+      "content": "Cover settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "cover_title",
+      "label": "Heading",
+      "default": "Showcase some product information"
+    },
+    {
+      "type": "select",
+      "id": "cover_title_desktop_position",
+      "label": "Heading position",
+      "info": "Only applies to desktop view",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "overlay_text",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "overlay_opacity",
+      "label": "Opacity",
+      "default": "0.3",
+      "options": [
+        {
+          "label": "100%",
+          "value": "1"
+        },
+        {
+          "label": "95%",
+          "value": "0.95"
+        },
+        {
+          "label": "90%",
+          "value": "0.9"
+        },
+        {
+          "label": "85%",
+          "value": "0.85"
+        },
+        {
+          "label": "80%",
+          "value": "0.8"
+        },
+        {
+          "label": "75%",
+          "value": "0.75"
+        },
+        {
+          "label": "70%",
+          "value": "0.7"
+        },
+        {
+          "label": "65%",
+          "value": "0.65"
+        },
+        {
+          "label": "60%",
+          "value": "0.6"
+        },
+        {
+          "label": "55%",
+          "value": "0.55"
+        },
+        {
+          "label": "50%",
+          "value": "0.5"
+        },
+        {
+          "label": "45%",
+          "value": "0.45"
+        },
+        {
+          "label": "40%",
+          "value": "0.4"
+        },
+        {
+          "label": "35%",
+          "value": "0.35"
+        },
+        {
+          "label": "30%",
+          "value": "0.3"
+        },
+        {
+          "label": "25%",
+          "value": "0.25"
+        },
+        {
+          "label": "20%",
+          "value": "0.2"
+        },
+        {
+          "label": "0%",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+},
+{
+  "name": "Gallery",
+  "type": "gallery",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_height",
+      "label": "Section height",
+      "default": "medium",
+      "options": [
+        {
+          "label": "Extra Small",
+          "value": "x-small"
+        },
+        {
+          "label": "Small",
+          "value": "small"
+        },
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "value": "large"
+        },
+        {
+          "label": "Extra Large",
+          "value": "x-large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "overlay_text",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "overlay_opacity",
+      "label": "Opacity",
+      "default": "0.3",
+      "options": [
+        {
+          "label": "100%",
+          "value": "1"
+        },
+        {
+          "label": "95%",
+          "value": "0.95"
+        },
+        {
+          "label": "90%",
+          "value": "0.9"
+        },
+        {
+          "label": "85%",
+          "value": "0.85"
+        },
+        {
+          "label": "80%",
+          "value": "0.8"
+        },
+        {
+          "label": "75%",
+          "value": "0.75"
+        },
+        {
+          "label": "70%",
+          "value": "0.7"
+        },
+        {
+          "label": "65%",
+          "value": "0.65"
+        },
+        {
+          "label": "60%",
+          "value": "0.6"
+        },
+        {
+          "label": "55%",
+          "value": "0.55"
+        },
+        {
+          "label": "50%",
+          "value": "0.5"
+        },
+        {
+          "label": "45%",
+          "value": "0.45"
+        },
+        {
+          "label": "40%",
+          "value": "0.4"
+        },
+        {
+          "label": "35%",
+          "value": "0.35"
+        },
+        {
+          "label": "30%",
+          "value": "0.3"
+        },
+        {
+          "label": "25%",
+          "value": "0.25"
+        },
+        {
+          "label": "20%",
+          "value": "0.2"
+        },
+        {
+          "label": "0%",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+},
+{
+  "name": "Cart page",
+  "type": "cart",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "cart_notes_enable",
+      "label": "Enable cart notes",
+      "default": true
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]
+  }
+  {% endschema %}

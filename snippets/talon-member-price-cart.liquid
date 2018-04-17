@@ -1,0 +1,59 @@
+<script>
+
+    function getCartForm() {
+        var allForms = document.getElementsByTagName("form")
+        for (var i = 0; i < allForms.length; ++i) {
+            if (allForms[i].action.indexOf("/cart") != -1) {
+                return allForms[i]
+            }
+        }
+    }
+
+    function addDiscountToForm(discountCode) {
+
+        var element = document.createElement('input')
+
+        element.type = "hidden"
+        element.name = "discount"
+        element.value = discountCode;
+
+        getCartForm().appendChild(element)
+    }
+
+    function getTotalElement() {
+        return document.getElementById('member-pricing-total')
+    }
+
+    function showDiscountInCartTotal() {
+
+        var element = getTotalElement()
+        var afterDiscountStr = getAfterDiscountStr(element)
+
+        element.innerHTML = "<s>" + element.innerHTML + "</s>&nbsp;<b>" + afterDiscountStr + "</b>"
+
+    }
+
+    function showDiscountOnCartItems() {
+
+
+        var allCartItemRows = document.querySelectorAll(".member-pricing-line-item")
+        for (var i = 0; i < allCartItemRows.length; ++i) {
+            var element = allCartItemRows[i]
+            var afterDiscountStr = getAfterDiscountStr(element)
+
+            element.innerHTML = "<s>" + element.innerHTML + "</s>&nbsp;<b>" + afterDiscountStr + "</b>"
+        }
+
+    }
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        if (window.discountCode && window.discountAmount != 1) {
+
+            addDiscountToForm(window.discountCode)
+            showDiscountInCartTotal()
+
+            showDiscountOnCartItems()
+        }
+    })
+
+</script>

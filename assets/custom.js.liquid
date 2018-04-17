@@ -1,0 +1,84 @@
+/*-----------------------------------------------------------------------------/
+/ Custom Theme JS
+/-----------------------------------------------------------------------------*/
+
+// Insert any custom theme js here...
+
+/* Custom Slider */
+$.fn.hasAttr = function(name){
+  return this.attr(name) !== undefined;
+}
+
+$(document).ready(function(){
+  $('.custom-product-slide').slick({
+    dots: true,
+	infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+	speed: 300,
+	slidesToShow: 1,
+  });
+  
+  $('.custom-review-slide').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 300,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+	]
+  });
+  
+  /* Product Accordion */  
+  
+  $(document).on('click','[data-accordion]', function(){
+    var hasOpened = $(this).hasClass('active');
+    if(!hasOpened){
+      $('[data-accordion]').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+  
+  /* Product Quanity */
+  
+  $(document).on('click','.product__add-to-cart-button.btn--to-secondary-transitioned',function(){
+    $quantity = $(this).parents('.product-form').find("[data-cart-item-input-quantity]");
+    $quantity.val(1);
+    $primary_text.html('Add 1 to basket');
+
+  });
+  
+  $(document).on('click','.product-quantity-button',function(){
+    $quantity = $(this).parents('.product-form').find("[data-cart-item-input-quantity]");
+    $primary_text = $(this).parents('.product-form').find("[data-cart-primary-submit-text]");
+    var quantity = parseInt($quantity.val());
+
+    if($(this).hasAttr("quantity-minus-icon")){
+      quantity = quantity != 1 ? quantity - 1 : 1;
+    }
+    
+    if($(this).hasAttr("quantity-plus-icon")){
+      quantity = quantity + 1;
+    }
+   
+	$quantity.val(quantity);
+    $primary_text.html('Add '+quantity+' to basket');
+  });
+});

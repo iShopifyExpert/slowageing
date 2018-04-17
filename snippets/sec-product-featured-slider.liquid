@@ -1,0 +1,317 @@
+<style>
+  #featured-slider-{{ section.id }} .featured-slider__slides-container {
+    background-color: {{ section.blocks[0].settings.background_color }}
+  }
+
+  #featured-slider-{{ section.id }} .featured-slider__close-icon .icon {
+    fill: {{ section.settings.text_color }};
+  }
+
+  #featured-slider-{{ section.id }} .pinch-indicator {
+    background-color: {{ section.settings.text_color }};
+  }
+
+  {% if section.settings.show_overlay %}
+    #featured-slider-{{ section.id }} .featured-slider__cover-title {
+      color: {{ section.settings.overlay_text }};
+      border-color: {{ section.settings.overlay_text }};
+    }
+
+    #featured-slider-{{ section.id }} .pinch-indicator {
+      background-color: {{ section.settings.overlay_text }};
+    }
+
+    #featured-slider-{{ section.id }} .featured-slider__cover-background:after {
+      background-color: {{ section.settings.overlay_color }};
+      opacity: {{ section.settings.overlay_opacity }};
+    }
+  {% endif %}
+</style>
+
+<div id="featured-slider-{{ section.id }}" class="featured-slider" data-section-id="{{ section.id }}" data-section-type="featured-slider">
+  <div class="featured-slider__cover">
+    <div class="featured-slider__cover-background featured-slider__cover-background--top reveal-slider__cover-background--top side-scroller__cover-background">
+      {% if product.metafields.feature.main != blank %}
+      	<div class="featured-slider__cover-background-image lazyload" data-bgset="{{product.metafields.feature.main }}"></div>
+        <noscript>
+          <div class="featured-slider__cover-background-image lazyload" style="background-image: {{ product.metafields.feature.main | img_url: 'master' }}"></div>
+        </noscript>
+      {% elsif section.settings.cover_image != blank %}
+        <div class="featured-slider__cover-background-image lazyload" data-bgset="{% include 'bgset', image: section.settings.cover_image %}"></div>
+        <noscript>
+          <div class="featured-slider__cover-background-image lazyload" style="background-image: {{ section.settings.cover_image | img_url: 'master' }}"></div>
+        </noscript>
+      {% else %}
+	    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </div>
+    <div class="featured-slider__cover-background featured-slider__cover-background--bottom reveal-slider__cover-background--bottom">
+      {% if product.metafields.feature.main != blank %}
+      	<div class="featured-slider__cover-background-image lazyload" data-bgset="{{product.metafields.feature.main}}"></div>
+        <noscript>
+          <div class="featured-slider__cover-background-image lazyload" style="background-image: {{ section.settings.cover_image | img_url: 'master' }}"></div>
+        </noscript>
+      {% elsif section.settings.cover_image != blank %}
+        <div class="featured-slider__cover-background-image lazyload" data-bgset="{% include 'bgset', image: section.settings.cover_image %}"></div>
+        <noscript>
+          <div class="featured-slider__cover-background-image lazyload" style="background-image: {{ section.settings.cover_image | img_url: 'master' }}"></div>
+        </noscript>
+      {% else %}
+	    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </div>
+
+    <div class="featured-slider__cover-content reveal-slider__cover-content side-scroller__cover-content{% if section.settings.cover_title_desktop_position == 'left' %} featured-slider__cover-content--left{% endif %}">
+      <h2 class="featured-slider__cover-title h3"{% if section.settings.show_overlay %} style="color: {{ product.metafields.feature.main_title }}; border-color: {{ section.settings.overlay_text }};"{% endif %} data-animate>{{ product.metafields.feature.main_title }}</h2>
+      <div class="pinch-indicators">
+        <div class="pinch-indicator pinch-indicator--top"></div>
+        <div class="pinch-indicator pinch-indicator--bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-slider__slides-container side-scroller__slides-container slider" tabindex="-1">
+
+    <button class="btn btn--clear featured-slider__close reveal-slider__close">
+      <span class="featured-slider__close-icon">{% include 'icon-close' %}</span>
+      <span class="featured-slider__close-circle" style="border-color: {{ section.settings.text_color }}"></span>
+    </button>
+
+    <div class="featured-slider__slide-list">
+	  {% if product.metafields.feature.img1 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container" style="padding-top: 98.50000000000001%">
+            <img class="featured-slider__slide-image lazyload"
+                 data-src="{{ product.metafields.feature.img1 }}"
+                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                 data-sizes="auto"
+                 alt="a">
+          </div>
+          {% if product.metafields.feature.img1_desc  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.feature.img1_desc }}</h3>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+	  {% if product.metafields.feature.img2 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container" style="padding-top: 98.50000000000001%">
+            <img class="featured-slider__slide-image lazyload"
+                 data-src="{{ product.metafields.feature.img2 }}"
+                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                 data-sizes="auto"
+                 alt="a">
+          </div>
+          {% if product.metafields.feature.img2_desc  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.feature.img2_desc }}</h3>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+	  {% if product.metafields.feature.img3 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container" style="padding-top: 98.50000000000001%">
+            <img class="featured-slider__slide-image lazyload"
+                 data-src="{{ product.metafields.feature.img3 }}"
+                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                 data-sizes="auto"
+                 alt="a">
+          </div>
+          {% if product.metafields.feature.img3_desc  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.feature.img3_desc }}</h3>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="reveal-slider__nav">
+      <button class="reveal-slider__nav-button active" style="background-color: {{ section.settings.text_color }}">
+        <span class="visually-hidden">{{ 'sections.slider.slide' | t: number: 0 }}</span>
+      </button>
+      <button class="reveal-slider__nav-button active" style="background-color: {{ section.settings.text_color }}">
+        <span class="visually-hidden">{{ 'sections.slider.slide' | t: number: 1 }}</span>
+      </button>
+      <button class="reveal-slider__nav-button active" style="background-color: {{ section.settings.text_color }}">
+        <span class="visually-hidden">{{ 'sections.slider.slide' | t: number: 2 }}</span>
+      </button>
+    </div>
+
+    <div class="reveal-slider__previous">
+      <button class="reveal-slider__previous-button">
+        <span class="visually-hidden">{{ 'sections.slider.previous_slide' | t }}</span>
+      </button>
+    </div>
+
+    <div class="reveal-slider__next">
+      <button class="reveal-slider__next-button">
+        <span class="visually-hidden">{{ 'sections.slider.next_slide' | t }}</span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Featured slider",
+  "class": "index-section index-section--product-featured-sider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_second_button",
+      "label": "Use secondary button style",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Slide heading color",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "header",
+      "content": "Cover settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "cover_title",
+      "label": "Heading",
+      "default": "Showcase some product information"
+    },
+    {
+      "type": "select",
+      "id": "cover_title_desktop_position",
+      "label": "Heading position",
+      "info": "Only applies to desktop view",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "overlay_text",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "overlay_opacity",
+      "label": "Opacity",
+      "default": "0.3",
+      "options": [
+        {
+          "label": "100%",
+          "value": "1"
+        },
+        {
+          "label": "95%",
+          "value": "0.95"
+        },
+        {
+          "label": "90%",
+          "value": "0.9"
+        },
+        {
+          "label": "85%",
+          "value": "0.85"
+        },
+        {
+          "label": "80%",
+          "value": "0.8"
+        },
+        {
+          "label": "75%",
+          "value": "0.75"
+        },
+        {
+          "label": "70%",
+          "value": "0.7"
+        },
+        {
+          "label": "65%",
+          "value": "0.65"
+        },
+        {
+          "label": "60%",
+          "value": "0.6"
+        },
+        {
+          "label": "55%",
+          "value": "0.55"
+        },
+        {
+          "label": "50%",
+          "value": "0.5"
+        },
+        {
+          "label": "45%",
+          "value": "0.45"
+        },
+        {
+          "label": "40%",
+          "value": "0.4"
+        },
+        {
+          "label": "35%",
+          "value": "0.35"
+        },
+        {
+          "label": "30%",
+          "value": "0.3"
+        },
+        {
+          "label": "25%",
+          "value": "0.25"
+        },
+        {
+          "label": "20%",
+          "value": "0.2"
+        },
+        {
+          "label": "0%",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Featured slider",
+      "category": "Advanced layout"
+    }
+  ]
+}
+{% endschema %}

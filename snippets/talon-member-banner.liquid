@@ -1,0 +1,134 @@
+<style>
+    #talon-banner {
+        width: 100%;
+        z-index: 2147483647;
+        height: auto;
+        background-color: black;
+        color: white;
+        position: absolute;
+        text-align: center;
+        line-height: 1.4em;
+        padding: 5px;
+      	display:none;
+    	font-family: arial,helvetica,sans-serif !important;
+        top: 0;
+    }
+
+    #talon-banner > a, #talon-banner > b > a, #talon-banner > a > b {
+        color: white;
+      
+    }
+
+</style>
+{% assign banner_text = "" %}
+{% if customer %}
+    {% for tag in customer.tags %}
+        {% capture meta_key %}{{ tag }}_banner_text{% endcapture %}
+        {% for field in shop.metafields.member_pricing %}
+            {% assign cur_key = field |first %}
+            {% if cur_key == meta_key %}
+                {% assign banner_text = field | last %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% else %}
+    {% assign banner_text = shop.metafields.member_pricing.not_loggedin_text %}
+{% endif %}
+{% assign banner_text = banner_text |strip %}
+{% if banner_text and banner_text != "" %}
+    <div id="talon-banner">
+        {{ banner_text }}
+    </div>
+{% endif %}
+
+<script>
+  
+  function adjustFixedAndAbsolute($, bannerHeight){
+    
+    	  var everything = $("*")
+          for (var i=0; i<everything.length; i++) {
+    	var cur = $(everything[i])
+            
+            var curPositionType = cur.css("position") 
+            var curId = cur.attr('id')
+            
+            if (curId != "admin_bar_iframe"&& curId != 'talon-banner')
+            {
+              var modifyStyle = ''
+              if(curPositionType == "fixed")
+              {
+                modifyStyle = 'margin-top'
+              }
+              
+              if(modifyStyle != '')
+              {
+                
+              cur.css(modifyStyle, "" + (parseInt(cur.css(modifyStyle))+bannerHeight) + "px")
+              //cur.css('top', "" + (parseInt(cur.css('top'))+bannerHeight) + "px")
+              }
+              
+            }
+        }
+  }
+     function loadScript(url, callback) {
+
+        var script = document.createElement("script")
+        script.type = "text/javascript";
+
+        if (script.readyState) {  //IE
+            script.onreadystatechange = function () {
+                if (script.readyState == "loaded" ||
+                        script.readyState == "complete") {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {  //Others
+            script.onload = function () {
+                callback();
+            };
+        }
+
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+       
+    }
+	function adjustPositions($, bannerHeight)
+  {
+     
+          var htmlMargintop = parseInt($('html').css("margin-top"))
+          
+          	$('html').css("margin-top", "" + (htmlMargintop+bannerHeight) + "px")
+          	if( $('html').css('padding-top') == "40px")
+            {
+          		$("#talon-banner").css("top", "-"+ bannerHeight + "px")
+            }
+          	adjustFixedAndAbsolute($, bannerHeight)
+          
+            
+  }
+  
+    function memPriceBannerStart($)
+    {
+      	
+      	
+        var bannerHeight = $('#talon-banner').outerHeight()
+
+        if(bannerHeight !== null && bannerHeight !== undefined)
+        {
+         	adjustPositions($, bannerHeight)
+           	$('#talon-banner').css("display", "block")
+           
+          	
+        }
+    }
+
+    if ((typeof jQuery === 'undefined') || (parseFloat(jQuery.fn.jquery) < 1.7)) {
+        loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', function () {
+            jQuery191 = jQuery.noConflict(true);
+            memPriceBannerStart(jQuery191);
+        });
+    } else {
+        memPriceBannerStart(jQuery);
+    }
+</script>

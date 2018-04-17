@@ -1,0 +1,19 @@
+{% assign talon_price = talon_product.selected_or_first_available_variant.price  %}
+{% assign discount_mult = 1 %}
+{% if customer and talon_product.variants %}
+    {% assign membership_levels = shop.metafields.mp_discounts.member_levels | split: "," %}
+    {% for tag in customer.tags %}
+      {% for level in membership_levels %}
+        {% assign level_breakdown = level | split: ":" %}
+          {% if  level_breakdown[0] == tag %}
+              {%  assign breakdown_num = level_breakdown[1] |plus: 0 %}
+			{% if breakdown_num < discount_mult %}
+              {% assign discount_mult = breakdown_num %}
+			{%endif%}
+          {% endif %}
+      {% endfor %}
+    {% endfor %}
+{% endif %}
+{% assign talon_price = talon_price | times: discount_mult  %}
+
+{{ talon_price }}

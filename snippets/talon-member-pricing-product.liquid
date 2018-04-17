@@ -1,0 +1,47 @@
+<script>
+    function setDiscount(priceElement) {
+        if (priceElement.tagName.toUpperCase() == "META") {
+            return;
+        }
+        var oldPrice = priceElement.querySelector("#auto-discounted-price")
+
+        if(oldPrice != null)
+        {
+            return
+        }
+
+
+
+        var afterDiscountStr = getAfterDiscountStr(priceElement)
+
+        var comparePriceElement = document.querySelector("#auto-discount-compare")
+
+        if (comparePriceElement && comparePriceElement.innerText != "" || window.comparePriceParent) {
+            if(!window.comparePriceParent )  window.comparePriceParent = comparePriceElement.parentNode
+            priceElement.innerHTML = "<b id=\"auto-discounted-price\">" + afterDiscountStr + "</b>";
+        }
+        else {
+          //  var newDiscountStr = "<s id=\"auto-discount-old-price\">" + priceElement.innerHTML + "</s>&nbsp;<b id=\"auto-discounted-price\">" + afterDiscountStr + "</b>"
+
+            priceElement.innerHTML = "<b id=\"auto-discounted-price\">" + afterDiscountStr + "</b>";
+        }
+
+    }
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+
+        var allPrices = document.querySelectorAll("[itemprop=price]")
+        if(window.discountAmount != 1) {
+            for (var i = 0; i < allPrices.length; ++i) {
+
+                var priceElement = allPrices[i];
+                observeDOM(priceElement, function () {
+                    setDiscount(priceElement)
+                })
+                setDiscount(priceElement)
+
+            }
+        }
+
+    })
+</script>
