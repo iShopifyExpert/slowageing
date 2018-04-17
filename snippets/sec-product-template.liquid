@@ -3,7 +3,7 @@
 {% if current_variant.compare_at_price > current_variant.price %}
   {%- assign current_variant_sale = true -%}
 {% endif %}
-<div class="product-slider-div product-template" data-section-id="{{ section.id }}" data-section-type="product-template" data-variant-id="{{ current_variant.id }}" itemscope itemtype="http://schema.org/Product">
+<div class="product-slider-div product-template" data-section-id="{{ block.id }}" data-section-type="product-template" data-variant-id="{{ current_variant.id }}" itemscope itemtype="http://schema.org/Product">
 
   <meta itemprop="name" content="{{ product.title }}">
   <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
@@ -76,7 +76,7 @@
             
             {% include 'product-form' %}
 
-            {% if section.settings.show_share_buttons %}
+            {% if block.settings.show_share_buttons %}
             {% if settings.share_facebook or settings.share_twitter or settings.share_pinterest %}
             <div class="product__share-wrapper small--hide">
               <div class="product__share">
@@ -94,7 +94,7 @@
     Product Share Buttons
     ------------------------------------------------------------------------------
     {% endcomment %}
-    {% if section.settings.show_share_buttons %}
+    {% if block.settings.show_share_buttons %}
       {% if settings.share_facebook or settings.share_twitter or settings.share_pinterest %}
         <div class="product__share-wrapper product__share-wrapper--mobile medium-up--hide">
           <div class="product__share">
@@ -108,42 +108,3 @@
     {{ product | json }}
   </script>
 </div>
-
-{% schema %}
-{
-  "name": "Product pages",
-  "settings": [
-    {
-      "type": "checkbox",
-      "id": "show_quantity_selector",
-      "label": "Show quantity selector",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_variant_labels",
-      "label": "Show variant labels",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_vendor",
-      "label": "Show product vendor",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "hide_variant_images",
-      "label": "Hide variant images in gallery",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_share_buttons",
-      "label": "Show social sharing buttons",
-      "info": "Make sure you have enabled social sharing in general settings",
-      "default": true
-    }
-  ]
-}
-{% endschema %}
