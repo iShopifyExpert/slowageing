@@ -83,6 +83,21 @@
     {% when 'sociall' %}
     {% include 'social-links' %}
 
+    {% when 'pfslider' %}
+    {% include 'sec-product-featured-slider' %}
+
+    {% when 'pgallery' %}
+    {% include 'sec-product-gallery' %}
+
+    {% when 'productr' %}
+    {% include 'sec-product-review' %}
+
+    {% when 'productt' %}
+    {% include 'sec-product-template' %}
+
+    {% when 'productvp' %}
+    {% include 'sec-product-video-popup' %}
+
 
     {% endcase %}
   </div>
@@ -2002,6 +2017,158 @@
       "unit": "%",
       "label": "Opacity",
       "default": 30
+    }
+  ]
+},
+{
+  "name": "Product Featured slider",
+  "type": "pfsider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_second_button",
+      "label": "Use secondary button style",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Slide heading color",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "header",
+      "content": "Cover settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "cover_title",
+      "label": "Heading",
+      "default": "Showcase some product information"
+    },
+    {
+      "type": "select",
+      "id": "cover_title_desktop_position",
+      "label": "Heading position",
+      "info": "Only applies to desktop view",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "overlay_text",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "overlay_opacity",
+      "label": "Opacity",
+      "default": "0.3",
+      "options": [
+        {
+          "label": "100%",
+          "value": "1"
+        },
+        {
+          "label": "95%",
+          "value": "0.95"
+        },
+        {
+          "label": "90%",
+          "value": "0.9"
+        },
+        {
+          "label": "85%",
+          "value": "0.85"
+        },
+        {
+          "label": "80%",
+          "value": "0.8"
+        },
+        {
+          "label": "75%",
+          "value": "0.75"
+        },
+        {
+          "label": "70%",
+          "value": "0.7"
+        },
+        {
+          "label": "65%",
+          "value": "0.65"
+        },
+        {
+          "label": "60%",
+          "value": "0.6"
+        },
+        {
+          "label": "55%",
+          "value": "0.55"
+        },
+        {
+          "label": "50%",
+          "value": "0.5"
+        },
+        {
+          "label": "45%",
+          "value": "0.45"
+        },
+        {
+          "label": "40%",
+          "value": "0.4"
+        },
+        {
+          "label": "35%",
+          "value": "0.35"
+        },
+        {
+          "label": "30%",
+          "value": "0.3"
+        },
+        {
+          "label": "25%",
+          "value": "0.25"
+        },
+        {
+          "label": "20%",
+          "value": "0.2"
+        },
+        {
+          "label": "0%",
+          "value": "0"
+        }
+      ]
     }
   ]
 }
