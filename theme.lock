@@ -321,6 +321,8 @@ snippets/sec-collection-list.liquid:
   development: 2018-04-17T10:15:30+01:00   679732cdb633416f442d60d50e1ec3bc
 snippets/sec-collection-template.liquid:
   development: 2018-04-17T10:20:12+01:00   e8a773e55fa633d1436926975a431d44
+snippets/sec-custom-content-html.liquid:
+  development: 2018-04-17T14:13:11+01:00   7b9830dc1e2e5d5f4fcbd321d568e607
 snippets/sec-feature-row.liquid:
   development: 2018-04-17T08:17:37+01:00   ed0941d72c8f6b44710ea13f3c65efd2
 snippets/sec-featured-blog.liquid:
