@@ -99,6 +99,8 @@ sections/password-footer.liquid:
   development: 2018-04-12T10:41:15+01:00   6150a647d2491864eaaf72ee11b57334
 sections/password-header.liquid:
   development: 2018-04-12T10:41:15+01:00   75c2f28653bbb373eac3cac397ffba9e
+sections/philosophy-sections.liquid:
+  development: 2018-04-17T09:44:48+01:00   c2b7f8356e9eaee08a9e8fad3d6a935d
 sections/product-featured-slider.liquid:
   development: 2018-04-12T10:41:15+01:00   4b82ee8b914e3bb4e9ec78a7fb5fb6ab
 sections/product-gallery.liquid:
@@ -117,10 +119,8 @@ sections/search-template.liquid:
   development: 2018-04-12T10:41:16+01:00   e51ed1cae46013c9cd4fdbc8e33daaa7
 sections/slideshow.liquid:
   development: 2018-04-12T10:41:16+01:00   e0e2326e532df07af8ca4f74757014d3
-sections/test.liquid:
-  development: 2018-04-17T09:05:59+01:00   c2b7f8356e9eaee08a9e8fad3d6a935d
-sections/testx.liquid:
-  development: 2018-04-16T10:10:29+01:00   0ba6b41df9b0607bf2c0f36b80277207
+sections/story-sections.liquid:
+  development: 2018-04-17T09:44:56+01:00   0ba6b41df9b0607bf2c0f36b80277207
 sections/video.liquid:
   development: 2018-04-12T10:41:16+01:00   8953bff7a4ef794a739d3e06bc1241d6
 snippets/article-card.liquid:
