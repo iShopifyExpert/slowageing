@@ -44,6 +44,19 @@
     {% when 'collection' %}
     {% include 'sec-featured-collection' %}
 
+    {% when 'collectionl' %}
+    {% include 'sec-collection-list' %}
+
+    {% when 'collectiont' %}
+    {% include 'sec-collection-template' %}
+
+    {% when 'customc' %}
+    {% include 'sec-custom-content' %}
+
+    {% when 'fblog' %}
+    {% include 'sec-featured-blog' %}
+
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -51,7 +64,7 @@
 
 {% schema %}
 {
-  "name": "TEST content area",
+  "name": "Philosohy Contents",
   "class": "index-section index-section--custom-content",
   "settings": [
   {
@@ -1054,6 +1067,27 @@
       "default": true
     }
   ]
+},
+{
+    "name": "Collection list",
+    "type": "collectionl",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collection list"
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Collections per row",
+        "min": 2,
+        "max": 4,
+        "step": 1,
+        "default": 3
+      }
+    ]
 }
 
 

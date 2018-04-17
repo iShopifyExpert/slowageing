@@ -98,7 +98,7 @@ sections/password-footer.liquid:
 sections/password-header.liquid:
   development: 2018-04-12T10:41:15+01:00   75c2f28653bbb373eac3cac397ffba9e
 sections/philosophy-sections.liquid:
-  development: 2018-04-17T09:44:48+01:00   c2b7f8356e9eaee08a9e8fad3d6a935d
+  development: 2018-04-17T10:18:43+01:00   1c29f52219c4940d6ebc553d39c746a7
 sections/product-featured-slider.liquid:
   development: 2018-04-12T10:41:15+01:00   4b82ee8b914e3bb4e9ec78a7fb5fb6ab
 sections/product-gallery.liquid:
@@ -118,7 +118,7 @@ sections/search-template.liquid:
 sections/slideshow.liquid:
   development: 2018-04-12T10:41:16+01:00   e0e2326e532df07af8ca4f74757014d3
 sections/story-sections.liquid:
-  development: 2018-04-17T09:44:56+01:00   0ba6b41df9b0607bf2c0f36b80277207
+  development: 2018-04-17T09:55:54+01:00   656a91e3d0c38e0501ed333badaf4b56
 sections/video.liquid:
   development: 2018-04-12T10:41:16+01:00   8953bff7a4ef794a739d3e06bc1241d6
 snippets/article-card.liquid:
@@ -317,6 +317,8 @@ snippets/sec-blog-template.liquid:
   development: 2018-04-17T08:46:05+01:00   b6f982c89bf99932193b9b9f6f333155
 snippets/sec-cart-template.liquid:
   development: 2018-04-17T09:05:35+01:00   7a9cd62557a444cb54ed42be100faf75
+snippets/sec-collection-list.liquid:
+  development: 2018-04-17T10:15:30+01:00   679732cdb633416f442d60d50e1ec3bc
 snippets/sec-feature-row.liquid:
   development: 2018-04-17T08:17:37+01:00   ed0941d72c8f6b44710ea13f3c65efd2
 snippets/sec-featured-collection.liquid:
@@ -384,9 +386,9 @@ templates/page.contact.liquid:
 templates/page.liquid:
   development: 2018-04-12T10:41:23+01:00   e5ba0a99aa80677dc86be60993fbc632
 templates/page.philosophy.liquid:
-  development: 2018-04-13T06:11:09+01:00   a07cd80e79bf2ca189ae54f5c02674cb
+  development: 2018-04-17T09:50:24+01:00   c30f38f73a6c792d44edf9b3e2fa94fd
 templates/page.story.liquid:
-  development: 2018-04-16T08:39:15+01:00   a07cd80e79bf2ca189ae54f5c02674cb
+  development: 2018-04-17T09:50:19+01:00   9374b4ef59041c9f9f65987812031506
 templates/password.liquid:
   development: 2018-04-12T10:41:23+01:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:
