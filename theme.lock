@@ -53,8 +53,6 @@ locales/pt-BR.json:
   development: 2018-04-12T10:41:19+01:00   33fb3614e72e43c76f3cbf6efb6fb727
 locales/pt-PT.json:
   development: 2018-04-12T10:41:19+01:00   65e446a311dac4747fa105feef783651
-sections/about.liquid:
-  development: 2018-04-16T09:28:57+01:00   a4bd1a089df62f12ac34e0ea7ff11814
 sections/article-template.liquid:
   development: 2018-04-12T10:41:14+01:00   f9fc8b1a796fd0fa516107ee8046d46e
 sections/blog-template.liquid:
@@ -389,10 +387,6 @@ templates/page.philosophy.liquid:
   development: 2018-04-13T06:11:09+01:00   a07cd80e79bf2ca189ae54f5c02674cb
 templates/page.story.liquid:
   development: 2018-04-16T08:39:15+01:00   a07cd80e79bf2ca189ae54f5c02674cb
-templates/page.test1.liquid:
-  development: 2018-04-16T09:35:48+01:00   fa5535964ba0914cb759a028483c509c
-templates/page.test2.liquid:
-  development: 2018-04-16T10:10:45+01:00   20a1be8ad842d717b8b5d2059f2783e5
 templates/password.liquid:
   development: 2018-04-12T10:41:23+01:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:
