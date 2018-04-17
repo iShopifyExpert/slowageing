@@ -1,23 +1,23 @@
 <style>
-  .feature-row--{{ section.id }} {
-    {% if section.settings.background_color != blank %}
-      background-color: {{ section.settings.background_color }};
-    {% elsif section.settings.background_color == blank and image_crop %}
+  .feature-row--{{ block.id }} {
+    {% if block.settings.background_color != blank %}
+      background-color: {{ block.settings.background_color }};
+    {% elsif block.settings.background_color == blank and image_crop %}
       background-color: {{ settings.color_secondary_bg }};
     {% endif %}
   }
 
 </style>
 
-<div class="product-review product-review--{{ section.id }} product-review--{{ section.settings.size }} {% if section.settings.mobile_layout == 'bottom' %} product-review-mobile--bottom{% endif %}" data-section-id="{{ section.id }}" data-section-type="product-review">
+<div class="product-review product-review--{{ block.id }} product-review--{{ block.settings.size }} {% if block.settings.mobile_layout == 'bottom' %} product-review-mobile--bottom{% endif %}" data-section-id="{{ block.id }}" data-section-type="product-review">
 	
   <div class="product-review__header">
-    {% if section.settings.content-title != blank %}
-      <h2 class="feature-row__heading h3 separator" data-animate>{{ section.settings.content-title | escape }}</h2>
+    {% if block.settings.content-title != blank %}
+      <h2 class="feature-row__heading h3 separator" data-animate>{{ block.settings.content-title | escape }}</h2>
     {% endif %}
     {% comment %}
-    {% if section.settings.content-description != blank %}
-      <div class="rte-setting">{{ section.settings.content-description }}</div>
+    {% if block.settings.content-description != blank %}
+      <div class="rte-setting">{{ block.settings.content-description }}</div>
     {% endif %}
     {% endcomment %}
   </div>
@@ -101,133 +101,4 @@
     </div>
   </div>
 </div>
-
-{% schema %}
-{
-  "name": "Product Review",
-  "class": "index-section index-section--product-review",
-  "settings": [
-    {
-      "type": "select",
-      "id": "size",
-      "label": "Section height",
-      "default": "medium",
-      "options": [
-        {
-          "label": "Small",
-          "value": "small"
-        },
-        {
-          "label": "Medium",
-          "value": "medium"
-        },
-        {
-          "label": "Large",
-          "value": "large"
-        },
-        {
-          "label": "Extra Large",
-          "value": "x-large"
-        }
-      ]
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#faf9f6"
-    },
-    {
-      "type": "header",
-      "content": "Text"
-    },
-    {
-      "type": "text",
-      "id": "content-title",
-      "label": "Heading",
-      "default": "default heading"
-    },
-    {
-      "type": "text",
-      "id": "content-description",
-      "label": "Description",
-      "default": "default text"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "slide",
-      "name": "Slide",
-      "limit": 5,
-      "settings": [
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background color",
-          "default": "rgba(0,0,0,0)"
-        },
-        {
-          "type": "header",
-          "content": "Image"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_image",
-          "label": "Show slide image",
-          "default": true
-        },
-        {
-          "type": "image_picker",
-          "id": "slide_image",
-          "label": "Image"
-        },
-        {
-          "type": "header",
-          "content": "Text"
-        },
-        {
-          "type": "text",
-          "id": "slide_title",
-          "label": "Author",
-          "default": "Author"
-        },
-		{
-          "type": "text",
-          "id": "slide_description",
-          "label": "Text",
-          "default": "Example text"
-        },
-        {
-          "type": "text",
-          "id": "slide_button_text",
-          "label": "Button label",
-          "default": "View"
-        },
-        {
-          "type": "url",
-          "id": "slide_button_url",
-          "label": "Button link"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Product Review",
-      "category": "Advanced layout",
-	  "blocks": [
-        {
-          "type": "slide"
-        },
-        {
-          "type": "slide"
-        },
-        {
-          "type": "slide"
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
 
