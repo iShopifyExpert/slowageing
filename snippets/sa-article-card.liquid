@@ -12,15 +12,18 @@
 
     <div class="card__info">
 
+      {% if section.settings.blog_show_tags %}
+      <h1 class="card__name">{{ article.tags }}</h1>
+      <hr class="underline">
+      {% endif %}
+
+
       {% if section.settings.blog_show_date %}
         <span class="card__date text-small--uppercase">
           {{ article.published_at | time_tag: format: 'month_day_year' }}
         </span>
       {% endif %}
 
-      {% if section.settings.blog_show_tags %}
-      <h1 class="card__name">{{ article.tags }}</h1>
-      {% endif %}
 
       <h3 class="card__name">{{ article.title }}</h3>
 

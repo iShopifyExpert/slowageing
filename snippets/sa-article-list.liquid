@@ -7,21 +7,14 @@
     {% endif %}
 
     {% if article_image != blank %}
-      {% include 'card-image', type: article_image, grid_style: grid_style %}
+      {% comment %}{% include 'sa-card-image-recent', type: article_image, grid_style: grid_style %}{% endcomment %}
+      <img src="{{article.image | img_url: '200x200', crop: 'center' }}" alt="{{ type.alt | escape }}" class="card__image">
     {% endif %}
 
     <div class="card__info">
 
-      {% if section.settings.blog_show_date %}
-        <span class="card__date text-small--uppercase">
-          {{ article.published_at | time_tag: format: 'month_day_year' }}
-        </span>
-      {% endif %}
-
-      {% if section.settings.blog_show_tags %}
       <h1 class="card__name">{{ article.tags }}</h1>
-      {% endif %}
-
+      <hr class="underline">
       <h3 class="card__name">{{ article.title }}</h3>
 
     </div>
