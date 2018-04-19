@@ -186,7 +186,7 @@ sections/rich-text.liquid:
 sections/sa-article-template.liquid:
   development: 2018-04-19T09:33:02+01:00   f9fc8b1a796fd0fa516107ee8046d46e
 sections/sa-blog-template.liquid:
-  development: 2018-04-19T13:08:34+01:00   0039531e3b80bbacdaeb686502b2040f
+  development: 2018-04-19T13:18:22+01:00   42ed7110f50d3bfb74ae2acace0903b9
 sections/search-template.liquid:
   development: 2018-04-19T08:08:35+01:00   e51ed1cae46013c9cd4fdbc8e33daaa7
 sections/slideshow.liquid:

@@ -1,4 +1,9 @@
 <style>
+.blog-tags {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 16px;
+}
 .post-list > div {
   overflow: hidden;
 }
@@ -15,9 +20,12 @@
 
   <div class="page-width">
 
+<div class="blog-tags">
+    <a href="{{ shop.url }}/blogs/news">All</a>
     {% for tag in blog.all_tags %}
-    {{ tag }}
+    <a href="{{ shop.url }}/blogs/news/tagged/{{ tag }}">{{ tag }}</a>
     {% endfor %}
+</div>
 
     <header class="section-header section-header--small text-center">
       <h1 class="section-header__title h2">{{ page_title }}</h1>
