@@ -1,74 +1,100 @@
-{%- assign limit = section.settings.articles | times: section.settings.rows -%}
+<style>
+.post-list > div {
+  overflow: hidden;
+}
+.blog-post-recent {
+    overflow: hidden;
+}
+.blog-post-recent > div {
+    float: left;
+}
+</style>
 
 <div class="blog-template" data-section-id="{{ section.id }}" data-section-type="blog-template">
-  {% paginate blog.articles by limit %}
 
-    <div class="page-width">
 
-{% for tag in blog.all_tags %}
+  <div class="page-width">
+
+    {% for tag in blog.all_tags %}
     {{ tag }}
-{% endfor %}
-      
-      <header class="section-header section-header--small text-center">
-        <h1 class="section-header__title h2">{{ page_title }}</h1>
-            {% if section.settings.heading_text != blank %}
-            <h2 class="custom-content__section-header text-center">{{ section.settings.heading_text | escape }}</h2>
-            {% endif %}
-      </header>
+    {% endfor %}
 
-      {%- assign desktopColumns = section.settings.articles -%}
-      {%- assign mobileColumns = '1' -%}
-
-      {%- capture gridClasses -%}
-        {% if desktopColumns == '3' %}medium-up--one-third {% else %}medium-up--one-half {% endif %}
-        {% if mobileColumns == '2' %}small--one-half {% endif %}
-      {%- endcapture -%}
+    <header class="section-header section-header--small text-center">
+      <h1 class="section-header__title h2">{{ page_title }}</h1>
+      {% if section.settings.heading_text != blank %}
+      <h2 class="custom-content__section-header text-center">{{ section.settings.heading_text | escape }}</h2>
+      {% endif %}
+    </header>
 
 
 
+    <div class="blog-post-recent">
+
+      <div class="post-list post-list-last medium-up--two-thirds">
+        <div class=" ">
+          {% for article in blog.articles limit: 1%}
+          {% include 'sa-article-last'%}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="post-list post-list-recent medium-up--one-third">
+        <div class=" ">
+          {% for article in blog.articles limit: 3%}
+          {% include 'sa-article-list'%}
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
+
+    {%- assign limit = section.settings.articles | times: section.settings.rows -%}
+
+    {% paginate blog.articles by limit %}
+
+
+    {%- assign desktopColumns = section.settings.articles -%}
+    {%- assign mobileColumns = '1' -%}
+
+    {%- capture gridClasses -%}
+    {% if desktopColumns == '3' %}medium-up--one-third {% else %}medium-up--one-half {% endif %}
+    {% if mobileColumns == '2' %}small--one-half {% endif %}
+    {%- endcapture -%}
 
 
       <div class="card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}" data-grid-style="{{ section.settings.grid_style }}">
         <div class="card-list__column grid__item {% if blog.articles.size == 1 %}card-list__column--center{% endif %} {{ gridClasses }}">
           {% for article in blog.articles %}
-            {% include 'article-card', article: article, grid_style: section.settings.grid_style %}
+          {% include 'sa-article-card', article: article, grid_style: section.settings.grid_style %}
           {% endfor %}
         </div>
       </div>
 
-
-
-
-
-
-
-      <div class="card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}" data-grid-style="{{ section.settings.grid_style }}">
-        <div class="card-list__column grid__item {% if blog.articles.size == 1 %}card-list__column--center{% endif %} {{ gridClasses }}">
-          {% for article in blog.articles %}
-            {% include 'article-card', article: article, grid_style: section.settings.grid_style %}
-          {% endfor %}
-        </div>
-      </div>
 
       {% if blog.articles.size == 0 %}
-        <p class="text-center">{{ 'blogs.article.no_matches' | t }}</p>
+      <p class="text-center">{{ 'blogs.article.no_matches' | t }}</p>
       {% endif %}
 
       {% if paginate.pages > 1 %}
-        <div class="card-list__sub-actions">
-          {% include 'pagination' %}
-        </div>
+      <div class="card-list__sub-actions">
+        {% include 'pagination' %}
+      </div>
       {% endif %}
+
+      {% endpaginate %}
+
+
+
     </div>
 
-  {% endpaginate %}
-</div>
+  </div>
 
-{% schema %}
-{
-  "name": "Blog",
-  "settings": [
-      {
+  {% schema %}
+  {
+    "name": "Blog",
+    "settings": [
+    {
       "type": "text",
       "id": "heading_text",
       "label": "Sub Heading",
@@ -80,14 +106,14 @@
       "label": "Grid style",
       "default": "collage",
       "options": [
-        {
-          "value": "collage",
-          "label": "Collage"
-        },
-        {
-          "value": "grid",
-          "label": "Grid"
-        }
+      {
+        "value": "collage",
+        "label": "Collage"
+      },
+      {
+        "value": "grid",
+        "label": "Grid"
+      }
       ]
     },
     {
@@ -96,14 +122,14 @@
       "label": "Articles per row",
       "default": "3",
       "options": [
-        {
-          "value": "2",
-          "label": "2"
-        },
-        {
-          "value": "3",
-          "label": "3"
-        }
+      {
+        "value": "2",
+        "label": "2"
+      },
+      {
+        "value": "3",
+        "label": "3"
+      }
       ]
     },
     {
@@ -112,34 +138,52 @@
       "label": "Rows per page",
       "default": "4",
       "options": [
-        {
-          "value": "2",
-          "label": "2"
-        },
-        {
-          "value": "3",
-          "label": "3"
-        },
-        {
-          "value": "4",
-          "label": "4"
-        },
-        {
-          "value": "5",
-          "label": "5"
-        },
-        {
-          "value": "6",
-          "label": "6"
-        }
+      {
+        "value": "2",
+        "label": "2"
+      },
+      {
+        "value": "3",
+        "label": "3"
+      },
+      {
+        "value": "4",
+        "label": "4"
+      },
+      {
+        "value": "5",
+        "label": "5"
+      },
+      {
+        "value": "6",
+        "label": "6"
+      }
       ]
     },
     {
       "type": "checkbox",
       "id": "blog_show_date",
       "label": "Show date",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_tags",
+      "label": "Show tags",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_excerpt",
+      "label": "Show excerpt",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_more",
+      "label": "Show read more",
+      "default": false
     }
-  ]
-}
-{% endschema %}
+    ]
+  }
+  {% endschema %}

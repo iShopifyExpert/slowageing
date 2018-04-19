@@ -1,4 +1,4 @@
-<div class="card critical-clear" data-animate>
+<div class="cards critical-clear" data-animate>
   <a href="{{ article.url }}" class="card__wrapper card--article">
     {% if article.image %}
       {% assign article_image = article.image %}
@@ -23,23 +23,6 @@
       {% endif %}
 
       <h3 class="card__name">{{ article.title }}</h3>
-
-      {% if section.settings.blog_show_excerpt %}
-      <div class="card__excerpt rte">
-        {% if article.excerpt.size > 0 %}
-          {{ article.excerpt }}
-        {% else %}
-          {{ article.content | strip_html | truncatewords: 30 }}
-        {% endif %}
-      </div>
-      {% endif %}
-
-      {% if section.settings.blog_show_more %}
-      <span class="card__read-more">
-        {{ 'blogs.article.read_more' | t }}
-        {% include 'icon-arrow-right' %}
-      </span>
-      {% endif %}
 
     </div>
   </a>

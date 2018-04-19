@@ -1,0 +1,14 @@
+<div class="cards critical-clear" data-animate>
+  <a href="{{ article.url }}" class="card__wrapper card--article">
+    {% if article.image %}
+      {% assign article_image = article.image %}
+    {% else %}
+      {% assign article_image = article.products.first %}
+    {% endif %}
+
+    {% if article_image != blank %}
+      {% include 'card-image', type: article_image, grid_style: grid_style %}
+    {% endif %}
+
+  </a>
+</div>
