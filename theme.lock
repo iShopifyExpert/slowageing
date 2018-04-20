@@ -459,6 +459,8 @@ snippets/sa-article-last.liquid:
   development: 2018-04-19T21:39:42+01:00   6ab71c4437fb460a6e6cd0a3a23cff44
 snippets/sa-article-list.liquid:
   development: 2018-04-19T20:53:58+01:00   a5e019af622bcfe8abd5e1d77ecb5fc1
+snippets/sa-article-related.liquid:
+  development: 2018-04-20T12:00:26+01:00   25c5f069249fb6fea98e26f1546679f0
 snippets/sa-card-image-last.liquid:
   development: 2018-04-19T19:47:40+01:00   3652f055732dcd2b507eefcdc9baeb92
 snippets/sa-card-image-recent.liquid:
@@ -554,7 +556,7 @@ snippets/talon-price-varies.liquid:
 templates/404.liquid:
   development: 2018-04-19T08:08:50+01:00   e4fbd978bf36321d6c78194d94831ff1
 templates/article.liquid:
-  development: 2018-04-19T09:35:22+01:00   2ee9b3ad9b3698ec0a78b6033098b452
+  development: 2018-04-20T14:27:32+01:00   f8f6313f5c54c9aa9a0795767e5b770c
 templates/blog.liquid:
   development: 2018-04-19T08:23:48+01:00   9a3660ffd98802d6794975d9133e9a8f
 templates/cart.liquid:
