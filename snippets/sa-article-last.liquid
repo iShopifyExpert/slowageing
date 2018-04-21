@@ -8,7 +8,10 @@
 
     {% if article_image != blank %}
       {% comment %}{% include 'sa-card-image-last', type: article_image, grid_style: grid_style %}{% endcomment %}
-      <img src="{{article.image | img_url: 'large' }}" alt="{{ type.alt | escape }}" class="card__image">
+      <div class="card__image-wrapper">
+         <img src="{{article.image | img_url: 'large' }}" alt="{{ type.alt | escape }}" class="card__image">
+      </div>
+     
     {% endif %}
 
   </a>

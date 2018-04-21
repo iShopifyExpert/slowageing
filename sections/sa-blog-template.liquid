@@ -6,22 +6,32 @@
   text-transform: uppercase;
 }
 .blog-tags a{
-    padding: 5px;
-    color: #244b5a;
-    text-decoration: none;
+  /*color: #244b5a;*/
+  padding: 5px 10px;
+  color: #002f3c;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 .blog-tags span {
-    color: #f7b300;
+  /*color: #f7b300;*/
+  color: #d29000;
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: 'scotch_roman_mtregular';
 }
 header h1.section-header__title.h2 {
-    font-weight: bold;
+  font-weight: 600;
+  font-size: 5.5rem;
+  letter-spacing: 1.5px;
 }
 header h2.custom-content__section-header.text-center {
-    font-size: 2.7rem;
-    margin-top: 20px;
+  font-size: 2.2rem;
+  max-width: 380px;
+  margin: auto;
+  margin-top: 20px;
 }
 .section-header--small {
-    margin: 50px 0 90px;
+  margin: 50px 0 90px;
 }
 .post-list > div {
   overflow: hidden;
@@ -33,85 +43,121 @@ header h2.custom-content__section-header.text-center {
   float: left;
 }
 .blog-template hr.underline {
-    border: 2px solid #f7b300;
-    margin: 0;
-    width: 55px;
-  }
+  border: 2px solid #f7b300;
+  margin: 0;
+  width: 55px;
+}
 .blog-template h1.card__name {
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
 .blog-template h3.card__name {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .post-list-last.medium-up--two-thirds {
-    width: 66.16665%;
+  width: 66.16665%;
 }
 .post-list-last a.card__wrapper .card__image{
-    position: initial;
-    position: inherit;
-    width: 100%;
+  position: initial;
+  position: inherit;
+  width: 100%;
 }
 .post-list-recent {
   padding-left: 20px;
+}
+.post-list-recent .card__image-wrapper {
+  width: 110.45px;
 }
 .post-list-recent a.card__wrapper {
   display: inline-flex;
 }
 .post-list-recent a.card__wrapper .card__image{
-    position: initial;
-    position: inherit;
-    float: left;
-    width: 94px;
-    height: 94px;
+  position: initial;
+  position: inherit;
+  float: left;
+  width: 94px;
+  height: 94px;
 }
 .post-list-recent a.card__wrapper .card__info {
-    float: left;
-    padding: 5px 15px!important;
+  float: left;
+  padding: 5px 15px!important;
+}
+.post-list-recent h1.card__name {
+  font-size: 1.5rem;
 }
 .post-list-recent  h3.card__name {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
+  font-family: 'scotch_roman_mtregular';
+}
+.post-list-recent .card__info hr.underline {
+  border: 1.5px solid #f7b300;
+  width: 45px;
 }
 .post-list-card {
-    margin-top: 15px;
+  margin-top: 18px;
+}
+.critical-clear .card__image-wrapper::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(245,167,0);
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.critical-clear .card__image-wrapper:hover::after {
+    opacity: 0.4;
 }
 .post-list-card .card__info {
-    text-align: right;
-    padding: 20px 0 0;
+  text-align: right;
+  padding: 14px 0 0;
+}
+.card__wrapper {
+  margin-bottom: 14px;
 }
 .post-list-card .card__info hr.underline {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+}
 .post-list-card span.card__date {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 .post-list-card h1.card__name {
-    text-align: center;
-  }
+  text-align: center;
+}
 .post-list-card h3.card__name {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'scotch_roman_mtregular';
 }
 .post-list-card .card__excerpt.rte {
-    text-align: justify;
+  text-align: justify;
 }
 .post-list-card .card__image-wrapper--aligned {
-    padding-top: 52%;
+  padding-top: 52%;
 }
 .post-list-card .card__read-more {
-    position: relative;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.25px;
-    color: #f5a801;
-    margin-right: 22px;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: #f5a801;
+  margin-right: 22px;
 }
 .post-list-card a.card__wrapper {
-    height: inherit!important;
-    height: initial!important;
+  height: inherit!important;
+  height: initial!important;
+}
+@media only screen and (max-width: 750px) {
+  .blog-post-recent{
+    display: none;
+  }
 }
 </style>
 
@@ -123,7 +169,7 @@ header h2.custom-content__section-header.text-center {
     <div class="blog-tags">
       <a href="{{ shop.url }}/blogs/news">All</a>
       {% for tag in blog.all_tags %}
-       <span>|</span> <a href="{{ shop.url }}/blogs/news/tagged/{{ tag }}">{{ tag }}</a>
+      <span>|</span> <a href="{{ shop.url }}/blogs/news/tagged/{{ tag }}">{{ tag }}</a>
       {% endfor %}
     </div>
 

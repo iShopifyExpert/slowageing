@@ -186,7 +186,7 @@ sections/rich-text.liquid:
 sections/sa-article-template.liquid:
   development: 2018-04-19T09:33:02+01:00   f9fc8b1a796fd0fa516107ee8046d46e
 sections/sa-blog-template.liquid:
-  development: 2018-04-19T21:41:40+01:00   291bf2492cbed797be3b7e5bc4152c4c
+  development: 2018-04-20T23:23:52+01:00   6b3eab692df7e53b271ed5490574e843
 sections/search-template.liquid:
   development: 2018-04-19T08:08:35+01:00   e51ed1cae46013c9cd4fdbc8e33daaa7
 sections/slideshow.liquid:
@@ -438,7 +438,7 @@ snippets/no-blocks.liquid:
 snippets/page-card.liquid:
   development: 2018-04-19T08:08:47+01:00   327a0ef7238ae95e349a03a6639de1c8
 snippets/pagination.liquid:
-  development: 2018-04-19T08:08:47+01:00   456f50471da588f31d6d229a8fd41868
+  development: 2018-04-20T22:20:21+01:00   e9d400788840f101a86b16023b71abf8
 snippets/placeholder-collection.liquid:
   development: 2018-04-19T08:08:47+01:00   4782b63d724c9ebd2bf2573b98e634c3
 snippets/placeholder-image.liquid:
@@ -456,9 +456,9 @@ snippets/product-form.liquid:
 snippets/sa-article-card.liquid:
   development: 2018-04-19T21:09:12+01:00   1b497c6023b180567661821c782e2508
 snippets/sa-article-last.liquid:
-  development: 2018-04-19T21:39:42+01:00   6ab71c4437fb460a6e6cd0a3a23cff44
+  development: 2018-04-20T23:11:48+01:00   ace7bee5ca03e2887651ec6c7e0dc80d
 snippets/sa-article-list.liquid:
-  development: 2018-04-19T20:53:58+01:00   a5e019af622bcfe8abd5e1d77ecb5fc1
+  development: 2018-04-20T23:12:29+01:00   26097ab5e10e80239d3e09f62db5a683
 snippets/sa-article-related.liquid:
   development: 2018-04-20T12:00:26+01:00   25c5f069249fb6fea98e26f1546679f0
 snippets/sa-card-image-last.liquid:
@@ -556,7 +556,7 @@ snippets/talon-price-varies.liquid:
 templates/404.liquid:
   development: 2018-04-19T08:08:50+01:00   e4fbd978bf36321d6c78194d94831ff1
 templates/article.liquid:
-  development: 2018-04-20T14:27:32+01:00   f8f6313f5c54c9aa9a0795767e5b770c
+  development: 2018-04-21T11:48:18+01:00   60bbf7307ee0955953a5983b3decfa51
 templates/blog.liquid:
   development: 2018-04-19T08:23:48+01:00   9a3660ffd98802d6794975d9133e9a8f
 templates/cart.liquid:
@@ -590,7 +590,7 @@ templates/page.liquid:
 templates/page.philosophy-dynamic.liquid:
   development: 2018-04-19T08:08:51+01:00   c30f38f73a6c792d44edf9b3e2fa94fd
 templates/page.philosophy-static.liquid:
-  development: 2018-04-19T08:08:51+01:00   382b71a553967504146db6ab67482978
+  development: 2018-04-21T14:47:25+01:00   a74b58d3b2b0972a2e22ad6434aa7889
 templates/page.story-dynamic.liquid:
   development: 2018-04-19T08:08:51+01:00   9374b4ef59041c9f9f65987812031506
 templates/page.story-static.liquid:
