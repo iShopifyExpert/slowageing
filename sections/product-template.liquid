@@ -1,3 +1,54 @@
+<style type="text/css">
+  .product__add-to-cart-div {
+    max-width: 250px;
+}
+.product__add-to-cart-div .btn, .product__add-to-cart-div .btn--secondary{
+  padding: 0px 15px;
+
+}
+.product__add-to-cart-div .product-quantity-button {
+    background-color: #f5a801;
+}
+.product__add-to-cart-div .product-quantity-button:hover:after {
+    outline-color: #f5a801;
+}
+h2.h3.feature-row__heading_sub::after {
+    margin-top: 5px;
+}
+.product__accordion .product__accordion-title {
+    width: max-content;
+    font-weight: normal;
+}
+.product__accordion p.product__accordion-title span.deactived,
+.product__accordion.active p.product__accordion-title span.actived{
+  display: inline-block;
+  color: #677980;
+  padding-left: 5px;
+  font-weight: normal;
+}
+.product__accordion.active p.product__accordion-title span.deactived,
+.product__accordion p.product__accordion-title span.actived{
+  display: none;
+}
+.product__accordion p.product__accordion-title:after{
+  content: ' ';
+}
+.product__accordion.active p.product__accordion-title:after{
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #f5a801;
+  transition: width 0.5s ease-out;
+  margin: 0 0 0;
+  margin-top: 5px;
+}
+
+
+/*.product__accordion.active p.product__accordion-title:after{
+
+}*/
+</style>
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {%- assign current_variant_sale = false -%}
 {% if current_variant.compare_at_price > current_variant.price %}
@@ -41,10 +92,10 @@
 
     <div class="product-detail__text">
       {% if product.title != blank %}
-        <h2 class="h3" data-animate>{{ product.title | escape }}</h2>
+        <h2 class="h3 feature-row__heading_sub separator" data-animate>{{ product.title | escape }}</h2>
       {% endif %}
       <div>
-        <p class="product__price feature-row__heading_sub separator {% if current_variant_sale %}product__price--sale{% endif %} custom-font" data-animate data-product-price aria-live="polite">
+        <p class="product__price {% if current_variant_sale %}product__price--sale{% endif %} custom-font" data-animate data-product-price aria-live="polite">
 
           <span class="product__sale-price-label visually-hidden"> {{ 'products.product.sale_price' | t }} </span>
           <span class="product__regular-price-label visually-hidden"> {{ 'products.product.price' | t }} </span>
@@ -64,19 +115,21 @@
             <meta itemprop="priceCurrency" content="{{ shop.currency }}">
             <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
 				
-            <div class="product__accordion active" data-accordion>
-              <p class="product__accordion-title feature-row__heading_sub separator" data-animate>Results And Benefits</p> 
+            <div class="product__accordion" data-accordion>
+              <p class="product__accordion-title" data-animate>Results And Benefits <span class="actived">&#9650;</span><span class="deactived">&#9660;</span></p> 
               <div class="product__accordion-desc">{{product.metafields.product.result}}</div>
             </div>
 
             <div class="product__accordion" data-accordion>
-              <p class="product__accordion-title feature-row__heading_sub separator" data-animate>Ingredients</p>
+              <p class="product__accordion-title" data-animate>Ingredients <span class="actived">&#9650;</span><span class="deactived">&#9660;</span> </p>
               <div class="product__accordion-desc">{{product.metafields.product.ingredient}}</div>
             </div>
             
             {% include 'product-form' %}
 
-            {% if section.settings.show_share_buttons %}
+
+
+{% comment %}            {% if section.settings.show_share_buttons %}
             {% if settings.share_facebook or settings.share_twitter or settings.share_pinterest %}
             <div class="product__share-wrapper small--hide">
               <div class="product__share">
@@ -84,7 +137,9 @@
               </div>
             </div>
             {% endif %}
-            {% endif %}
+            {% endif %}{% endcomment %}
+
+
           </div>
         </div>
       </div>
@@ -94,7 +149,7 @@
     Product Share Buttons
     ------------------------------------------------------------------------------
     {% endcomment %}
-    {% if section.settings.show_share_buttons %}
+{% comment %}    {% if section.settings.show_share_buttons %}
       {% if settings.share_facebook or settings.share_twitter or settings.share_pinterest %}
         <div class="product__share-wrapper product__share-wrapper--mobile medium-up--hide">
           <div class="product__share">
@@ -102,7 +157,9 @@
           </div>
         </div>
       {% endif %}
-    {% endif %}
+    {% endif %}{% endcomment %}
+
+
   </div>
   <script type="application/json" data-product-json>
     {{ product | json }}
