@@ -72,7 +72,7 @@ sections/feature-row.liquid:
 sections/featured-blog.liquid:
   development: 2018-04-19T08:08:31+01:00   ef07d0e1eb2a9bd70296b9e6789afdcd
 sections/featured-collection.liquid:
-  development: 2018-04-23T20:46:03+01:00   73057eab532147ab29394a44957e785c
+  development: 2018-04-25T21:00:06+01:00   a6f5270fcd4ea1cfd68746fc9374c596
 sections/featured-product.liquid:
   development: 2018-04-19T08:08:31+01:00   d4b57210cbc4c13d62d191c0f0ee97cd
 sections/featured-slider.liquid:
@@ -174,15 +174,15 @@ sections/ph-slideshow-4.liquid:
 sections/philosophy-sections.liquid:
   development: 2018-04-19T08:08:35+01:00   b5d69900656d51e5af39f4b3cd2d735a
 sections/product-featured-slider.liquid:
-  development: 2018-04-25T18:29:16+01:00   054901922913059a03a3f2a614338ff5
+  development: 2018-04-25T20:58:45+01:00   fcbb002ef88b736f0d4a7961a331ee42
 sections/product-gallery.liquid:
   development: 2018-04-19T08:08:35+01:00   16a7f42208695bb417ec602c94e4beb8
 sections/product-review.liquid:
-  development: 2018-04-25T20:15:51+01:00   ea8d77febcbe41aa0da93ca3aafc16b2
+  development: 2018-04-25T20:59:17+01:00   c6d201a2da220b86b1ddfff4a406ab7b
 sections/product-template.liquid:
   development: 2018-04-25T15:22:29+01:00   62ce4097cae9be1278320fbff991d517
 sections/product-video-popup.liquid:
-  development: 2018-04-25T18:48:36+01:00   9f0e5c92e09366ba572bf75b4f023013
+  development: 2018-04-25T20:58:02+01:00   78881951236508a8d41e86938504e264
 sections/quotes.liquid:
   development: 2018-04-19T08:08:35+01:00   5d1bce2f44809915d2a3f1cddd2811a3
 sections/rich-text.liquid:

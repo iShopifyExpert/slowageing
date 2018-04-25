@@ -42,30 +42,24 @@ h2.featured-slider__cover-title {
     padding-top: 0px!important;
     text-align: left;
 }
-h1.featured-slider__slide-title {
-  font-family: 'scotch_roman_mtregular';
-  margin: 15px 0 25px;
-  font-weight: 600;
-  text-transform: none;
-  font-size: 4.5rem;
+h2.featured-slider__slide-title {
+    font-weight: normal;
+    text-transform: none;
 }
-h1.featured-slider__slide-title::after {
+h2.featured-slider__slide-title::after {
     margin-top: 5px;
 }
-h2.featured-slider__slide-title {
+h3.featured-slider__slide-title {
   font-family: 'scotch_roman_mtregular';
   margin: 5px 0;
   font-weight: normal;
   letter-spacing: normal;
   text-transform: none;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
 }
-h3.featured-slider__slide-title {
-    margin: 5px 0 10px;
-    font-weight: 300;
-    letter-spacing: 0.2px;
-    font-size: 2.2rem;
+p.featured-slider__slide-pera {
     text-align: justify;
+    text-transform: uppercase;
 }
 </style>
 
@@ -120,15 +114,15 @@ h3.featured-slider__slide-title {
 
     <div class="featured-slider__slide-list">
 
-    <h1 class="slide-list-main-title featured-slider__slide-title h1 feature-row__heading_sub separator" data-animate>Ingredient</h1>
+    <h2 class="slide-list-main-title featured-slider__slide-title h3 feature-row__heading_sub separator" data-animate>Ingredient</h2>
 
     {% if product.metafields.ingredient.ingredient_title_1 != blank %}
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_1 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_1 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_1  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_1 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_1 }}</p>
           {% endif %}
         </div>
       </div>
@@ -140,9 +134,9 @@ h3.featured-slider__slide-title {
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_1 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_1 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_1  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_1 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_1 }}</p>
           {% endif %}
         </div>
       </div>
@@ -154,9 +148,9 @@ h3.featured-slider__slide-title {
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_2 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_2 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_2  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_2 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_2 }}</p>
           {% endif %}
         </div>
       </div>
@@ -168,9 +162,9 @@ h3.featured-slider__slide-title {
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_3 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_3 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_3  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_3 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_3 }}</p>
           {% endif %}
         </div>
       </div>
@@ -182,9 +176,9 @@ h3.featured-slider__slide-title {
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_4 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_4 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_4  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_4 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_4 }}</p>
           {% endif %}
         </div>
       </div>
@@ -196,9 +190,9 @@ h3.featured-slider__slide-title {
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_5 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_5 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_5  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_5 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_5 }}</p>
           {% endif %}
         </div>
       </div>
@@ -209,9 +203,9 @@ h3.featured-slider__slide-title {
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_6 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_6 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_6  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_6 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_6 }}</p>
           {% endif %}
         </div>
       </div>
@@ -222,9 +216,9 @@ h3.featured-slider__slide-title {
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
           <div class="featured-slider__slide-image-container">
-          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_7 }}</h2>
+          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_7 }}</h3>
           {% if product.metafields.ingredient.ingredient_disc_7  != blank %}
-          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_7 }}</h3>
+          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_7 }}</p>
           {% endif %}
         </div>
       </div>
