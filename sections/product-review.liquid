@@ -8,9 +8,10 @@
   }
 .product-review {
     margin-top: 0;
+    padding-bottom: 50px;
 }
 .product-review .product-review__header {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .product-review__header .feature-row__heading{
   color: #ffffff;
@@ -18,6 +19,11 @@
 }
 .product-review__header .feature-row__heading::after {
     background-color: #ffffff;
+  }
+
+ .product-review .slick-prev:before, .product-review .slick-next:before {
+    color: #ffffff;
+}
 </style>
 
 <div class="product-review product-review--{{ section.id }} product-review--{{ section.settings.size }} {% if section.settings.mobile_layout == 'bottom' %} product-review-mobile--bottom{% endif %}" data-section-id="{{ section.id }}" data-section-type="product-review"   style="background-color: {{ product.metafields.reviews.rv_background_col }}; background-image: url({{ product.metafields.reviews.rv_background_img }}); background-position: center center; background-size: cover; background-repeat: no-repeat;">

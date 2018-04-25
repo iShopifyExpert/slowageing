@@ -174,11 +174,11 @@ sections/ph-slideshow-4.liquid:
 sections/philosophy-sections.liquid:
   development: 2018-04-19T08:08:35+01:00   b5d69900656d51e5af39f4b3cd2d735a
 sections/product-featured-slider.liquid:
-  development: 2018-04-25T20:58:45+01:00   fcbb002ef88b736f0d4a7961a331ee42
+  development: 2018-04-25T21:10:47+01:00   eb2e5394c6bb5056debb5ab2048dced1
 sections/product-gallery.liquid:
   development: 2018-04-19T08:08:35+01:00   16a7f42208695bb417ec602c94e4beb8
 sections/product-review.liquid:
-  development: 2018-04-25T20:59:17+01:00   c6d201a2da220b86b1ddfff4a406ab7b
+  development: 2018-04-25T21:09:19+01:00   ddbba6792c62b0d0c16bf518047cfa07
 sections/product-template.liquid:
   development: 2018-04-25T15:22:29+01:00   62ce4097cae9be1278320fbff991d517
 sections/product-video-popup.liquid:
