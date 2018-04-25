@@ -27,23 +27,55 @@
     }
   {% endif %}
 
-.featured-slider__slide-title {
+h2.featured-slider__cover-title {
+    color: #ffffff;
+}
+.featured-slider__slide-list {
+    padding: 10vh 40px;
+    max-width: 600px;
+}
+.featured-slider__slide-content {
+    padding: 10px 0;
+    max-width: 100%;
+}
+.featured-slider__slide-image-container {
+    padding-top: 0px!important;
+    text-align: left;
+}
+h1.featured-slider__slide-title {
   font-family: 'scotch_roman_mtregular';
-    margin: 40px 0 20px;
-    font-weight: normal;
-    letter-spacing: normal;
-    text-transform: none;
-    font-size: 3.2rem;
+  margin: 15px 0 25px;
+  font-weight: 600;
+  text-transform: none;
+  font-size: 4.5rem;
+}
+h1.featured-slider__slide-title::after {
+    margin-top: 5px;
+}
+h2.featured-slider__slide-title {
+  font-family: 'scotch_roman_mtregular';
+  margin: 5px 0;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-size: 3.2rem;
+}
+h3.featured-slider__slide-title {
+    margin: 5px 0 10px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    font-size: 2.2rem;
+    text-align: justify;
 }
 </style>
 
 <div id="featured-slider-{{ section.id }}" class="featured-slider" data-section-id="{{ section.id }}" data-section-type="featured-slider">
   <div class="featured-slider__cover">
     <div class="featured-slider__cover-background featured-slider__cover-background--top reveal-slider__cover-background--top side-scroller__cover-background">
-      {% if product.metafields.feature.main != blank %}
-      	<div class="featured-slider__cover-background-image lazyload" data-bgset="{{product.metafields.feature.main }}"></div>
+      {% if product.metafields.ingredient.ingredient_feature_image != blank %}
+      	<div class="featured-slider__cover-background-image lazyload" data-bgset="{{product.metafields.ingredient.ingredient_feature_image }}"></div>
         <noscript>
-          <div class="featured-slider__cover-background-image lazyload" style="background-image: {{ product.metafields.feature.main | img_url: 'master' }}"></div>
+          <div class="featured-slider__cover-background-image lazyload" style="background-image: {{ product.metafields.ingredient.ingredient_feature_image | img_url: 'master' }}"></div>
         </noscript>
       {% elsif section.settings.cover_image != blank %}
         <div class="featured-slider__cover-background-image lazyload" data-bgset="{% include 'bgset', image: section.settings.cover_image %}"></div>
@@ -55,8 +87,8 @@
       {% endif %}
     </div>
     <div class="featured-slider__cover-background featured-slider__cover-background--bottom reveal-slider__cover-background--bottom">
-      {% if product.metafields.feature.main != blank %}
-      	<div class="featured-slider__cover-background-image lazyload" data-bgset="{{product.metafields.feature.main}}"></div>
+      {% if product.metafields.ingredient.ingredient_feature_image != blank %}
+      	<div class="featured-slider__cover-background-image lazyload" data-bgset="{{product.metafields.ingredient.ingredient_feature_image}}"></div>
         <noscript>
           <div class="featured-slider__cover-background-image lazyload" style="background-image: {{ section.settings.cover_image | img_url: 'master' }}"></div>
         </noscript>
@@ -71,7 +103,7 @@
     </div>
 
     <div class="featured-slider__cover-content reveal-slider__cover-content side-scroller__cover-content{% if section.settings.cover_title_desktop_position == 'left' %} featured-slider__cover-content--left{% endif %}">
-      <h2 class="featured-slider__cover-title h3"{% if section.settings.show_overlay %} style="color: {{ product.metafields.feature.main_title }}; border-color: {{ section.settings.overlay_text }};"{% endif %} data-animate>{{ product.metafields.feature.main_title }}</h2>
+      <h2 class="featured-slider__cover-title h3" data-animate>{{ product.metafields.ingredient.ingredient_feature_title }}</h2>
       <div class="pinch-indicators">
         <div class="pinch-indicator pinch-indicator--top"></div>
         <div class="pinch-indicator pinch-indicator--bottom"></div>
@@ -87,6 +119,123 @@
     </button>
 
     <div class="featured-slider__slide-list">
+
+    <h1 class="slide-list-main-title featured-slider__slide-title h1 feature-row__heading_sub separator" data-animate>Ingredient</h1>
+
+    {% if product.metafields.ingredient.ingredient_title_1 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_1 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_1  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_1 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+
+    {% if product.metafields.ingredient.ingredient_title_1 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_1 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_1  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_1 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+
+    {% if product.metafields.ingredient.ingredient_title_2 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_2 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_2  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_2 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+
+    {% if product.metafields.ingredient.ingredient_title_3 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_3 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_3  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_3 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+
+    {% if product.metafields.ingredient.ingredient_title_4 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_4 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_4  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_4 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+
+    {% if product.metafields.ingredient.ingredient_title_5 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_5 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_5  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_5 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+    {% if product.metafields.ingredient.ingredient_title_6 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_6 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_6  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_6 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+    {% if product.metafields.ingredient.ingredient_title_7 != blank %}
+      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
+        <div class="featured-slider__slide-content">
+          <div class="featured-slider__slide-image-container">
+          <h2 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_7 }}</h2>
+          {% if product.metafields.ingredient.ingredient_disc_7  != blank %}
+          <h3 class="featured-slider__slide-title h6">{{ product.metafields.ingredient.ingredient_disc_7 }}</h3>
+          {% endif %}
+        </div>
+      </div>
+     </div>
+      {% endif %}
+
+
+    </div>
+
+
+{% comment %}    <div class="featured-slider__slide-list">
 	  {% if product.metafields.feature.img1 != blank %}
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
@@ -135,7 +284,7 @@
         </div>
       </div>
       {% endif %}
-    </div>
+    </div>{% endcomment %}
 
     <div class="reveal-slider__nav">
       <button class="reveal-slider__nav-button active" style="background-color: {{ section.settings.text_color }}">

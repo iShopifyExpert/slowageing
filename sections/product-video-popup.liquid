@@ -47,6 +47,12 @@
   #vidoe_popup--{{ section.id }} .video-section__load-player-button-circle {
     border-color: {{ section.settings.cover_text_color }}
   }
+
+  .feature-row h2.feature-row__heading.h3.separator.has-animated,
+  .feature-row .rte-setting.featured-row__subtext p {
+      color: {{product.metafields.optional.text_color}};
+  }
+
 </style>
 
 {% if section.settings.show_overlay %}
@@ -109,7 +115,7 @@
 {% endcapture %}
 
 
-<div class="feature-row feature-row--{{ section.id }} feature-row--{{ section.settings.size }} feature-row__image-crop--{{ section.settings.image_crop }}{% if section.settings.mobile_layout == 'bottom' %} feature-row-mobile--bottom{% endif %}" data-section-id="{{ section.id }}" data-section-type="feature-row">
+<div class="feature-row feature-row--{{ section.id }} feature-row--{{ section.settings.size }} feature-row__image-crop--{{ section.settings.image_crop }}{% if section.settings.mobile_layout == 'bottom' %} feature-row-mobile--bottom{% endif %}" data-section-id="{{ section.id }}" data-section-type="feature-row"  style="background-color: {{ product.metafields.optional.background_col }}; background-image: url({{ product.metafields.optional.background_img }}); background-position: center center; background-size: cover; background-repeat: no-repeat;">
   {% if section.settings.desktop_layout == 'left' %}
     {{ image_layout }}
   {% endif %}

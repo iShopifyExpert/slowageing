@@ -2,7 +2,7 @@
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-04-19T08:08:39+01:00   494ba902820999f5b27fe9cbb17bf396
+  development: 2018-04-25T12:02:02+01:00   0d5dbef95c08cf3089b0a7bf349f2d64
 assets/custom.js.liquid:
   development: 2018-04-19T08:08:39+01:00   e71a38ebbcdb544635828ead99d4ec44
 assets/ico-select.svg.liquid:
@@ -26,7 +26,7 @@ assets/slick.woff:
 assets/theme.asset.js:
   development: 2018-04-19T08:08:41+01:00   427dfeff6721510c378f32ae56069342
 assets/theme.min.js.liquid:
-  development: 2018-04-19T08:08:41+01:00   9be7c83fd78fe1820c2111e0f8a09d67
+  development: 2018-04-25T11:26:34+01:00   eeafdfa4cd76337ae1075ea7e967c892
 assets/theme.scss.liquid:
   development: 2018-04-19T08:08:41+01:00   1a96bb414d0d3f77809de23bdbefb8c1
 config/settings_data.json:
@@ -174,15 +174,15 @@ sections/ph-slideshow-4.liquid:
 sections/philosophy-sections.liquid:
   development: 2018-04-19T08:08:35+01:00   b5d69900656d51e5af39f4b3cd2d735a
 sections/product-featured-slider.liquid:
-  development: 2018-04-23T20:07:55+01:00   870da8b604e91936d9baaefc9c5a8dc0
+  development: 2018-04-25T18:29:16+01:00   054901922913059a03a3f2a614338ff5
 sections/product-gallery.liquid:
   development: 2018-04-19T08:08:35+01:00   16a7f42208695bb417ec602c94e4beb8
 sections/product-review.liquid:
-  development: 2018-04-19T08:08:35+01:00   bc1c9dc942f577d4baa26a808faf05f4
+  development: 2018-04-25T20:15:51+01:00   ea8d77febcbe41aa0da93ca3aafc16b2
 sections/product-template.liquid:
-  development: 2018-04-23T20:09:50+01:00   36d47752af381f1c06e8372dfcd73023
+  development: 2018-04-25T15:22:29+01:00   62ce4097cae9be1278320fbff991d517
 sections/product-video-popup.liquid:
-  development: 2018-04-19T08:08:35+01:00   4d48abd36036940403f65b1900c189bd
+  development: 2018-04-25T18:48:36+01:00   9f0e5c92e09366ba572bf75b4f023013
 sections/quotes.liquid:
   development: 2018-04-19T08:08:35+01:00   5d1bce2f44809915d2a3f1cddd2811a3
 sections/rich-text.liquid:

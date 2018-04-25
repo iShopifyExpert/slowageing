@@ -321,3 +321,13 @@ h2,
 .slick-arrow.slick-hidden {
     display: none;
 }
+/*ADDED BY ROUSNAY*/
+.site-header__wrapper {
+    background-color: #f5a801;
+}
+.site-header__wrapper svg {
+    fill: #244b5a;
+}
+.navigation__expand-sublinks svg {
+    display: none;
+    }

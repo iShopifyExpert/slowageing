@@ -44,10 +44,14 @@ h2.h3.feature-row__heading_sub::after {
   margin-top: 5px;
 }
 
-
-/*.product__accordion.active p.product__accordion-title:after{
-
-}*/
+input[type="number"].product-form__quantity-input {
+    margin-bottom: 0;
+    padding: 0;
+}
+form.product-form {
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
 </style>
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {%- assign current_variant_sale = false -%}
@@ -115,18 +119,22 @@ h2.h3.feature-row__heading_sub::after {
             <meta itemprop="priceCurrency" content="{{ shop.currency }}">
             <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
 				
+            {% include 'product-form' %}
+
             <div class="product__accordion" data-accordion>
-              <p class="product__accordion-title" data-animate>Results And Benefits <span class="actived">&#9650;</span><span class="deactived">&#9660;</span></p> 
+              <p class="product__accordion-title" data-animate>Results And Benefits <span class="actived">[-]</span><span class="deactived">[+]</span></p> 
               <div class="product__accordion-desc">{{product.metafields.product.result}}</div>
             </div>
 
             <div class="product__accordion" data-accordion>
-              <p class="product__accordion-title" data-animate>Ingredients <span class="actived">&#9650;</span><span class="deactived">&#9660;</span> </p>
+              <p class="product__accordion-title" data-animate>Ingredients <span class="actived">[-]</span><span class="deactived">[+]</span> </p>
               <div class="product__accordion-desc">{{product.metafields.product.ingredient}}</div>
             </div>
-            
-            {% include 'product-form' %}
 
+            <div class="product__accordion" data-accordion>
+              <p class="product__accordion-title" data-animate>Reviews <span class="actived">[-]</span><span class="deactived">[+]</span> </p>
+              <div class="product__accordion-desc">{{product.metafields.product.reviews}}</div>
+            </div>
 
 
 {% comment %}            {% if section.settings.show_share_buttons %}
