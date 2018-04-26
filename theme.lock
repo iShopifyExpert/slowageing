@@ -595,12 +595,8 @@ templates/page.contact.liquid:
   development: 2018-04-19T08:08:51+01:00   c0c82539dc7a4f0f2e32b9c965a0a8e7
 templates/page.liquid:
   development: 2018-04-19T08:08:51+01:00   e5ba0a99aa80677dc86be60993fbc632
-templates/page.philosophy-dynamic.liquid:
-  development: 2018-04-19T08:08:51+01:00   c30f38f73a6c792d44edf9b3e2fa94fd
 templates/page.philosophy-static.liquid:
-  development: 2018-04-21T16:20:19+01:00   a3ef2d54e52d4989a090ed8ecbad525f
-templates/page.story-dynamic.liquid:
-  development: 2018-04-19T08:08:51+01:00   9374b4ef59041c9f9f65987812031506
+  development: 2018-04-26T11:27:29+01:00   146abd60e2fad69bbe129a199c6580aa
 templates/page.story-static.liquid:
   development: 2018-04-21T16:20:13+01:00   d347fbc9113f78084cc53095f50956b4
 templates/password.liquid:
