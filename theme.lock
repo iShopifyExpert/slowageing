@@ -146,7 +146,7 @@ sections/feature-row.liquid:
 sections/featured-blog.liquid:
   development: 2018-04-19T08:08:31+01:00   ef07d0e1eb2a9bd70296b9e6789afdcd
 sections/featured-collection.liquid:
-  development: 2018-04-25T21:00:06+01:00   a6f5270fcd4ea1cfd68746fc9374c596
+  development: 2018-04-26T20:31:15+01:00   aa566d6fcca3076b6a0aa499f9908400
 sections/featured-product.liquid:
   development: 2018-04-19T08:08:31+01:00   d4b57210cbc4c13d62d191c0f0ee97cd
 sections/featured-slider.liquid:
@@ -246,7 +246,7 @@ sections/ph-slideshow-3.liquid:
 sections/ph-slideshow-4.liquid:
   development: 2018-04-19T08:08:35+01:00   e0e2326e532df07af8ca4f74757014d3
 sections/product-featured-slider.liquid:
-  development: 2018-04-25T21:10:47+01:00   eb2e5394c6bb5056debb5ab2048dced1
+  development: 2018-04-26T21:13:03+01:00   9fa0d05a1919a5f8d780343a5f2b9226
 sections/product-gallery.liquid:
   development: 2018-04-19T08:08:35+01:00   16a7f42208695bb417ec602c94e4beb8
 sections/product-review.liquid:

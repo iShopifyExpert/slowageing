@@ -131,20 +131,6 @@ p.featured-slider__slide-pera {
       {% endif %}
 
 
-    {% if product.metafields.ingredient.ingredient_title_1 != blank %}
-      <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
-        <div class="featured-slider__slide-content">
-          <div class="featured-slider__slide-image-container">
-          <h3 class="featured-slider__slide-title h2">{{ product.metafields.ingredient.ingredient_title_1 }}</h3>
-          {% if product.metafields.ingredient.ingredient_disc_1  != blank %}
-          <p class="featured-slider__slide-pera">{{ product.metafields.ingredient.ingredient_disc_1 }}</p>
-          {% endif %}
-        </div>
-      </div>
-     </div>
-      {% endif %}
-
-
     {% if product.metafields.ingredient.ingredient_title_2 != blank %}
       <div class="featured-slider__slide side-scroller__slide slider__slide slider__slide--active">
         <div class="featured-slider__slide-content">
