@@ -55,6 +55,80 @@ locales/pt-BR.json:
   development: 2018-04-19T08:11:07+01:00   33fb3614e72e43c76f3cbf6efb6fb727
 locales/pt-PT.json:
   development: 2018-04-19T08:11:30+01:00   65e446a311dac4747fa105feef783651
+sections/ab-custom-content-1.liquid:
+  development: 2018-04-26T11:50:04+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-custom-content-2.liquid:
+  development: 2018-04-26T11:50:05+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-custom-content-3.liquid:
+  development: 2018-04-26T11:50:05+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-custom-content-4.liquid:
+  development: 2018-04-26T11:50:06+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-custom-content-5.liquid:
+  development: 2018-04-26T11:50:06+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-custom-content-6.liquid:
+  development: 2018-04-26T11:50:06+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-custom-content-7.liquid:
+  development: 2018-04-26T11:50:07+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-featured-collection-1.liquid:
+  development: 2018-04-26T11:50:06+01:00   ea9b2aaa9836e65089d77ebc5623e2cf
+sections/ab-featured-slider-1.liquid:
+  development: 2018-04-26T11:50:07+01:00   5805387138a2a7ca96bd79d0918cfc6c
+sections/ab-featured-slider-2.liquid:
+  development: 2018-04-26T11:50:08+01:00   5805387138a2a7ca96bd79d0918cfc6c
+sections/ab-featured-slider-3.liquid:
+  development: 2018-04-26T11:50:08+01:00   5805387138a2a7ca96bd79d0918cfc6c
+sections/ab-featured-slider-4.liquid:
+  development: 2018-04-26T11:50:09+01:00   5805387138a2a7ca96bd79d0918cfc6c
+sections/ab-gallery-1.liquid:
+  development: 2018-04-26T11:50:09+01:00   1f80893b2232040167fbb6f820d20ce8
+sections/ab-gallery-2.liquid:
+  development: 2018-04-26T11:50:10+01:00   1f80893b2232040167fbb6f820d20ce8
+sections/ab-gallery-3.liquid:
+  development: 2018-04-26T11:50:10+01:00   1f80893b2232040167fbb6f820d20ce8
+sections/ab-gallery-4.liquid:
+  development: 2018-04-26T11:50:17+01:00   1f80893b2232040167fbb6f820d20ce8
+sections/ab-hero-1.liquid:
+  development: 2018-04-26T11:47:18+01:00   4486bb5fbd9d6babb388820372c5fa21
+sections/ab-hero-2.liquid:
+  development: 2018-04-26T11:50:14+01:00   4486bb5fbd9d6babb388820372c5fa21
+sections/ab-hero-3.liquid:
+  development: 2018-04-26T11:50:11+01:00   4486bb5fbd9d6babb388820372c5fa21
+sections/ab-hero-4.liquid:
+  development: 2018-04-26T11:50:13+01:00   4486bb5fbd9d6babb388820372c5fa21
+sections/ab-hero-5.liquid:
+  development: 2018-04-26T11:50:13+01:00   4486bb5fbd9d6babb388820372c5fa21
+sections/ab-highlight-1.liquid:
+  development: 2018-04-26T11:50:11+01:00   4b2d651684d72b7487009b6e9ec0f323
+sections/ab-highlight-2.liquid:
+  development: 2018-04-26T11:50:12+01:00   4b2d651684d72b7487009b6e9ec0f323
+sections/ab-highlight-3.liquid:
+  development: 2018-04-26T11:50:12+01:00   4b2d651684d72b7487009b6e9ec0f323
+sections/ab-highlight-4.liquid:
+  development: 2018-04-26T11:50:14+01:00   4b2d651684d72b7487009b6e9ec0f323
+sections/ab-quotes-1.liquid:
+  development: 2018-04-26T11:50:15+01:00   5d1bce2f44809915d2a3f1cddd2811a3
+sections/ab-quotes-2.liquid:
+  development: 2018-04-26T11:50:16+01:00   5d1bce2f44809915d2a3f1cddd2811a3
+sections/ab-quotes-3.liquid:
+  development: 2018-04-26T11:50:16+01:00   5d1bce2f44809915d2a3f1cddd2811a3
+sections/ab-quotes-4.liquid:
+  development: 2018-04-26T11:50:15+01:00   5d1bce2f44809915d2a3f1cddd2811a3
+sections/ab-rich-text-1.liquid:
+  development: 2018-04-26T11:50:17+01:00   5a7995b1ba2fd7f418094b18654fe0de
+sections/ab-rich-text-2.liquid:
+  development: 2018-04-26T11:50:18+01:00   5a7995b1ba2fd7f418094b18654fe0de
+sections/ab-rich-text-3.liquid:
+  development: 2018-04-26T11:50:18+01:00   5a7995b1ba2fd7f418094b18654fe0de
+sections/ab-rich-text-4.liquid:
+  development: 2018-04-26T11:50:19+01:00   5a7995b1ba2fd7f418094b18654fe0de
+sections/ab-slideshow-1.liquid:
+  development: 2018-04-26T11:52:07+01:00   e0e2326e532df07af8ca4f74757014d3
+sections/ab-slideshow-2.liquid:
+  development: 2018-04-26T11:50:20+01:00   e0e2326e532df07af8ca4f74757014d3
+sections/ab-slideshow-3.liquid:
+  development: 2018-04-26T11:50:20+01:00   e0e2326e532df07af8ca4f74757014d3
+sections/ab-slideshow-4.liquid:
+  development: 2018-04-26T11:52:08+01:00   e0e2326e532df07af8ca4f74757014d3
 sections/article-template.liquid:
   development: 2018-04-19T08:08:31+01:00   f9fc8b1a796fd0fa516107ee8046d46e
 sections/blog-template.liquid:
@@ -591,14 +665,16 @@ templates/index.liquid:
   development: 2018-04-19T08:08:50+01:00   b2a0a05382c135215e50a0042c0f7cb7
 templates/list-collections.liquid:
   development: 2018-04-19T08:08:50+01:00   2a3229f9bf1a7d5da0eb25003db24b63
+templates/page.about.liquid:
+  development: 2018-04-26T11:50:48+01:00   1ad1164b8acd6368b6404606e0393371
 templates/page.contact.liquid:
   development: 2018-04-19T08:08:51+01:00   c0c82539dc7a4f0f2e32b9c965a0a8e7
 templates/page.liquid:
   development: 2018-04-19T08:08:51+01:00   e5ba0a99aa80677dc86be60993fbc632
-templates/page.philosophy-static.liquid:
-  development: 2018-04-26T11:27:29+01:00   146abd60e2fad69bbe129a199c6580aa
-templates/page.story-static.liquid:
-  development: 2018-04-21T16:20:13+01:00   d347fbc9113f78084cc53095f50956b4
+templates/page.philosophy.liquid:
+  development: 2018-04-26T11:55:01+01:00   d347fbc9113f78084cc53095f50956b4
+templates/page.story.liquid:
+  development: 2018-04-26T11:54:48+01:00   146abd60e2fad69bbe129a199c6580aa
 templates/password.liquid:
   development: 2018-04-19T08:08:51+01:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:
