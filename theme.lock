@@ -245,8 +245,6 @@ sections/ph-slideshow-3.liquid:
   development: 2018-04-19T08:08:35+01:00   e0e2326e532df07af8ca4f74757014d3
 sections/ph-slideshow-4.liquid:
   development: 2018-04-19T08:08:35+01:00   e0e2326e532df07af8ca4f74757014d3
-sections/philosophy-sections.liquid:
-  development: 2018-04-19T08:08:35+01:00   b5d69900656d51e5af39f4b3cd2d735a
 sections/product-featured-slider.liquid:
   development: 2018-04-25T21:10:47+01:00   eb2e5394c6bb5056debb5ab2048dced1
 sections/product-gallery.liquid:
@@ -343,8 +341,6 @@ sections/st-slideshow-3.liquid:
   development: 2018-04-19T08:08:38+01:00   e0e2326e532df07af8ca4f74757014d3
 sections/st-slideshow-4.liquid:
   development: 2018-04-19T08:08:38+01:00   e0e2326e532df07af8ca4f74757014d3
-sections/story-sections.liquid:
-  development: 2018-04-19T08:08:38+01:00   1e80c61974ba37a88a2b669d10350117
 sections/video.liquid:
   development: 2018-04-19T08:08:38+01:00   8953bff7a4ef794a739d3e06bc1241d6
 snippets/article-card.liquid:
@@ -549,72 +545,6 @@ snippets/sa-card-image-recent.liquid:
   development: 2018-04-19T20:02:48+01:00   7bb49e737c7978acda2f0d3904de1a93
 snippets/search-bar.liquid:
   development: 2018-04-19T08:08:47+01:00   5842bd9745263ff18fc5360c31d04090
-snippets/sec-article-template.liquid:
-  development: 2018-04-19T08:08:47+01:00   be04369d63a78cfdbd286147aab769ba
-snippets/sec-blog-template.liquid:
-  development: 2018-04-19T08:08:47+01:00   b6f982c89bf99932193b9b9f6f333155
-snippets/sec-cart-template.liquid:
-  development: 2018-04-19T08:08:47+01:00   7a9cd62557a444cb54ed42be100faf75
-snippets/sec-collection-list.liquid:
-  development: 2018-04-19T08:08:48+01:00   679732cdb633416f442d60d50e1ec3bc
-snippets/sec-collection-template.liquid:
-  development: 2018-04-19T08:08:48+01:00   e8a773e55fa633d1436926975a431d44
-snippets/sec-custom-content-end.liquid:
-  development: 2018-04-19T08:08:48+01:00   b24ab8c5da0ef8609530e0d1c5703b07
-snippets/sec-custom-content-html.liquid:
-  development: 2018-04-19T08:08:48+01:00   53a118754e25681a854aa40062e3275d
-snippets/sec-custom-content-image.liquid:
-  development: 2018-04-19T08:08:48+01:00   0c67884868b267cff77bebfcd5050f24
-snippets/sec-custom-content-product.liquid:
-  development: 2018-04-19T08:08:48+01:00   1b4440a422a9bbb8c681e6a37332be3a
-snippets/sec-custom-content-start.liquid:
-  development: 2018-04-19T08:08:48+01:00   5c6dfb6e2ec1a1d86c2d42dcc74baa2d
-snippets/sec-custom-content-text.liquid:
-  development: 2018-04-19T08:08:48+01:00   a52e4cd1a4bd54d18fa025d406e9a883
-snippets/sec-custom-content-video.liquid:
-  development: 2018-04-19T08:08:48+01:00   90a89a3096dc98eaaf9e603b071f299c
-snippets/sec-feature-row.liquid:
-  development: 2018-04-19T08:08:48+01:00   ed0941d72c8f6b44710ea13f3c65efd2
-snippets/sec-featured-blog.liquid:
-  development: 2018-04-19T08:08:48+01:00   97ea99152c32bf4c5b28b718ac24a9f9
-snippets/sec-featured-collection.liquid:
-  development: 2018-04-19T08:08:48+01:00   f3d8f20a3e9c0dffa50a58eb33957081
-snippets/sec-featured-product.liquid:
-  development: 2018-04-19T08:08:48+01:00   6a7f46d17ffc5601ea63c7a4dab8638f
-snippets/sec-featured-slider.liquid:
-  development: 2018-04-19T08:08:48+01:00   686f893c4e667cfa8248eca57e49893c
-snippets/sec-gallery.liquid:
-  development: 2018-04-19T08:08:48+01:00   f144e1c2270d3ce04b97177ebd2723df
-snippets/sec-hero.liquid:
-  development: 2018-04-19T08:08:48+01:00   e2f93e8054d87c1ae9f231bbdf7e1630
-snippets/sec-highlight.liquid:
-  development: 2018-04-19T08:08:48+01:00   393c9f133f6b5e8d61dcb51abbe641b4
-snippets/sec-list-collections-template.liquid:
-  development: 2018-04-19T08:08:48+01:00   780b0b4b567cc15d8e6b407f32530d4b
-snippets/sec-map.liquid:
-  development: 2018-04-19T08:08:48+01:00   8460adc4a902c49d1c745c59645602bb
-snippets/sec-newsletter.liquid:
-  development: 2018-04-19T08:08:48+01:00   d78a3646a131ae930e7c6b766247f832
-snippets/sec-product-featured-slider.liquid:
-  development: 2018-04-19T08:08:49+01:00   51d15efb797e4afcf27919d4cc5ce475
-snippets/sec-product-gallery.liquid:
-  development: 2018-04-19T08:08:49+01:00   050593fba54861b8b825828f6bbcef5b
-snippets/sec-product-review.liquid:
-  development: 2018-04-19T08:08:49+01:00   da24f6f1f3d9b17963818813dd0fd978
-snippets/sec-product-template.liquid:
-  development: 2018-04-19T08:08:49+01:00   732f0be004197818591d4940174c4c2d
-snippets/sec-product-video-popup.liquid:
-  development: 2018-04-19T08:08:49+01:00   1816ce35f8009b27b1bd7a7dcc3353c7
-snippets/sec-quotes.liquid:
-  development: 2018-04-19T08:08:49+01:00   c1c38cf9b92ddd812860734a2eac071c
-snippets/sec-rich-text.liquid:
-  development: 2018-04-19T08:08:49+01:00   abfe1100aee919a4dbbc3976ba7b3d4b
-snippets/sec-search-template.liquid:
-  development: 2018-04-19T08:08:49+01:00   ffee7d3eacb7b63153485ac8c384542a
-snippets/sec-slideshow.liquid:
-  development: 2018-04-19T08:08:49+01:00   888579f777aca8998d83e6e2291f179d
-snippets/sec-video.liquid:
-  development: 2018-04-19T08:08:49+01:00   bd179554a3913fc9fe1f81fadbe8de68
 snippets/social-links.liquid:
   development: 2018-04-19T08:08:49+01:00   d57cddddd257ef6a84576bad8b5a9c06
 snippets/social-meta-tags.liquid:
