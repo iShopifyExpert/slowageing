@@ -322,11 +322,24 @@ h2,
     display: none;
 }
 /*ADDED BY ROUSNAY*/
-.site-header__wrapper {
+.site-header__wrapper,
+.site-header--fixed .site-header__wrapper,
+.navigation__sublinks-container {
     background-color: #f5a801;
 }
+.navigation__sublink a:hover {
+    background-color: #da9400ad;
+}
+span.site-header__logo-text,
+.navigation__link a,
+.navigation__expand-sublinks {
+    color: #ffffff;
+}
+.navigation__link.navigation__link--active a{
+    color: #244b5a;
+}
 .site-header__wrapper svg {
-    fill: #244b5a;
+    fill: #ffffff;
 }
 .navigation__expand-sublinks svg {
     display: none;

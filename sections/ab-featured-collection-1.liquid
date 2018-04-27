@@ -1,6 +1,12 @@
+<style type="text/css">
+  img.fcimg{
+    width: 100%
+  }
+</style>
 {%- assign limit = section.settings.products | times: section.settings.rows -%}
 {%- assign featuredCollection = collections[section.settings.collection] -%}
 {%- assign totalProducts = featuredCollection.products.size -%}
+{%- assign fcimg = section.settings.image -%}
 
 <div class="featured-collection collection-template" data-section-id="{{ section.id }}" data-section-type="collection-template">
   <div class="page-width">
@@ -26,6 +32,20 @@
       {% if mobileColumns == '2' %}small--one-half {% endif %}
     {%- endcapture -%}
 
+    <div class="collection-feature-image">
+
+      {% if section.settings.enable_custom_image %}
+
+      <img class="fcimg" src="{{ fcimg | img_url: 'master'}}" alt="">
+
+      {% else %}
+
+      {{ 'collection-feature-img.jpg' | asset_url | img_tag: 'Collection image' }}
+
+      {% endif %}
+
+    </div>
+    
     <div class="card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}" data-grid-style="{{ section.settings.grid_style }}">
       <div class="card-list__column{% if totalProducts == 1 %} card-list__column--center{% endif %} grid grid__item {{ gridClasses }}">
         {% unless featuredCollection == blank %}
@@ -97,6 +117,17 @@
       "id": "title",
       "label": "Heading",
       "default": "Featured collection"
+    },
+    {
+      "id": "enable_custom_image",
+      "type": "checkbox",
+      "label": "Use custom feature image",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Pick a feature image"
     },
     {
       "type": "checkbox",
