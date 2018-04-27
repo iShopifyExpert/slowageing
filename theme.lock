@@ -254,7 +254,7 @@ sections/product-review.liquid:
 sections/product-template.liquid:
   development: 2018-04-25T15:22:29+01:00   62ce4097cae9be1278320fbff991d517
 sections/product-video-popup.liquid:
-  development: 2018-04-25T20:58:02+01:00   78881951236508a8d41e86938504e264
+  development: 2018-04-27T19:42:57+01:00   1932595df9b808add8540168f272b81d
 sections/quotes.liquid:
   development: 2018-04-19T08:08:35+01:00   5d1bce2f44809915d2a3f1cddd2811a3
 sections/rich-text.liquid:

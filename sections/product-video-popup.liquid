@@ -85,11 +85,43 @@
 {% if product.metafields.optional.image != blank %}
 	{%- assign cover_image_url = product.metafields.optional.image -%}
 {% endif %}
-  
+
+{%- assign product_video_id = product.metafields.product_video.video_id  -%}
+{%- assign product_video_type = product.metafields.product_video.video_type  -%}
+
+{% capture product_video_layout %}
+  <div class="product_video_layout feature-row feature-row__item feature-row__image-wrapper">
+    <div id="vidoe_popup--{{ section.id }}" class="video-popup__wrapper lazyload {% if image_crop %} feature-row__image-crop{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section" data-video-id="{{product_video_id}}" data-video-type="{{product_video_type}}" data-bgset="{{cover_image_url}}">
+      <div class="video-section__body-overlay"></div>
+      <button class="btn btn--clear btn--square video-section__player-close">
+        <span class="visually-hidden">{{ 'video.close' | t }}</span>
+        {% include 'icon-close' %}
+      </button>
+      <div class="video-section__player"></div>
+      <div class="video-section__cover">
+        <div class="video-section__cover-background">
+          {% if cover_image_url == blank %}
+            {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+            {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+        <div class="video-section__cover-overlay"></div>
+        <div class="video-section__cover-content">
+          <button class="btn btn--clear video-section__load-player-button">
+            <span class="visually-hidden">{{ 'video.play' | t }}</span>
+            <div class="video-section__load-player-button-triangle"></div>
+            <div class="video-section__load-player-button-circle"></div>
+          </button>
+          <p class="video-section__error"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endcapture %}
 
 {% capture video_layout %}
-  <div class="feature-row feature-row__item feature-row__image-wrapper">
-    <div id="vidoe_popup--{{ section.id }}" class="video-popup__wrapper lazyload {% if image_crop %} feature-row__image-crop{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section" data-video-id="{{ section.settings.video_url.id }}" data-video-type="{{ section.settings.video_url.type }}" data-bgset="{{cover_image_url}}">
+  <div class="video_layout feature-row feature-row__item feature-row__image-wrapper">
+    <div id="vidoe_popup--{{ section.id }}" class="video-popup__wrapper lazyload {% if image_crop %} feature-row__image-crop{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section" data-video-id="{{section.settings.video_url.id}}" data-video-type="{{section.settings.video_url.type}}" data-bgset="{{cover_image_url}}">
       <div class="video-section__body-overlay"></div>
       <button class="btn btn--clear btn--square video-section__player-close">
         <span class="visually-hidden">{{ 'video.close' | t }}</span>
@@ -137,9 +169,14 @@
     {% endif %}
   </div>
 
-  {% if section.settings.desktop_layout == 'right' %}
-    {{ video_layout }}
+
+  {% if product_video_type != blank and product_video_id != blank %}
+        {{ product_video_layout }}
+      {% elsif section.settings.desktop_layout == 'right' %}
+          {{ video_layout }}
   {% endif %}
+
+
 </div>
 
 {% schema %}
