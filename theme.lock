@@ -602,9 +602,9 @@ templates/page.contact.liquid:
 templates/page.liquid:
   development: 2018-04-19T08:08:51+01:00   e5ba0a99aa80677dc86be60993fbc632
 templates/page.philosophy.liquid:
-  development: 2018-04-27T12:12:51+01:00   502ad273fd20342bbae54d7c5c6e6749
+  development: 2018-04-29T17:49:58+01:00   1be4f72044355f8c5a728c763c470658
 templates/page.story.liquid:
-  development: 2018-04-27T12:12:48+01:00   494e9275ed8888ea246a1279ba6c96db
+  development: 2018-04-29T17:59:43+01:00   e354403957b15e66f1cdf1822669122e
 templates/password.liquid:
   development: 2018-04-19T08:08:51+01:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:
