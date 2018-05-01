@@ -2,7 +2,7 @@
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-04-27T12:55:57+01:00   6e68b759b3e3d1f5e19aa5b2d76ebd9f
+  development: 2018-04-30T18:03:15+01:00   c1d1af7004ac0c195a7a41748ab79ccf
 assets/custom.js.liquid:
   development: 2018-04-19T08:08:39+01:00   e71a38ebbcdb544635828ead99d4ec44
 assets/ico-select.svg.liquid:
@@ -26,7 +26,7 @@ assets/slick.woff:
 assets/theme.asset.js:
   development: 2018-04-19T08:08:41+01:00   427dfeff6721510c378f32ae56069342
 assets/theme.min.js.liquid:
-  development: 2018-04-25T11:26:34+01:00   eeafdfa4cd76337ae1075ea7e967c892
+  development: 2018-04-30T18:00:59+01:00   74bceed5baac949ff5e59374459a1499
 assets/theme.scss.liquid:
   development: 2018-04-19T08:08:41+01:00   1a96bb414d0d3f77809de23bdbefb8c1
 config/settings_data.json:

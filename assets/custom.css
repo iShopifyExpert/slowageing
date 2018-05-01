@@ -322,6 +322,30 @@ h2,
     display: none;
 }
 /*ADDED BY ROUSNAY*/
+body.template-index .main-content {
+    margin-top: 44px;
+}
+body.template-index .slideshow{
+    height: min-content;
+    min-height: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+}
+body.template-index .slideshow .slideshow__slides{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom:52.8%; 
+  /*padding-bottom:56.34%;*/
+}
+body.template-index .slideshow .slideshow__video, 
+body.template-index .slideshow .slideshow__video iframe{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
 .site-header__wrapper,
 .site-header--fixed .site-header__wrapper,
 .navigation__sublinks-container {
@@ -344,3 +368,8 @@ span.site-header__logo-text,
 .navigation__expand-sublinks svg {
     display: none;
     }
+@media only screen and (max-width: 749px){
+    .slideshow__video, .slideshow__video iframe {
+        display: block!important;
+    }
+}
