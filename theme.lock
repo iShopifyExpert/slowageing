@@ -2,9 +2,9 @@
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-04-30T18:03:15+01:00   c1d1af7004ac0c195a7a41748ab79ccf
+  development: 2018-05-01T13:41:30+01:00   80eccd1078eeb4ce6b545b07a04e4eca
 assets/custom.js.liquid:
-  development: 2018-04-19T08:08:39+01:00   e71a38ebbcdb544635828ead99d4ec44
+  development: 2018-05-01T13:17:38+01:00   18a19ff89f29b3b90effcd45fdc7d937
 assets/ico-select.svg.liquid:
   development: 2018-04-19T08:08:39+01:00   765be6d2ef08d76aa0f1aab48a10e2b7
 assets/lazysizes.min.js.liquid:
@@ -309,6 +309,8 @@ sections/st-hero-4.liquid:
   development: 2018-04-19T08:08:37+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/st-hero-5.liquid:
   development: 2018-04-21T15:53:50+01:00   4486bb5fbd9d6babb388820372c5fa21
+sections/st-hero-6.liquid:
+  development: 2018-05-01T14:01:44+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/st-highlight-1.liquid:
   development: 2018-04-19T08:08:37+01:00   4b2d651684d72b7487009b6e9ec0f323
 sections/st-highlight-2.liquid:
@@ -602,7 +604,7 @@ templates/page.contact.liquid:
 templates/page.liquid:
   development: 2018-04-19T08:08:51+01:00   e5ba0a99aa80677dc86be60993fbc632
 templates/page.philosophy.liquid:
-  development: 2018-04-29T17:49:58+01:00   1be4f72044355f8c5a728c763c470658
+  development: 2018-05-01T14:05:30+01:00   d2b2bf545f75e9bc1bb9f496e1ad5662
 templates/page.story.liquid:
   development: 2018-04-29T17:59:43+01:00   e354403957b15e66f1cdf1822669122e
 templates/password.liquid:

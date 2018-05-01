@@ -368,6 +368,34 @@ span.site-header__logo-text,
 .navigation__expand-sublinks svg {
     display: none;
     }
+blockquote {
+    position: relative;
+    border: none;
+    font-weight: inherit;
+    padding: 0 30px;
+    font-size: 4rem;
+    line-height: 1.225;
+    font-family: 'scotch_roman_mtregular';
+}
+blockquote::before, blockquote::after {
+    display: block;
+    position: absolute;
+    color: #F2A900;
+    line-height: 1;
+    font-size: 65px;
+    text-rendering: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+blockquote::before{
+    content: "“";
+    top: -10px;
+    left: 0;
+}
+blockquote::after {
+    content: "”";
+    bottom: -40px;
+    right: 0;
+}
 @media only screen and (max-width: 749px){
     .slideshow__video, .slideshow__video iframe {
         display: block!important;
