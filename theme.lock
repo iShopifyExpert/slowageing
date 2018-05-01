@@ -616,15 +616,15 @@ templates/index.liquid:
 templates/list-collections.liquid:
   development: 2018-04-19T08:08:50+01:00   2a3229f9bf1a7d5da0eb25003db24b63
 templates/page.about.liquid:
-  development: 2018-04-26T11:50:48+01:00   1ad1164b8acd6368b6404606e0393371
+  development: 2018-05-01T17:31:13+01:00   e2a11405ffaf5da5c1920843bb3bbd84
 templates/page.contact.liquid:
   development: 2018-04-19T08:08:51+01:00   c0c82539dc7a4f0f2e32b9c965a0a8e7
 templates/page.liquid:
   development: 2018-04-19T08:08:51+01:00   e5ba0a99aa80677dc86be60993fbc632
 templates/page.philosophy.liquid:
-  development: 2018-05-01T14:05:30+01:00   d2b2bf545f75e9bc1bb9f496e1ad5662
+  development: 2018-05-01T17:31:49+01:00   9378d43336b27d1f708e2379e376cb5d
 templates/page.story.liquid:
-  development: 2018-04-29T17:59:43+01:00   e354403957b15e66f1cdf1822669122e
+  development: 2018-05-01T17:31:37+01:00   db39bc6f5beb175a3a008e03beaa4773
 templates/password.liquid:
   development: 2018-04-19T08:08:51+01:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:
