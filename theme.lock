@@ -69,6 +69,12 @@ sections/ab-custom-content-6.liquid:
   development: 2018-04-26T11:50:06+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
 sections/ab-custom-content-7.liquid:
   development: 2018-04-26T11:50:07+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-feature-row-1.liquid:
+  development: 2018-05-01T17:27:06+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+sections/ab-feature-row-2.liquid:
+  development: 2018-05-01T17:27:04+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+sections/ab-feature-row-3.liquid:
+  development: 2018-05-01T17:27:05+01:00   1f7843dd44ef8fe1598c81beed3e08e6
 sections/ab-featured-collection-1.liquid:
   development: 2018-04-27T12:38:28+01:00   c272bba63f78c2e11d7c72faa41724a8
 sections/ab-featured-slider-1.liquid:
@@ -187,6 +193,12 @@ sections/ph-custom-content-6.liquid:
   development: 2018-04-19T08:08:33+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
 sections/ph-custom-content-7.liquid:
   development: 2018-04-19T08:08:33+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ph-feature-row-1.liquid:
+  development: 2018-05-01T17:26:42+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+sections/ph-feature-row-2.liquid:
+  development: 2018-05-01T17:26:41+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+sections/ph-feature-row-3.liquid:
+  development: 2018-05-01T17:26:41+01:00   1f7843dd44ef8fe1598c81beed3e08e6
 sections/ph-featured-collection-1.liquid:
   development: 2018-04-27T12:38:34+01:00   c272bba63f78c2e11d7c72faa41724a8
 sections/ph-featured-slider-1.liquid:
@@ -281,6 +293,12 @@ sections/st-custom-content-6.liquid:
   development: 2018-04-19T08:08:36+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
 sections/st-custom-content-7.liquid:
   development: 2018-04-19T08:08:36+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/st-feature-row-1.liquid:
+  development: 2018-05-01T17:26:17+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+sections/st-feature-row-2.liquid:
+  development: 2018-05-01T17:26:17+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+sections/st-feature-row-3.liquid:
+  development: 2018-05-01T17:26:18+01:00   1f7843dd44ef8fe1598c81beed3e08e6
 sections/st-featured-collection-1.liquid:
   development: 2018-04-27T12:38:31+01:00   c272bba63f78c2e11d7c72faa41724a8
 sections/st-featured-slider-1.liquid:
