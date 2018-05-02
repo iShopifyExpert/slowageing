@@ -45,7 +45,22 @@
       {% endif %}
 
     </div>
-    
+
+    {% if section.settings.show_view_all %}
+      <div class="featured-collection__view-all">
+        {%if section.settings.collection_page_url != blank %}
+          <a href="{{  section.settings.collection_page_url }}" class="btn{% if section.settings.use_second_button %} btn--secondary{% endif %}">
+            BUY THE COLLECTION
+          </a>
+        {% else %}
+          <a href="{{ featuredCollection.url }}" class="btn{% if section.settings.use_second_button %} btn--secondary{% endif %}">
+            BUY THE COLLECTION
+          </a>
+       {% endif %}
+      </div>
+    {% endif %}
+
+
     <div class="card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}" data-grid-style="{{ section.settings.grid_style }}">
       <div class="card-list__column{% if totalProducts == 1 %} card-list__column--center{% endif %} grid grid__item {{ gridClasses }}">
         {% unless featuredCollection == blank %}
@@ -82,14 +97,6 @@
       {% endif %}
     {% endunless %}
 
-
-    {% if section.settings.show_view_all %}
-      <div class="featured-collection__view-all">
-        <a href="{{ featuredCollection.url }}" class="btn{% if section.settings.use_second_button %} btn--secondary{% endif %}">
-          {{ 'collections.general.view_all' | t }}
-        </a>
-      </div>
-    {% endif %}
   </div>
 </div>
 
@@ -138,8 +145,13 @@
     {
       "type": "checkbox",
       "id": "show_view_all",
-      "label": "Show 'View all' button",
+      "label": "Show 'Buy The Collection' button",
       "default": false
+    },
+    {
+      "type": "url",
+      "id": "collection_page_url",
+      "label": "Custom URL of collection page (optional)"
     },
     {
       "type": "checkbox",

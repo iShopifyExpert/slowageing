@@ -1,3 +1,30 @@
+<style>
+  .featured-blog .card__image-wrapper {
+      padding-top: 52%;
+  }
+  .card__info{
+    text-align: right;
+    padding: 14px 0 0!important
+  }
+  .featured-blog h1.card__name {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      text-align: center;
+  }
+  .featured-blog hr{
+      border: 2px solid #f7b300;
+      margin: 0 auto;
+      width: 55px;
+  }
+  .featured-blog h2.card__name{
+      margin-top: 10px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: 'scotch_roman_mtregular';
+  }
+</style>
+
 <div class="card critical-clear" data-animate>
   <a href="{{ article.url }}" class="card__wrapper card--article">
     {% if article.image %}
@@ -11,7 +38,7 @@
         <div class="medium-up--one-half card-list__column--half-left">
       {% endif %}
 
-      {% include 'card-image', type: article_image %}
+      {% include 'sa-article-card-image', type: article_image %}
 
       {% if blog.articles.size == 1 or section.settings.post_limit == 1 %}
         </div>
@@ -25,6 +52,10 @@
     {% endif %}
 
     <div class="card__info">
+
+      <h1 class="card__name">{{ article.tags }}</h1>
+      <hr class="underline">
+
       {% if section.settings.blog_show_date %}
         <span class="article__date text-small--uppercase">
           {{ article.published_at | time_tag: format: 'month_day_year' }}
@@ -45,10 +76,10 @@
           {% endif %}
         </div>
       {% endif %}
-      <span class="card__read-more">
+{% comment %}      <span class="card__read-more">
         {{ 'blogs.article.read_more' | t }}
         {% include 'icon-arrow-right' %}
-      </span>
+      </span>{% endcomment %}
     </div>
 
     {% if section.settings.blog_show_image %}

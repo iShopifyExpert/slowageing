@@ -439,6 +439,16 @@ span.sa-quote {
 #shopify-section-st-feature-row-1 h2.feature-row__heading::after {
     background-color: #ffffff;
 }
+
+.card__brand, .card__price {
+    color: #2a5b6c;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'scotch_roman_mtregular';
+}
+.featured-collection__view-all {
+    margin: 25px auto;
+}
 @media only screen and (min-width: 750px){
   #shopify-section-ph-feature-row-1 .feature-row__text {
     padding: 160px 40px;
@@ -450,6 +460,9 @@ span.sa-quote {
     line-height: 1.125;
     text-align: center;
 }  
+.card__info {
+    padding: 20px 0;
+}
 }
 @media only screen and (max-width: 749px){
     .slideshow__video, .slideshow__video iframe {

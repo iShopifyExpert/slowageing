@@ -19,7 +19,7 @@
     {% endunless %}
 
     <div class="card__info">
-      <h3 class="card__name h4">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ 'homepage.onboarding.collection_title' | t }}{% endif %}</h3>
+      <h3 class="card__name h4 sa-separator" data-animate>{% if collection.title != blank %}{{ collection.title }}{% else %}{{ 'homepage.onboarding.collection_title' | t }}{% endif %}</h3>
 
       {% if section.settings.show_description and collection.description != blank %}
         <div class="rte card__description{% if width == '2' %} card__description--padding{% endif %}">
