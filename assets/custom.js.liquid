@@ -85,11 +85,45 @@ $(document).ready(function(){
 
 
 // ADDED BY ROUSNAY
-$( ".custom__block-heading-text.h6" ).wrapInner( "<blockquote></blockquote>");
 
 
+{% comment %}$( ".custom__block-heading-text.h6" ).wrapInner( "<blockquote></blockquote>");{% endcomment %}
+{% comment %}
+$('#shopify-section-st-hero-1 p:contains("”")').html('<span class="sa-sptext">' + $('#shopify-section-st-hero-1 p:contains("”")').text() + '</span>');
+$('#shopify-section-st-hero-3 p:contains("”")').html('<span class="sa-sptext">' + $('#shopify-section-st-hero-3 p:contains("”")').text() + '</span>');
+$('#shopify-section-st-hero-6 p:contains("”")').html('<span class="sa-sptext">' + $('#shopify-section-st-hero-6 p:contains("”")').text() + '</span>');
+{% endcomment %}
+
+$('body p:contains("”")').each(
+        function(index) {
+            var $el = $(this);
+            var html = $el.html();
+            {% comment %}$el.html(html.replace(/Office Current Listings/g, "<h2>Office Current Listings</h2>"));{% endcomment %}
+            $el.html('<span class="sa-sptext">' + $el.text() + '</span>');
+    
+});
 
 
+$(".sa-sptext").parent().css( "text-align", "center" );
+
+
+$("body p:contains('”')").html(function(_, html) {
+   return  html.replace(/(”)/g, '<span class="sa-quote sa-quote-a">$1</span>')
+});
+
+
+$("body p:contains('“')").html(function(_, html) {
+   return  html.replace(/(“)/g, '<span class="sa-quote sa-b-quote-b">$1</span>')
+});
+
+$("body h2:contains('”')").html(function(_, html) {
+   return  html.replace(/(”)/g, '<span class="sa-quote sa-quote-a">$1</span>')
+});
+
+
+$("body h2:contains('“')").html(function(_, html) {
+   return  html.replace(/(“)/g, '<span class="sa-quote sa-b-quote-b">$1</span>')
+});
 
 
 });
