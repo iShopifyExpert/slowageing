@@ -322,8 +322,12 @@ h2,
     display: none;
 }
 /*ADDED BY ROUSNAY*/
-
-
+  .hidden {
+    opacity: 0;
+  }
+  .visible {
+    opacity: 1!important;
+  }
 .site-header-sections .site-header__section-right {
     /*display: block;*/
     align-items: center;
@@ -375,7 +379,7 @@ padding:0;
 .site-header-top-section {
     display: flex;
     position: relative;
-    padding: 0 40px;
+    padding: 7px 40px;
 }
 .site-header__section--title {
     -webkit-justify-content: center;
@@ -406,6 +410,9 @@ span.site-header__logo-text,
 .navigation__expand-sublinks svg {
     display: none;
     }
+button.product__add-to-cart-button, span.product-quantity-button {
+    line-height: 2.1;
+}
 blockquote {
     position: relative;
     border: none;

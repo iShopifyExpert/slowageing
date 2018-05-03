@@ -37,6 +37,7 @@
   {% include 'critical-css' %}
   {% include 'google-fonts' %}
   {% include 'load-css' %}
+  {{ 'animate.css' | asset_url | stylesheet_tag }}
   {{ 'custom.css' | asset_url | stylesheet_tag }}
 
   <script>
