@@ -75,6 +75,11 @@
       }
     </style>
     <div class="site-header-sections">
+
+<div class="site-header-sa-custom">
+
+
+
       <div class="site-header__section site-header__section--button site-header__section--toggle">
         <button class="site-header__navigation btn btn--clear btn--square" aria-expanded="false" role="navigation">
           <span class="burger-icon burger-icon--top"></span>
@@ -82,7 +87,15 @@
           <span class="burger-icon burger-icon--bottom"></span>
           <span class="icon__fallback-text">{{ 'general.header.expand_navigation' | t }}</span>
         </button>
-      </div>
+      </div> {% comment %}end site-header__section--toggle{% endcomment %}
+
+  
+<div class="site-header-top-section"> 
+
+
+
+
+
       <div class="site-header__section site-header__section--title">
         {% comment %}
         Use the uploaded logo from theme settings if enabled.
@@ -126,12 +139,58 @@
             {{ shop.name }}
           {% endif %}
         </a>
-		<span class="site-header__logo-text custom-font"> {{section.settings.logo_text}} </span>
+
+
+    <span class="site-header__logo-text custom-font"> {{section.settings.logo_text}} </span>
+
         {% if template.name == 'index' %}
           </h1>
         {% else %}
           </div>
         {% endif %}
+
+
+
+      </div> {% comment %}end site-header__section--title{% endcomment %}
+
+      <style>
+        .site-header__section-right{
+          display: flex;
+          align-items: center;
+        }
+      </style>
+      <div class="site-header__section site-header__section--button site-header__section-right">
+        {% if customer %}
+          <a href="/account/logout" class="btn btn--clear btn--square btn--hover-scale site-header__login" aria-expanded="false">
+          {%- assign icon = 'icon-logout' %}
+          {% include icon %}
+          <span class="icon__fallback-text">{{ 'layout.customer.log_out' | t }}</span>
+        {% else %}
+          <a href="/account" class="btn btn--clear btn--square btn--hover-scale site-header__login" aria-expanded="false">
+          {%- assign icon = 'icon-user' %}
+          {% include icon %}
+          <span class="icon__fallback-text">{{ 'layout.customer.log_in' | t }}</span>
+        </a>
+          
+        {% endif %}
+        <a href="/cart" class="btn btn--clear btn--square btn--hover-scale site-header__cart ajax-cart__toggle" aria-expanded="false">
+          {%- assign icon = 'icon-header-' | append: section.settings.icon %}
+          {% include icon %}
+          <span class="icon__fallback-text">{{ 'general.header.view_cart' | t }}</span>
+          <span class="site-header__cart-bubble{% if cart.item_count > 0 %} site-header__cart-bubble--visible{% endif %}"></span>
+        </a>
+      </div> {% comment %}end site-header__section-right{% endcomment %}
+
+
+
+</div> {% comment %}end site-header-top-section{% endcomment %}
+
+
+
+
+<div class="site-header-menu-section"> 
+
+
         <ul class="site-header__menu-items supports-no-js critical-hide navigation__links">
           {% for link in linklists[section.settings.primary_navigation].links%}
             {% assign child_list_handle = link.title | handleize %}
@@ -175,36 +234,16 @@
               </li>
             {% endif %}
           {% endfor %}
-        </ul>
-      </div>
-      <style>
-        .site-header__section-right{
-          display: flex;
-          align-items: center;
-        }
-      </style>
-      <div class="site-header__section site-header__section--button site-header__section-right">
-        {% if customer %}
-          <a href="/account/logout" class="btn btn--clear btn--square btn--hover-scale site-header__login" aria-expanded="false">
-          {%- assign icon = 'icon-logout' %}
-          {% include icon %}
-          <span class="icon__fallback-text">{{ 'layout.customer.log_out' | t }}</span>
-        {% else %}
-          <a href="/account" class="btn btn--clear btn--square btn--hover-scale site-header__login" aria-expanded="false">
-          {%- assign icon = 'icon-user' %}
-          {% include icon %}
-          <span class="icon__fallback-text">{{ 'layout.customer.log_in' | t }}</span>
-        </a>
-          
-        {% endif %}
-        <a href="/cart" class="btn btn--clear btn--square btn--hover-scale site-header__cart ajax-cart__toggle" aria-expanded="false">
-          {%- assign icon = 'icon-header-' | append: section.settings.icon %}
-          {% include icon %}
-          <span class="icon__fallback-text">{{ 'general.header.view_cart' | t }}</span>
-          <span class="site-header__cart-bubble{% if cart.item_count > 0 %} site-header__cart-bubble--visible{% endif %}"></span>
-        </a>
-      </div>
-    </div>
+        </ul> {% comment %}end navigation__links{% endcomment %}
+
+</div> {% comment %}end site-header-menu-section{% endcomment %}
+
+
+</div> {% comment %}end site-header-sa-custom{% endcomment %}
+
+    </div> {% comment %}end site-header-sections{% endcomment %}
+
+
   </header>
 
   <nav class="navigation supports-no-js critical-hide" data-section-id="{{ section.id }}" data-section-type="navigation" role="navigation" aria-hidden=true>

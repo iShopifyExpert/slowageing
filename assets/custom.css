@@ -322,6 +322,22 @@ h2,
     display: none;
 }
 /*ADDED BY ROUSNAY*/
+
+
+.site-header-sections .site-header__section-right {
+    /*display: block;*/
+    align-items: center;
+    /*position: absolute;*/
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+.site-header-sections .site-header__section-right .btn--square {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
 body.template-index .main-content {
     margin-top: 44px;
 }
@@ -346,10 +362,32 @@ body.template-index .slideshow .slideshow__video iframe{
    width: 100%;
    height: 100%;
 }
-.site-header__wrapper,
-.site-header--fixed .site-header__wrapper,
 .navigation__sublinks-container {
     background-color: #f5a801;
+}
+.site-header-sections {
+padding:0;
+}
+.site-header-sa-custom {
+    width: 100%;
+    display: block;
+}
+.site-header-top-section {
+    display: flex;
+    position: relative;
+    padding: 0 40px;
+}
+.site-header__section--title {
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+.site-header__menu-items {
+    justify-content: center;
+     text-align: center; 
+}
+.site-header-menu-section {
+    background-color: #f2a900;
 }
 .navigation__sublink a:hover {
     background-color: #da9400ad;
@@ -357,13 +395,13 @@ body.template-index .slideshow .slideshow__video iframe{
 span.site-header__logo-text,
 .navigation__link a,
 .navigation__expand-sublinks {
-    color: #ffffff;
+    color: #2a5b6c;
 }
 .navigation__link.navigation__link--active a{
     color: #244b5a;
 }
 .site-header__wrapper svg {
-    fill: #ffffff;
+    fill: #2a5b6c;
 }
 .navigation__expand-sublinks svg {
     display: none;
@@ -449,7 +487,33 @@ span.sa-quote {
 .featured-collection__view-all {
     margin: 25px auto;
 }
+
+.site-header__section--toggle .btn--square {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    line-height: 40px;
+}
+.burger-icon--top {
+    top: 12px;
+}
+.burger-icon--mid {
+    top: 20px;
+}
+.burger-icon--bottom {
+    top: 28px;
+}
 @media only screen and (min-width: 750px){
+    .burger-icon--top {
+        top: 12px;
+    }
+    .burger-icon--mid {
+        top: 20px;
+    }
+    .burger-icon--bottom {
+        top: 27px;
+    }
   #shopify-section-ph-feature-row-1 .feature-row__text {
     padding: 160px 40px;
     margin: 0 auto;
@@ -472,5 +536,10 @@ span.sa-quote {
 @media only screen and (max-width: 749px){
     #shopify-section-ph-feature-row-1 .feature-row__image-crop--none .feature-row__image {
         height: 300px;
+    }
+}
+@media only screen and (max-width: 989px){
+    .site-header-top-section {
+        background-color: #f2a900;
     }
 }
