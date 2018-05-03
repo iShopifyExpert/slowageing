@@ -469,7 +469,22 @@ span.sa-quote {
     vertical-align: middle;
     /*vertical-align: -webkit-baseline-middle;*/
 }
-
+div#shopify-section-st-custom-content-2 .custom__item.custom__item--1525005212206.align--center{
+    display: block;
+    margin: 10px auto;
+}
+div#shopify-section-st-custom-content-2 .custom__item.custom__item--1525005212206.align--center h2.custom__block-heading-text.h2{
+    display: inline-block;
+}
+div#shopify-section-st-custom-content-2 .custom__item.custom__item--1525005212206.align--center h2.custom__block-heading-text.h2::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #f2a900;
+    transition: width 0.5s ease-out;
+    margin: 0 0 0;
+    margin-top: 0;
+}
 #shopify-section-ph-feature-row-1 .feature-row__heading::after{
     display: none;
 }
