@@ -78,7 +78,7 @@
 
 <div class="site-header-sa-custom">
 
-
+<div class="site-header-top-section"> 
 
       <div class="site-header__section site-header__section--button site-header__section--toggle">
         <button class="site-header__navigation btn btn--clear btn--square" aria-expanded="false" role="navigation">
@@ -88,13 +88,6 @@
           <span class="icon__fallback-text">{{ 'general.header.expand_navigation' | t }}</span>
         </button>
       </div> {% comment %}end site-header__section--toggle{% endcomment %}
-
-  
-<div class="site-header-top-section"> 
-
-
-
-
 
       <div class="site-header__section site-header__section--title">
         {% comment %}
@@ -135,6 +128,9 @@
               <img class="site-header__logo-image site-header__logo-image--transparent" src="{{ transparent_logo | img_url: image_size }}" srcset="{{ transparent_logo | img_url: image_size }} 1x, {{ transparent_logo | img_url: image_size, scale: 2 }} 2x" alt="{{ section.settings.logo.alt | default: shop.name }}"
                       itemprop="logo">
             {% endif %}
+
+            <img class="site-header__logo-image sa-mobile-screen-logo" src="{{ 'slow-ageing-essentials-logo-white.png' | asset_url }}" srcset="{{ section.settings.logo | asset_url: image_size }} 1x, {{ section.settings.logo | asset_url: image_size, scale: 2 }} 2x" alt="{{ section.settings.logo.alt | default: shop.name }}" itemprop="logo">
+
           {% else %}
             {{ shop.name }}
           {% endif %}

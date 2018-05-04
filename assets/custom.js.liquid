@@ -893,25 +893,6 @@ $("body h2:contains('“')").html(function(_, html) {
     offset: '65%'
   });
 
-  $('div#shopify-section-st-featured-collection-1 h2.feature-row__heading').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-st-featured-collection-1 .collection-feature-image').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-st-featured-collection-1 .featured-collection__view-all').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-
 
 // STORY PAGE
   $('#shopify-section-ph-feature-row-1 .feature-row--ph-feature-row-1 .feature-row__image-wrapper').addClass('hidden').waypoint({
@@ -983,26 +964,6 @@ $("body h2:contains('“')").html(function(_, html) {
     },
     offset: '65%'
   });
-  $('div#shopify-section-ph-featured-collection-1 h2.feature-row__heading').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-ph-featured-collection-1 .collection-feature-image').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-ph-featured-collection-1 .featured-collection__view-all').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-
-
 
 
 // ABOUT
@@ -1081,25 +1042,6 @@ $("body h2:contains('“')").html(function(_, html) {
     offset: '65%'
   });
 
-  $('div#shopify-section-ab-featured-collection-1 h2.feature-row__heading').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-ab-featured-collection-1 .collection-feature-image').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-ab-featured-collection-1 .featured-collection__view-all').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-
 
   // PRODUCT PAGE
 
@@ -1142,25 +1084,6 @@ $("body h2:contains('“')").html(function(_, html) {
     offset: '65%'
   });
 
-  $('div#shopify-section-featured-collection h2.feature-row__heading').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-featured-collection .collection-feature-image').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-  $('div#shopify-section-featured-collection .featured-collection__view-all').addClass('hidden').waypoint({
-    handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
-    },
-    offset: '65%'
-  });
-
 
 // NEWS
   $('.blog-template .blog-tags').addClass('hidden').waypoint({
@@ -1176,8 +1099,40 @@ $("body h2:contains('“')").html(function(_, html) {
     offset: '65%'
   });
 
+// HOME
+  $('div#shopify-section-slideshow').addClass('hidden').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated fadeIn")
+    },
+    offset: '65%'
+  });
 
 
+
+
+
+
+
+
+
+  $('.featured-collection.collection-template h2.feature-row__heading').addClass('hidden').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated fadeIn")
+    },
+    offset: '65%'
+  });
+  $('.featured-collection.collection-template .collection-feature-image').addClass('hidden').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated fadeIn")
+    },
+    offset: '65%'
+  });
+  $('.featured-collection.collection-template .featured-collection__view-all').addClass('hidden').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated fadeIn")
+    },
+    offset: '65%'
+  });
 
 
 

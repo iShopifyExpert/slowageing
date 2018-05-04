@@ -366,6 +366,12 @@ body.template-index .slideshow .slideshow__video iframe{
    width: 100%;
    height: 100%;
 }
+.site-header-sections .burger-icon {
+    background: #ffffff;
+}
+img.site-header__logo-image.sa-mobile-screen-logo{
+    display: none;
+}
 .navigation__sublinks-container {
     background-color: #f5a801;
 }
@@ -396,12 +402,15 @@ padding:0;
 .navigation__sublink a:hover {
     background-color: #da9400ad;
 }
-span.site-header__logo-text,
-.navigation__link a,
-.navigation__expand-sublinks {
+span.site-header__logo-text {
     color: #2a5b6c;
 }
-.navigation__link.navigation__link--active a{
+.navigation__link a,
+.navigation__expand-sublinks{
+    color: #ffffff;
+}
+.navigation__link.navigation__link--active a,
+.navigation__sublinks-container [aria-current="page"]{
     color: #244b5a;
 }
 .site-header__wrapper svg {
@@ -517,6 +526,10 @@ div#shopify-section-st-custom-content-2 .custom__item.custom__item--152500521220
     text-align: center;
     line-height: 40px;
 }
+.burger-icon {
+    width: 22px;
+    margin-left: -18px;
+}
 .burger-icon--top {
     top: 12px;
 }
@@ -550,18 +563,29 @@ div#shopify-section-st-custom-content-2 .custom__item.custom__item--152500521220
     padding: 20px 0;
 }
 }
+@media only screen and (max-width: 989px){
+    .site-header-top-section {
+        background-color: #f2a900;
+    }
+    span.site-header__logo-text {
+        color: #ffffff;
+    }
+    .site-header__wrapper svg {
+        fill: #ffffff;
+    }
+    img.site-header__logo-image{
+        display: none;
+    }
+    img.site-header__logo-image.sa-mobile-screen-logo{
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 749px){
     .slideshow__video, .slideshow__video iframe {
         display: block!important;
     }
-}
-@media only screen and (max-width: 749px){
     #shopify-section-ph-feature-row-1 .feature-row__image-crop--none .feature-row__image {
         height: 300px;
-    }
-}
-@media only screen and (max-width: 989px){
-    .site-header-top-section {
-        background-color: #f2a900;
     }
 }

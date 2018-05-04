@@ -4,9 +4,9 @@ assets/animate.css:
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-05-03T22:58:16+01:00   66c474411954d263ab3ccbfe7dac9d40
+  development: 2018-05-04T13:11:13+01:00   3c225ac2fe7d83fb103c9d094b0b41c6
 assets/custom.js.liquid:
-  development: 2018-05-03T22:59:44+01:00   e49ef562c2ec32b4f6b15008cad37208
+  development: 2018-05-04T12:37:50+01:00   6971303096d3729f2bd6c98beeb4cbb9
 assets/ico-select.svg.liquid:
   development: 2018-04-19T08:08:39+01:00   765be6d2ef08d76aa0f1aab48a10e2b7
 assets/lazysizes.min.js.liquid:
@@ -25,6 +25,8 @@ assets/slick.ttf:
   development: 2018-04-19T08:08:40+01:00   d41f55a78e6f49a5512878df1737e58a
 assets/slick.woff:
   development: 2018-04-19T08:08:41+01:00   b7c9e1e479de3b53f1e4e30ebac2403a
+assets/slow-ageing-essentials-logo-white.png:
+  development: 2018-05-04T13:06:21+01:00   d367ec2dac1556bf7283a7c3d5f4fa4e
 assets/theme.asset.js:
   development: 2018-04-19T08:08:41+01:00   427dfeff6721510c378f32ae56069342
 assets/theme.min.js.liquid:
@@ -164,7 +166,7 @@ sections/footer.liquid:
 sections/gallery.liquid:
   development: 2018-04-19T08:08:31+01:00   1f80893b2232040167fbb6f820d20ce8
 sections/header.liquid:
-  development: 2018-05-03T11:52:43+01:00   ddbe2f45978eb5125fe255b721d1c8d4
+  development: 2018-05-04T13:10:17+01:00   9b093da0b99f32bf00ba3c79437751d4
 sections/hero.liquid:
   development: 2018-04-19T08:08:32+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/highlight.liquid:
