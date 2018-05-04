@@ -4,9 +4,9 @@ assets/animate.css:
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-05-04T13:11:13+01:00   3c225ac2fe7d83fb103c9d094b0b41c6
+  development: 2018-05-04T22:34:31+01:00   91af31ab559f7a83ccd441d1afed0858
 assets/custom.js.liquid:
-  development: 2018-05-04T12:37:50+01:00   6971303096d3729f2bd6c98beeb4cbb9
+  development: 2018-05-04T22:32:01+01:00   67694a2e351179ed7e564a4a2ce0262c
 assets/ico-select.svg.liquid:
   development: 2018-04-19T08:08:39+01:00   765be6d2ef08d76aa0f1aab48a10e2b7
 assets/lazysizes.min.js.liquid:
@@ -60,7 +60,7 @@ locales/pt-BR.json:
 locales/pt-PT.json:
   development: 2018-04-19T08:11:30+01:00   65e446a311dac4747fa105feef783651
 sections/ab-custom-content-1.liquid:
-  development: 2018-04-26T11:50:04+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+  development: 2018-05-04T20:31:13+01:00   202b06a8bd15b2f852d0d2f234394261
 sections/ab-custom-content-2.liquid:
   development: 2018-04-26T11:50:05+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
 sections/ab-custom-content-3.liquid:
@@ -73,6 +73,8 @@ sections/ab-custom-content-6.liquid:
   development: 2018-04-26T11:50:06+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
 sections/ab-custom-content-7.liquid:
   development: 2018-04-26T11:50:07+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+sections/ab-custom-gallery.liquid:
+  development: 2018-05-04T14:04:50+01:00   1f80893b2232040167fbb6f820d20ce8
 sections/ab-feature-row-1.liquid:
   development: 2018-05-01T17:27:06+01:00   1f7843dd44ef8fe1598c81beed3e08e6
 sections/ab-feature-row-2.liquid:
@@ -90,9 +92,9 @@ sections/ab-featured-slider-3.liquid:
 sections/ab-featured-slider-4.liquid:
   development: 2018-04-26T11:50:09+01:00   5805387138a2a7ca96bd79d0918cfc6c
 sections/ab-gallery-1.liquid:
-  development: 2018-04-26T11:50:09+01:00   1f80893b2232040167fbb6f820d20ce8
+  development: 2018-05-04T21:34:10+01:00   ea934dc2ad8e2b773ea4a34a633c1c31
 sections/ab-gallery-2.liquid:
-  development: 2018-04-26T11:50:10+01:00   1f80893b2232040167fbb6f820d20ce8
+  development: 2018-05-04T21:05:20+01:00   e1cc1d68688ec77f8de13eeff4dc73ff
 sections/ab-gallery-3.liquid:
   development: 2018-04-26T11:50:10+01:00   1f80893b2232040167fbb6f820d20ce8
 sections/ab-gallery-4.liquid:
@@ -106,7 +108,7 @@ sections/ab-hero-3.liquid:
 sections/ab-hero-4.liquid:
   development: 2018-04-26T11:50:13+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/ab-hero-5.liquid:
-  development: 2018-04-26T11:50:13+01:00   4486bb5fbd9d6babb388820372c5fa21
+  development: 2018-05-04T22:34:58+01:00   38b3b65d10c2b043492398133bffb829
 sections/ab-highlight-1.liquid:
   development: 2018-04-26T11:50:11+01:00   4b2d651684d72b7487009b6e9ec0f323
 sections/ab-highlight-2.liquid:
@@ -268,7 +270,7 @@ sections/product-gallery.liquid:
 sections/product-review.liquid:
   development: 2018-04-25T21:09:19+01:00   ddbba6792c62b0d0c16bf518047cfa07
 sections/product-template.liquid:
-  development: 2018-04-25T15:22:29+01:00   62ce4097cae9be1278320fbff991d517
+  development: 2018-05-04T20:48:26+01:00   79e44fd940929b18edc2a8a6d1110336
 sections/product-video-popup.liquid:
   development: 2018-04-27T19:42:57+01:00   1932595df9b808add8540168f272b81d
 sections/quotes.liquid:

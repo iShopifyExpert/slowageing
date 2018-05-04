@@ -478,6 +478,16 @@ span.sa-quote {
     vertical-align: middle;
     /*vertical-align: -webkit-baseline-middle;*/
 }
+div#shopify-section-ab-custom-content-1 .custom__item.custom__item--1525189246237.small--one-whole.medium-up--one-half.align--center {
+    padding-right: 20px;
+}
+div#shopify-section-ab-custom-content-1 .custom__item.custom__item--1525189252415.small--one-whole.medium-up--one-half.align--center {
+    padding-left: 20px;
+}
+
+div#shopify-section-ab-custom-content-1 p {
+    margin: 0 0 15px;
+}
 div#shopify-section-st-custom-content-2 .custom__item.custom__item--1525005212206.align--center{
     display: block;
     margin: 10px auto;
@@ -539,6 +549,219 @@ div#shopify-section-st-custom-content-2 .custom__item.custom__item--152500521220
 .burger-icon--bottom {
     top: 28px;
 }
+div#shopify-section-ab-gallery-2 h3.h2.text-title.image-bar__caption {
+    display: none;
+}
+div#shopify-section-ab-gallery-2 p.custom-text-holder {
+    max-width: 700px;
+    width: 1000%;
+    margin: 0 auto;
+}
+div#shopify-section-ab-gallery-2 p.custom-text-holder span {
+    line-height: 0.54;
+}
+.ab1-sa-sz-1, .ab1-sa-sz-2, .ab1-sa-sz-3,
+.ab2-sa-sz-1, .ab2-sa-sz-2, .ab2-sa-sz-3
+{
+    font-family: 'scotch_roman_mtregular';
+    color: #2a5b6c;
+}
+.ab1-sa-sz-1 {
+    font-size: 20rem;
+    margin-right: -2rem;
+}
+.ab1-sa-sz-2 {
+    font-size: 16rem;
+    margin-right: 12rem;
+}
+.ab1-sa-sz-3 {
+    font-size: 15rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+div#shopify-section-ab-hero-5 p.custom-text-holder {
+    text-align: center;
+    margin: 8rem auto 10rem;
+}
+div#shopify-section-ab-hero-5 p.custom-text-holder span {
+    line-height: 0.57;
+}
+.ab2-sa-sz-1{
+    font-size: 20rem;
+    line-height: 0.5!important;
+}
+.ab2-sa-sz-2 {
+    font-size: 15rem;
+}
+.ab2-sa-sz-3 {
+    font-size: 6rem;
+    margin-right: 0rem;
+}
+.ab2-as-mr{
+    margin-left: 0.8rem;
+}
+.ab2-as-sp{
+    vertical-align: top;
+}
+/*custom text style*/
+div#shopify-section-ab-gallery-1 .image-bar__text.hidden.visible {
+    height: 70%;
+}
+div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
+    display: none;
+}
+.as-custom-html-code {
+    position: relative;
+    height: 100%;
+}
+
+.sa-carousel {
+    overflow: hidden;
+    transition: margin 250ms cubic-bezier(0.215, 0.61, 0.355, 1), width 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: margin, width
+}
+
+@media only screen and (min-width:768px) {}
+.sa-carousel-slide {
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 15%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 320px;
+    /*margin-left: -25px;*/
+    width: 100%;
+    right: 10%;
+}
+
+@media (orientation:portrait) {
+    .sa-carousel-slide {
+        max-width: 310px
+    }
+}
+@media only screen and (min-width:768px) {
+    .sa-carousel-slide {
+        max-width: 655px;
+        /*margin-left: -70px*/
+    }
+}
+@media only screen and (min-width:768px) and (orientation:portrait) {
+    .sa-carousel-slide {
+        /*margin-left: -30px*/
+    }
+}
+
+.sa-carousel-slide.active {
+    opacity: 1
+}
+.sa-carousel-slide-heading {
+    color: black;
+    color: #2a5b6c;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.word.sa-fn1{
+    font-family: 'scotch_roman_mtregular';
+}
+.word.sa-fn2{
+    font-family: "Avenir","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.word.sa-sz-1{
+    font-size: 7rem;
+}
+.word.sa-sz-2{
+    font-size: 5rem;
+}
+.word.sa-sz-3{
+    font-size: 2.2rem;
+}
+.word.sa-osr{
+    padding-right: 5rem;
+}
+.word.sa-osl{
+    padding-left: 4.5rem;
+}
+
+.word.sa-sz-1 span.letter {
+    letter-spacing: -3px;
+}
+.word.sa-sz-2 span.letter {
+    letter-spacing: -2px;
+}
+.word.sa-sz-3 span.letter {
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+.sa-mrl-1{
+    margin-left: -1.5rem;
+}
+.sa-mrl-2{
+    margin-left: -0.5rem;
+}
+@media only screen and (min-width:768px) {
+    .word.sa-sz-1{
+        font-size: 13rem;
+    }
+    .word.sa-sz-2{
+        font-size: 10rem;
+    }
+    .word.sa-sz-3{
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .word.sa-osr{
+        padding-right: 18rem;
+    }
+    .word.sa-osl{
+        padding-left: 12rem;
+    }
+    .sa-mrl-1{
+    margin-left: -3rem;
+    }
+    .sa-mrl-2{
+        margin-left: -1.35rem;
+    }
+}
+.sa-carousel-slide-heading .word {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    line-height: 1;
+}
+.sa-carousel-slide-heading em {
+    display: inherit;
+    font-style: normal;
+    color: #CC9966
+}
+.sa-carousel-slide-heading .letter {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+    transition: opacity 1750ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 750ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: opacity 1750ms cubic-bezier(0.215, 0.61, 0.355, 1), transform 750ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: opacity 1750ms cubic-bezier(0.215, 0.61, 0.355, 1), transform 750ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 750ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    display: block;
+    position: relative;
+    -webkit-box-flex: 0;
+    flex: none;
+    white-space: pre;
+    will-change: transform, opacity
+}
+.sa-carousel-slide-heading .letter.visible {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
 @media only screen and (min-width: 750px){
     .burger-icon--top {
         top: 12px;
@@ -553,15 +776,15 @@ div#shopify-section-st-custom-content-2 .custom__item.custom__item--152500521220
     padding: 160px 40px;
     margin: 0 auto;
     max-width: 650px;
-}
-#shopify-section-ph-feature-row-1 .feature-row__heading {
-    font-size: 6rem;
-    line-height: 1.125;
-    text-align: center;
-}  
-.card__info {
-    padding: 20px 0;
-}
+    }
+    #shopify-section-ph-feature-row-1 .feature-row__heading {
+        font-size: 6rem;
+        line-height: 1.125;
+        text-align: center;
+    }  
+    .card__info {
+        padding: 20px 0;
+    }
 }
 @media only screen and (max-width: 989px){
     .site-header-top-section {

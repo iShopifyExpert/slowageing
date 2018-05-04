@@ -780,13 +780,123 @@ $("body h2:contains('”')").html(function(_, html) {
    return  html.replace(/(”)/g, '<span class="sa-quote sa-quote-a">$1</span>')
 });
 
-
 $("body h2:contains('“')").html(function(_, html) {
    return  html.replace(/(“)/g, '<span class="sa-quote sa-b-quote-b">$1</span>')
 });
 
 
+//TEXT SLIDER
+function initialiseHomepageCarousel() {
+    return $.Deferred(function(dfd) {
+        var $slides = $('.sa-carousel-slide'),
+            numSlides = $slides.length;
+        console.log('Num Slides [' + numSlides + ']');
+        $('.sa-carousel-slide-heading').each(function() {
+            wrapCharacters($(this)[0]);
+            $(this).find('.word').append('&nbsp;');
+        });
+        clearTimeout(homeCarouselSlidesTimeout);
+        clearTimeout(homeCarouselRevealLettersTimeout);
+            cycleSlides($slides, numSlides);
+        return dfd.resolve();
+    }).promise();
+}
 
+
+function revealLetters($el) {
+    var $letters = $el.find('.letter:not(.visible)');
+    if ($letters.length === 0) {
+        return;
+    }
+    homeCarouselRevealLettersTimeout = setTimeout(function() {
+        if (msieVersion <= 9 && msieVersion !== false) {
+            $letters.first().fadeIn('fast');
+        }
+        $letters.first().addClass('visible');
+        revealLetters($el);
+    }, 75);
+}
+function wrapCharacters(element) {
+    $(element).contents().each(function() {
+        if (this.nodeType === 1) {
+            wrapCharacters(this);
+        } else if (this.nodeType === 3) {
+            var str = $.trim(this.nodeValue);
+            $(this).replaceWith($.map(str.split(''), function(c) {
+                return '<span class="letter">' + c + '</span>';
+            }).join(''));
+        }
+    });
+}
+
+
+function wrapCharacters(element) {
+    $(element).contents().each(function() {
+        if (this.nodeType === 1) {
+            wrapCharacters(this);
+        } else if (this.nodeType === 3) {
+            var str = $.trim(this.nodeValue);
+            $(this).replaceWith($.map(str.split(''), function(c) {
+                return '<span class="letter">' + c + '</span>';
+            }).join(''));
+        }
+    });
+}
+function cycleSlides($slides, numSlides) {
+    var $curr = $('.sa-carousel-slide.active'),
+        index = $slides.index($curr);
+    if (index === numSlides - 1 || index === -1) {
+        $next = $slides.first();
+    } else {
+        $next = $curr.next();
+    }
+    $next.addClass('active');
+    $curr.removeClass('active').find('.letter').removeClass('visible');
+    if (msieVersion <= 9 && msieVersion !== false) {
+        $('.sa-carousel-slide .letter').removeClass('visible').hide();
+    }
+    revealLetters($next);
+    if (numSlides === 1) {
+        return;
+    }
+    homeCarouselSlidesTimeout = setTimeout(function() {
+        cycleSlides($slides, numSlides);
+    }, 5000);
+}
+var msieVersion = false;
+var msieDetect = {
+    init: function() {
+        msieVersion = this.getVersion();
+        if (!msieVersion)
+            return;
+        document.documentElement.className += ' msie msie-' + msieVersion;
+    },
+    getVersion: function() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\.?/)) {
+            if (!!navigator.userAgent.match(/Trident.*rv\:11\.?/))
+                return 11;
+            return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)));
+        } else {
+            return false;
+        }
+        return false;
+    }
+}
+msieDetect.init();
+var $window,
+        $document,
+        $body,
+        documentHeight,
+        viewportWidth,
+        viewportHeight,
+        page,
+        resizeTimer,
+        menuItemTimeout,
+        homeCarouselSlidesTimeout, 
+        homeCarouselRevealLettersTimeout;
+initialiseHomepageCarousel();
 // waypoint.js+animate.css
 // =========================
 
@@ -995,9 +1105,9 @@ $("body h2:contains('“')").html(function(_, html) {
     offset: '65%'
   });
 
-  $('#shopify-section-ab-gallery-2').addClass('hidden').waypoint({
+  $('#shopify-section-ab-gallery-2 .as-custom-html-code').addClass('hidden').waypoint({
     handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
+        $(this.element).addClass("visible animated zoomIn")
     },
     offset: '90%'
   });
@@ -1007,7 +1117,12 @@ $("body h2:contains('“')").html(function(_, html) {
     },
     offset: '65%'
   });
-
+  $('div#shopify-section-ab-hero-5 .as-custom-html-code').addClass('hidden').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated zoomIn")
+    },
+    offset: '65%'
+  });
   $('div#shopify-section-ab-gallery-3 .image-bar--ab-gallery-3 > div').addClass('hidden').waypoint({
     handler: function() {
         $(this.element).addClass("visible animated fadeIn")
@@ -1135,10 +1250,21 @@ $("body h2:contains('“')").html(function(_, html) {
   });
 
 
-
-
-
   $('span.sa-sptext').addClass('hidden').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated zoomIn")
+    },
+    offset: '65%'
+  });
+
+  $('body p:contains("”")').addClass('hidden').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated zoomIn")
+    },
+    offset: '65%'
+  });
+  
+  $('body h2:contains("”")').addClass('hidden').waypoint({
     handler: function() {
         $(this.element).addClass("visible animated zoomIn")
     },
