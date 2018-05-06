@@ -1,7 +1,6 @@
 <style>
 	.hero.hero--st-hero-1 .hero__inner .page-width,
 	.hero.hero--st-hero-3 .hero__inner .page-width,
-	.hero.hero--st-hero-4 .hero__inner .page-width,
 	.hero.hero--st-hero-5 .hero__inner .page-width,
 	.hero.hero--st-hero-6 .hero__inner .page-width {
 	    text-align: left!important;
@@ -9,7 +8,6 @@
 	}
 	.hero.hero--st-hero-1 .hero__inner .mega-subtitle,
 	.hero.hero--st-hero-3 .hero__inner .mega-subtitle,
-	.hero.hero--st-hero-4 .hero__inner .mega-subtitle,
 	.hero.hero--st-hero-5 .hero__inner .mega-subtitle,
 	.hero.hero--st-hero-6 .hero__inner .mega-subtitle {
 	    text-align: left!important;
@@ -18,16 +16,12 @@
 	    margin: 0;
 	    max-width: 100%;
 	}
-	.hero.hero--st-hero-4 .hero__inner .hero__overlay-title::after {
-	    background-color: #ffffff;
-	}
 	.hero.hero--st-hero-2 .hero__overlay-title::after {
 	    display: none;
 	}
 	@media only screen and (max-width: 980px) {
 		.hero.hero--st-hero-1 .hero__inner .page-width
 		.hero.hero--st-hero-3 .hero__inner .page-width,
-		.hero.hero--st-hero-4 .hero__inner .page-width,
 		.hero.hero--st-hero-5 .hero__inner .page-width,
 		.hero.hero--st-hero-6 .hero__inner .page-width {
 		    padding:0 30px;
@@ -35,7 +29,8 @@
 	}
 </style>
 {% section 'st-hero-2' %}
-{% section 'st-gallery-1' %}
+{% comment %}{% section 'st-gallery-1' %}{% endcomment %}
+{% section 'st-hero-4' %}
 {% section 'st-hero-1' %}
 {% section 'st-custom-content-2' %}
 {% section 'st-custom-content-7' %}
@@ -43,7 +38,8 @@
 {% section 'st-hero-6' %}
 {% section 'st-gallery-2' %}
 {% section 'st-hero-3' %}
-{% section 'st-gallery-3' %}
+{% comment %}{% section 'st-gallery-3' %}{% endcomment %}
+{% section 'st-hero-7' %}
 {% section 'st-hero-5' %}
 {% section 'st-feature-row-2' %}
 {% section 'st-featured-collection-1' %}
@@ -64,7 +60,6 @@
 {% section 'st-slideshow-1' %}
 {% section 'st-gallery-4' %}
 {% section 'st-rich-text-1' %}
-{% section 'st-hero-4' %}
 {% section 'st-custom-content-1' %}
 
 {% section 'st-highlight-1' %}

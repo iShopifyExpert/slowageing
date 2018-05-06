@@ -1005,7 +1005,7 @@ initialiseHomepageCarousel();
 
 
 // STORY PAGE
-  $('#shopify-section-ph-feature-row-1 .feature-row--ph-feature-row-1 .feature-row__image-wrapper').addClass('hidden').waypoint({
+  $('#shopify-section-ph-feature-row-1 .feature-row--ph-feature-row-1 .feature-row__image-wrapper').waypoint({
     handler: function() {
         $(this.element).addClass("visible animated fadeIn")
     },
@@ -1013,7 +1013,7 @@ initialiseHomepageCarousel();
   });
   $('#shopify-section-ph-feature-row-1 .feature-row--ph-feature-row-1 .feature-row__text').addClass('hidden').waypoint({
     handler: function() {
-        $(this.element).addClass("visible animated fadeIn")
+        $(this.element).addClass("visible animated zoomIn")
     },
     offset: '65%'
   });
@@ -1201,19 +1201,24 @@ initialiseHomepageCarousel();
 
 
 // NEWS
-  $('.blog-template .blog-tags').addClass('hidden').waypoint({
+  $('.blog-template .blog-tags').waypoint({
     handler: function() {
         $(this.element).addClass("visible animated fadeIn")
     },
-    offset: '65%'
+    offset: '80%'
   });
-  $('.blog-template header.section-header').addClass('hidden').waypoint({
+  $('.blog-template header.section-header').waypoint({
     handler: function() {
         $(this.element).addClass("visible animated fadeIn")
     },
-    offset: '65%'
+    offset: '80%'
   });
-
+  $('.blog-template .blog-post-recent').waypoint({
+    handler: function() {
+        $(this.element).addClass("visible animated fadeIn")
+    },
+    offset: '80%'
+  });
 // HOME
   $('div#shopify-section-slideshow').addClass('hidden').waypoint({
     handler: function() {

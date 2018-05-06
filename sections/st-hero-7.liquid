@@ -26,19 +26,6 @@
       {% if section.settings.title != blank %}
         <h2 class="hero__overlay-title separator{% if section.settings.show_overlay %} hero__overlay-title--overlay{% endif %}{% if section.settings.text_size == 'large' %} h1{% endif %}" data-animate>{{ section.settings.title | escape }}</h2>
       {% endif %}
-          <div class="as-custom-html-code">
-          <div class="sa-carousel">
-              <div class="sa-carousel-slide">
-                  <div class="sa-carousel-slide-heading">
-                      <div class="word sa-fn1 sa-sz-2"><em>The</em></div>
-                      <div class="word sa-fn1 sa-sz-1">Philosophy</div><br>
-                      <div class="word sa-fn2 sa-sz-3 sa-osl">of</div>
-                      <div class="word sa-fn1 sa-sz-2">Slow</div>
-                  </div>
-              </div>
-          </div>
-
-          </div>
       {% if section.settings.text != blank %}
         <div class="rte-setting mega-subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>
       {% endif %}

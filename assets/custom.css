@@ -26,7 +26,7 @@ h2,
 .h2,
 .h3,
 .h4{
-  font-family: 'scotch_roman_mtregular';
+  font-family: 'scotch_roman_mtregular'!important;
 }
 /*! Custom Slider */
 
@@ -603,6 +603,30 @@ div#shopify-section-ab-hero-5 p.custom-text-holder span {
 .ab2-as-sp{
     vertical-align: top;
 }
+.featured-blog hr {
+    border-color: #f2a900;
+}
+div#shopify-section-st-hero-4 .page-width.text-center{
+    width: 270px;
+    margin-right: 0;
+}
+div#shopify-section-st-hero-7 .page-width.text-center {
+    text-align: right;
+    width: 245px;
+    margin-right: 5%;
+}
+div#shopify-section-st-hero-4 .hero--x-large .hero__inner {
+    padding: 50px 0 200px;
+}
+div#shopify-section-st-hero-4  h2,
+div#shopify-section-st-hero-7  h2 {
+    line-height: 1;
+}
+div#shopify-section-st-hero-4 h2::after,
+div#shopify-section-st-hero-7 h2::after
+{
+    display: none;
+}
 /*custom text style*/
 div#shopify-section-ab-gallery-1 .image-bar__text.hidden.visible {
     height: 70%;
@@ -619,37 +643,6 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
     overflow: hidden;
     transition: margin 250ms cubic-bezier(0.215, 0.61, 0.355, 1), width 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
     will-change: margin, width
-}
-
-@media only screen and (min-width:768px) {}
-.sa-carousel-slide {
-    opacity: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 15%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    max-width: 320px;
-    /*margin-left: -25px;*/
-    width: 100%;
-    right: 10%;
-}
-
-@media (orientation:portrait) {
-    .sa-carousel-slide {
-        max-width: 310px
-    }
-}
-@media only screen and (min-width:768px) {
-    .sa-carousel-slide {
-        max-width: 655px;
-        /*margin-left: -70px*/
-    }
-}
-@media only screen and (min-width:768px) and (orientation:portrait) {
-    .sa-carousel-slide {
-        /*margin-left: -30px*/
-    }
 }
 
 .sa-carousel-slide.active {
@@ -704,31 +697,6 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
 .sa-mrl-2{
     margin-left: -0.5rem;
 }
-@media only screen and (min-width:768px) {
-    .word.sa-sz-1{
-        font-size: 13rem;
-    }
-    .word.sa-sz-2{
-        font-size: 10rem;
-    }
-    .word.sa-sz-3{
-        font-size: 4rem;
-        text-transform: uppercase;
-        font-weight: 100;
-    }
-    .word.sa-osr{
-        padding-right: 18rem;
-    }
-    .word.sa-osl{
-        padding-left: 12rem;
-    }
-    .sa-mrl-1{
-    margin-left: -3rem;
-    }
-    .sa-mrl-2{
-        margin-left: -1.35rem;
-    }
-}
 .sa-carousel-slide-heading .word {
     display: -webkit-box;
     display: flex;
@@ -761,6 +729,131 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
+.featured-blog .page-width{
+    text-align: center;
+}
+.site-footer a:hover, .site-footer a:focus {
+    opacity: 1;
+    color: #f2a900;
+}
+#shopify-section-footer input:hover,
+#shopify-section-footer input:focus{
+    color: #f2a900;
+}
+#shopify-section-footer .social-links .icon {
+    fill: #ffffff;
+}
+.site-footer .input-group--underline:hover,
+.site-footer .input-group--underline:focus{
+    border-color: #f2a900;
+}
+#shopify-section-footer .input-group__field, 
+#shopify-section-footer .input-group__btn {
+    vertical-align: baseline;
+}
+#shopify-section-footer .input-group__btn .btn {
+    height: 38px;
+    opacity: 1;
+}
+#shopify-section-footer input#NewsletterEmail {
+    font-size: 1.6rem;
+    line-height: 1;
+    outline: 0;
+}
+#shopify-section-footer .social-links a:hover, 
+#shopify-section-footer .social-links a:focus {
+    opacity: 1;
+}
+#shopify-section-footer .social-links a:hover .icon {
+    fill: #f2a900;
+}
+.site-footer__copyright small {
+    font-size: 85%;
+}
+.site-footer a {
+    text-decoration: none;
+}
+@media only screen and (min-width:768px) {}
+.sa-carousel-slide {
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 15%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 320px;
+    /*margin-left: -25px;*/
+    width: 100%;
+    right: 10%;
+}
+
+@media (orientation:portrait) {
+    .sa-carousel-slide {
+        max-width: 310px
+    }
+}
+@media only screen and (min-width:768px) {
+    .sa-carousel-slide {
+        max-width: 655px;
+        /*margin-left: -70px*/
+    }
+}
+@media only screen and (min-width:768px) and (orientation:portrait) {
+    .sa-carousel-slide {
+        /*margin-left: -30px*/
+    }
+}
+@media only screen and (min-width:768px) {
+    .word.sa-sz-1{
+        font-size: 13rem;
+    }
+    .word.sa-sz-2{
+        font-size: 10rem;
+    }
+    .word.sa-sz-3{
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .word.sa-osr{
+        padding-right: 18rem;
+    }
+    .word.sa-osl{
+        padding-left: 12rem;
+    }
+    .sa-mrl-1{
+    margin-left: -3rem;
+    }
+    .sa-mrl-2{
+        margin-left: -1.35rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    div#shopify-section-st-hero-4 .page-width.text-center{
+        width: 520px;
+    }
+    div#shopify-section-st-hero-7 .page-width.text-center {
+        width: 480px;
+    }
+    div#shopify-section-st-hero-4 .hero--x-large .hero__inner {
+        padding: 120px 0 400px;
+    }
+    div#shopify-section-st-hero-4  h2,
+    div#shopify-section-st-hero-7  h2
+     {
+        font-size: 8rem;
+    }
+}
+
+
+@media (min-width: 750px) and (max-width: 1199px){
+    div#shopify-section-st-hero-4 .page-width.text-center,
+    div#shopify-section-st-hero-7 .page-width.text-center {
+        width: 400px;
+    }
+}
 
 @media only screen and (min-width: 750px){
     .burger-icon--top {
@@ -784,6 +877,12 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
     }  
     .card__info {
         padding: 20px 0;
+    }
+    div#shopify-section-st-hero-4  .hero--x-large .hero__inner { 
+        padding: 100px 0 300px;
+    }
+    .flex-footer__item--one-third {
+        flex: none;
     }
 }
 @media only screen and (max-width: 989px){
