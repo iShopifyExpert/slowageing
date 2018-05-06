@@ -549,6 +549,12 @@ div#shopify-section-st-custom-content-2 .custom__item.custom__item--152500521220
 .burger-icon--bottom {
     top: 28px;
 }
+div#shopify-section-st-gallery-2 .image-bar__flex{
+ flex: 1 1 0;
+}
+div#shopify-section-st-gallery-2 .image-bar__flex:last-child{
+ flex: 2 1 0;
+}
 div#shopify-section-ab-gallery-2 h3.h2.text-title.image-bar__caption {
     display: none;
 }
@@ -626,6 +632,26 @@ div#shopify-section-st-hero-4 h2::after,
 div#shopify-section-st-hero-7 h2::after
 {
     display: none;
+}
+div#shopify-section-st-hero-2 {
+    margin-top: 15px;
+}
+div#shopify-section-st-hero-2 .page-width{
+    max-width: 100% 
+}
+div#shopify-section-st-hero-2 h2.hero__overlay-title{
+    display: none;
+}
+div#shopify-section-st-hero-2 .sa-carousel-slide{
+    top: initial;
+    max-width: 95%;
+    width: 95%;
+    left:5%;
+    position: absolute;
+    overflow: initial;
+}
+div#shopify-section-st-hero-2 .sa-carousel-slide-heading{
+        color: #ffffff;
 }
 /*custom text style*/
 div#shopify-section-ab-gallery-1 .image-bar__text.hidden.visible {

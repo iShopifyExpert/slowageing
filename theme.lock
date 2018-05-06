@@ -4,7 +4,7 @@ assets/animate.css:
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-05-06T22:23:17+01:00   90e4ea85eddd359ea7767b1c5cc407d6
+  development: 2018-05-06T23:24:20+01:00   4fc8241a90fbc4d890b0fb28fc2fe051
 assets/custom.js.liquid:
   development: 2018-05-06T22:28:18+01:00   9822cc19fe5bba4f0d2157b78b33618c
 assets/ico-select.svg.liquid:
@@ -326,7 +326,7 @@ sections/st-gallery-4.liquid:
 sections/st-hero-1.liquid:
   development: 2018-04-19T08:08:37+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/st-hero-2.liquid:
-  development: 2018-04-19T08:08:37+01:00   4486bb5fbd9d6babb388820372c5fa21
+  development: 2018-05-06T23:07:58+01:00   23034851648a8b79f0bb27b8739279da
 sections/st-hero-3.liquid:
   development: 2018-04-19T08:08:37+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/st-hero-4.liquid:
