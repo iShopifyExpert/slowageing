@@ -4,7 +4,7 @@ assets/animate.css:
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-05-06T23:24:20+01:00   4fc8241a90fbc4d890b0fb28fc2fe051
+  development: 2018-05-07T13:46:56+01:00   7dd309f0a3c5d92de05a4e7c2e7b2294
 assets/custom.js.liquid:
   development: 2018-05-06T22:28:18+01:00   9822cc19fe5bba4f0d2157b78b33618c
 assets/ico-select.svg.liquid:
@@ -92,7 +92,7 @@ sections/ab-featured-slider-3.liquid:
 sections/ab-featured-slider-4.liquid:
   development: 2018-04-26T11:50:09+01:00   5805387138a2a7ca96bd79d0918cfc6c
 sections/ab-gallery-1.liquid:
-  development: 2018-05-04T21:34:10+01:00   ea934dc2ad8e2b773ea4a34a633c1c31
+  development: 2018-05-07T13:45:56+01:00   ee095ddd0d89b5caf3f0cfde3cceedbe
 sections/ab-gallery-2.liquid:
   development: 2018-05-04T21:05:20+01:00   e1cc1d68688ec77f8de13eeff4dc73ff
 sections/ab-gallery-3.liquid:

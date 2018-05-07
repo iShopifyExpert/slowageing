@@ -666,7 +666,7 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
 }
 
 .sa-carousel {
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition: margin 250ms cubic-bezier(0.215, 0.61, 0.355, 1), width 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
     will-change: margin, width
 }
