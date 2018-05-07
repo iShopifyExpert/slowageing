@@ -4,9 +4,9 @@ assets/animate.css:
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-05-07T13:46:56+01:00   7dd309f0a3c5d92de05a4e7c2e7b2294
+  development: 2018-05-07T20:59:27+01:00   07b922b92f9dea9d34543437d5bfcdc7
 assets/custom.js.liquid:
-  development: 2018-05-06T22:28:18+01:00   9822cc19fe5bba4f0d2157b78b33618c
+  development: 2018-05-07T18:34:07+01:00   9822cc19fe5bba4f0d2157b78b33618c
 assets/ico-select.svg.liquid:
   development: 2018-04-19T08:08:39+01:00   765be6d2ef08d76aa0f1aab48a10e2b7
 assets/lazysizes.min.js.liquid:
@@ -30,7 +30,7 @@ assets/slow-ageing-essentials-logo-white.png:
 assets/theme.asset.js:
   development: 2018-04-19T08:08:41+01:00   427dfeff6721510c378f32ae56069342
 assets/theme.min.js.liquid:
-  development: 2018-04-30T18:00:59+01:00   74bceed5baac949ff5e59374459a1499
+  development: 2018-05-07T18:17:57+01:00   eeafdfa4cd76337ae1075ea7e967c892
 assets/theme.scss.liquid:
   development: 2018-04-19T08:08:41+01:00   1a96bb414d0d3f77809de23bdbefb8c1
 config/settings_data.json:
@@ -152,7 +152,7 @@ sections/collection-list.liquid:
 sections/collection-template.liquid:
   development: 2018-04-19T08:08:31+01:00   9ac477a9a0710900381484ed1c836004
 sections/custom-content.liquid:
-  development: 2018-04-19T08:08:31+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
+  development: 2018-05-07T19:01:23+01:00   b453a1ed59b502c58684192efe804c28
 sections/feature-row.liquid:
   development: 2018-04-19T08:08:31+01:00   1f7843dd44ef8fe1598c81beed3e08e6
 sections/featured-blog.liquid:
@@ -168,7 +168,7 @@ sections/footer.liquid:
 sections/gallery.liquid:
   development: 2018-04-19T08:08:31+01:00   1f80893b2232040167fbb6f820d20ce8
 sections/header.liquid:
-  development: 2018-05-07T18:11:22+01:00   9b093da0b99f32bf00ba3c79437751d4
+  development: 2018-05-07T18:36:50+01:00   9b093da0b99f32bf00ba3c79437751d4
 sections/hero.liquid:
   development: 2018-04-19T08:08:32+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/highlight.liquid:
@@ -178,7 +178,7 @@ sections/list-collections-template.liquid:
 sections/map.liquid:
   development: 2018-04-19T08:08:32+01:00   fa3b143be46e2f58c643cd77a356b82a
 sections/newsletter.liquid:
-  development: 2018-04-19T08:08:32+01:00   36dc30d4a9e81ac9dda885e886a62beb
+  development: 2018-05-07T20:44:50+01:00   b32766a3350db7703d9587deba8d0a6b
 sections/password-content.liquid:
   development: 2018-04-19T08:08:32+01:00   84489e557fd049d29d0c0c9aa37fcdd1
 sections/password-footer.liquid:
@@ -200,11 +200,11 @@ sections/ph-custom-content-6.liquid:
 sections/ph-custom-content-7.liquid:
   development: 2018-04-19T08:08:33+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
 sections/ph-feature-row-1.liquid:
-  development: 2018-05-01T17:26:42+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+  development: 2018-05-07T20:57:26+01:00   9f59a1260877a45b96dd79a3a3d3a9db
 sections/ph-feature-row-2.liquid:
   development: 2018-05-01T17:26:41+01:00   1f7843dd44ef8fe1598c81beed3e08e6
 sections/ph-feature-row-3.liquid:
-  development: 2018-05-01T17:26:41+01:00   1f7843dd44ef8fe1598c81beed3e08e6
+  development: 2018-05-07T20:57:10+01:00   1f7843dd44ef8fe1598c81beed3e08e6
 sections/ph-featured-collection-1.liquid:
   development: 2018-05-02T12:29:58+01:00   65e7971046107053a6d93889018f7078
 sections/ph-featured-slider-1.liquid:
