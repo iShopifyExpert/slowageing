@@ -168,7 +168,7 @@ sections/footer.liquid:
 sections/gallery.liquid:
   development: 2018-04-19T08:08:31+01:00   1f80893b2232040167fbb6f820d20ce8
 sections/header.liquid:
-  development: 2018-05-04T13:10:17+01:00   9b093da0b99f32bf00ba3c79437751d4
+  development: 2018-05-07T18:11:22+01:00   9b093da0b99f32bf00ba3c79437751d4
 sections/hero.liquid:
   development: 2018-04-19T08:08:32+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/highlight.liquid:
