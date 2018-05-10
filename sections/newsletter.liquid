@@ -51,7 +51,8 @@
         <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ section.settings.heading | escape }}" name="contact[email]" class="input-group__field" id="EmailField{{ section.id }}" aria-label="{{ 'general.newsletter_form.newsletter_placeholder' | t }}" autocorrect="off" autocapitalize="off">
         <div class="input-group__btn input-group__btn--newsletter">
           <button type="submit" class="btn" tabindex="-1">
-            {{ 'sections.newsletter.submit' | t }}
+            {% comment %}{{ 'sections.newsletter.submit' | t }}{% endcomment %}
+            Join
           </button>
         </div>
       </div>
