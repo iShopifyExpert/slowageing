@@ -320,6 +320,9 @@ h2,
     display: none;
 }
 /*ADDED BY ROUSNAY*/
+html, body, .site-header__wrapper {
+    background-color: #f3f2ed!important;
+}
 .hidden {
     opacity: 0;
 }
@@ -515,12 +518,57 @@ span.sa-sptext {
     font-size: 4rem;
     /*line-height: 1;*/
 }
+
+div#shopify-section-ab-gallery-1 .image-bar__item{
+    transition: inherit;
+}
+div#shopify-section-ab-gallery-1 .image-bar__text{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    transform:none;
+}
+div#shopify-section-ab-gallery-1 .sa-carousel{
+    overflow: hidden; 
+     -webkit-transition: none;
+    -o-transition: none;
+     transition:none; 
+     will-change: none;
+}
+div#shopify-section-ab-gallery-1 .image-bar__text.hidden.visible{
+    height: auto;
+}
+div#shopify-section-ab-gallery-1 .sa-carousel-slide{
+    position: relative;
+    top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    right: 0;
+    float: right;
+}
 span.sa-quote {
     color: #f2a900;
     font-size: 65px;
     line-height: 1rem;
     vertical-align: middle;
     /*vertical-align: -webkit-baseline-middle;*/
+}
+div#shopify-section-1525986480938 .newsletter-wrapper {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+div#shopify-section-1526030458888 .page-width {
+    max-width: 1500px;
+}
+div#shopify-section-1526030458888 h2.hero__overlay-title {
+    text-align: center;
+    width: 287px;
+    font-size: 4.5rem;
+    float: left;
+}
+div#shopify-section-1526030458888 h2.hero__overlay-title::after{
+    content: none;
 }
 div#shopify-section-ab-custom-content-1 .custom__item.custom__item--1525189246237.small--one-whole.medium-up--one-half.align--center {
     padding-right: 20px;
@@ -564,6 +612,12 @@ div#shopify-section-st-custom-content-2 .custom__item.custom__item--152500521220
 #shopify-section-st-feature-row-1 h2.feature-row__heading::after {
     background-color: #ffffff;
 }
+#shopify-section-1523369205555 .custom__item {
+    margin: 0 0 60px;
+}
+/*.shopify-section.index-section .featured-collection .card-list {
+    margin-bottom: 0;
+}*/
 .shopify-section.index-section .featured-blog {
     /*padding: 0 0 80px;*/
 }
@@ -739,6 +793,10 @@ div#shopify-section-1523379697526 .page-width{
     width: 100%;
     margin: 0 auto;
 }
+.shopify-section.index-section .custom-content-wrapper .custom__item{
+    margin: 10px 0;
+}
+        
 /*custom text style*/
 div#shopify-section-ab-gallery-1 .image-bar__text.hidden.visible {
     height: 70%;
@@ -1023,6 +1081,13 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         {
             font-size: 8rem;
         }
+        div#shopify-section-1526030458888 h2.hero__overlay-title {
+            width: 350px;
+            font-size: 8rem;
+        }
+        div#shopify-section-1526030458888 span.sa-quote {
+            font-size: 100px;
+        }
     }
 
 
@@ -1045,6 +1110,9 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         }
         .burger-icon--bottom {
             top: 27px;
+        }
+        .custom-content-wrapper--bottom-margin {
+            padding-bottom: 80px;
         }
         #shopify-section-ph-feature-row-1 .feature-row__text {
             padding: 200px 40px;
@@ -1155,6 +1223,13 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         div#shopify-section-st-gallery-2 .image-bar__flex:last-child{
             width: 100%;
             flex: 1 1 auto;
+        }
+        div#shopify-section-1526030458888 h2.hero__overlay-title {
+            width: 200px;
+            font-size: 3rem;
+        }
+        div#shopify-section-1526030458888 span.sa-quote {
+            font-size: 35px;
         }
     }
 
@@ -1434,6 +1509,10 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         }
         div#shopify-section-st-hero-4 span.sa-quote,  div#shopify-section-st-hero-7 span.sa-quote{
             font-size: 40px;
+        }
+        div#shopify-section-1526030458888 h2.hero__overlay-title {
+            width: 150px;
+            font-size: 2rem;
         }
     }
 
