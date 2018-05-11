@@ -329,6 +329,92 @@ html, body, .site-header__wrapper {
 .visible {
     opacity: 1!important;
 }
+.slideshow__buttons, button.slideshow__button--next, button.slideshow__button--previous {
+    display: none;
+}
+.slideshow__slide {
+    transition: none;
+        transition: none;
+    animation: fadeout 2s;
+    -moz-animation: fadeout 2s; /* Firefox */
+    -webkit-animation: fadeout 2s; /* Safari and Chrome */
+    -o-animation: fadeout 2s; /* Opera */
+}
+.slideshow__slide--active{
+    transition: none;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
 .site-header-sections .site-header__section-right {
     /*display: block;*/
     -webkit-box-align: center;
@@ -464,6 +550,11 @@ span.site-header__logo-text {
 .feature-row.feature-row--product-video-popup h2 {
 color: #ffffff;
 }
+
+.custom-content-wrapper--ab-custom-content-1 .custom__item--1525189246237 .custom__block-heading-text::after{
+ content: none;
+}
+
 button.product__add-to-cart-button, span.product-quantity-button {
     line-height: 2.1;
 }
@@ -1088,6 +1179,14 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         div#shopify-section-1526030458888 span.sa-quote {
             font-size: 100px;
         }
+        #shopify-section-ph-feature-row-1 .feature-row__heading {
+            font-size: 8rem;
+            line-height: 1.125;
+            text-align: center;
+        }  
+        #shopify-section-ph-feature-row-1 span.sa-quote {
+            font-size: 110px;
+        }
     }
 
 
@@ -1096,6 +1195,14 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         div#shopify-section-st-hero-7 .page-width.text-center {
             width: 400px;
         }
+        #shopify-section-ph-feature-row-1 .feature-row__heading {
+            font-size: 6rem;
+            line-height: 1.125;
+            text-align: center;
+        } 
+        #shopify-section-ph-feature-row-1 span.sa-quote {
+            font-size: 80px;
+        } 
     }
 
     @media only screen and (min-width: 750px){
@@ -1114,16 +1221,16 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         .custom-content-wrapper--bottom-margin {
             padding-bottom: 80px;
         }
+        .slideshow__nav {
+            display: flex;
+            height: 35px;
+        }
         #shopify-section-ph-feature-row-1 .feature-row__text {
             padding: 200px 40px;
             margin: 0 auto;
-            max-width: 650px;
+            /*max-width: 650px;*/
+            max-width: 900px;
         }
-        #shopify-section-ph-feature-row-1 .feature-row__heading {
-            /*font-size: 6rem;*/
-            /*line-height: 1.125;*/
-            text-align: center;
-        }  
         .shopify-section.index-section .featured-blog {
             /*padding: 0 0 100px;*/
         }
@@ -1310,6 +1417,9 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
         }
         .custom-content-wrapper--bottom-margin {
             padding-bottom: 60px;
+        }
+        div#shopify-section-1525986480938 .newsletter-wrapper {
+            padding-top: 60px;
         }
         #shopify-section-st-feature-row-2 .featured-row__subtext {
             margin-top: 0;

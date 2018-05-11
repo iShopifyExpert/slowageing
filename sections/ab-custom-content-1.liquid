@@ -78,8 +78,7 @@
 
                 <div class="text-{{ block.settings.align_text }}">
                   {% if block.settings.heading_text != blank %}
-                  <h2 class="custom__block-heading-text sa-separator" data-animate>Environmentally aware</h2>
-                    <h2 class="custom__block-heading-text {{ block.settings.heading_style }}">{{ block.settings.heading_text | escape }}</h2>
+                    <h2 class="custom__block-heading-text {{ block.settings.heading_style }} sa-separator" data-animate>{{ block.settings.heading_text | escape }}</h2>
                   {% endif %}
                   {% if block.settings.paragraph_text != blank %}
                     <div class="custom__block-body-text rte-setting">{{ block.settings.paragraph_text }}</div>

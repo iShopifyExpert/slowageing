@@ -4,9 +4,9 @@ assets/animate.css:
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-05-11T16:31:39+01:00   0278010006437a18621f505df3a44605
+  development: 2018-05-11T19:44:04+01:00   985b47bc89bd1dc402e81a72f8bb27ab
 assets/custom.js.liquid:
-  development: 2018-05-11T12:51:07+01:00   36a63a9cfb00e80bedd09fbe36a92623
+  development: 2018-05-11T19:30:14+01:00   a30b825642cab2199f697c542326df76
 assets/ico-select.svg.liquid:
   development: 2018-04-19T08:08:39+01:00   765be6d2ef08d76aa0f1aab48a10e2b7
 assets/lazysizes.min.js.liquid:
@@ -30,7 +30,7 @@ assets/slow-ageing-essentials-logo-white.png:
 assets/theme.asset.js:
   development: 2018-04-19T08:08:41+01:00   427dfeff6721510c378f32ae56069342
 assets/theme.min.js.liquid:
-  development: 2018-05-07T18:17:57+01:00   eeafdfa4cd76337ae1075ea7e967c892
+  development: 2018-05-11T16:56:43+01:00   9fe10b0747c2e92cb7d0b2fd8065870f
 assets/theme.scss.liquid:
   development: 2018-04-19T08:08:41+01:00   1a96bb414d0d3f77809de23bdbefb8c1
 config/settings_data.json:
@@ -60,7 +60,7 @@ locales/pt-BR.json:
 locales/pt-PT.json:
   development: 2018-04-19T08:11:30+01:00   65e446a311dac4747fa105feef783651
 sections/ab-custom-content-1.liquid:
-  development: 2018-05-04T20:31:13+01:00   202b06a8bd15b2f852d0d2f234394261
+  development: 2018-05-11T18:22:12+01:00   845c799c2cccbb0bb578fbacd2efcfe5
 sections/ab-custom-content-2.liquid:
   development: 2018-04-26T11:50:05+01:00   0fe7dc101b4eb8d2c690badcaf3a73dd
 sections/ab-custom-content-3.liquid:
@@ -280,7 +280,7 @@ sections/rich-text.liquid:
 sections/sa-article-template.liquid:
   development: 2018-04-19T09:33:02+01:00   f9fc8b1a796fd0fa516107ee8046d46e
 sections/sa-blog-template.liquid:
-  development: 2018-05-10T09:46:38+01:00   9f4f85bfc4cde3f63caaa4ec8f055962
+  development: 2018-05-11T18:09:44+01:00   b4ea1d96ddb4bc56ed4317352625beef
 sections/search-template.liquid:
   development: 2018-04-19T08:08:35+01:00   e51ed1cae46013c9cd4fdbc8e33daaa7
 sections/slideshow.liquid:
@@ -568,7 +568,7 @@ snippets/sa-article-last.liquid:
 snippets/sa-article-list.liquid:
   development: 2018-04-20T23:12:29+01:00   26097ab5e10e80239d3e09f62db5a683
 snippets/sa-article-related.liquid:
-  development: 2018-04-20T12:00:26+01:00   25c5f069249fb6fea98e26f1546679f0
+  development: 2018-05-11T17:53:14+01:00   434ae01d95e9a76605e5b4b0718cd75d
 snippets/sa-card-image-last.liquid:
   development: 2018-04-19T19:47:40+01:00   3652f055732dcd2b507eefcdc9baeb92
 snippets/sa-card-image-recent.liquid:

@@ -1,6 +1,6 @@
 <style>
 .blog-tags {
-  margin-top: 70px;
+  margin-top: 50px;
   text-align: center;
   font-size: 15px;
   text-transform: uppercase;
@@ -8,7 +8,7 @@
 .blog-tags a{
   /*color: #244b5a;*/
   padding: 5px 10px;
-  color: #002f3c;
+  color: #2a5b6c;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -31,7 +31,7 @@ header h2.custom-content__section-header.text-center {
   margin-top: 20px;
 }
 .section-header--small {
-  margin: 50px 0 90px;
+  margin: 50px 0;
 }
 .post-list > div {
   overflow: hidden;
@@ -67,10 +67,10 @@ header h2.custom-content__section-header.text-center {
   padding-left: 20px;
 }
 .post-list-recent .card__image-wrapper {
-  width: 110.45px;
+  width: auto;
 }
 .post-list-recent a.card__wrapper {
-  display: inline-flex;
+  display: flex;
 }
 .post-list-recent a.card__wrapper .card__image{
   position: initial;
@@ -176,7 +176,7 @@ header h2.custom-content__section-header.text-center {
     </div>
 
     <header class="section-header section-header--small text-center">
-      <h1 class="section-header__title h2">{{ page_title }}</h1>
+      <h1 class="section-header__title h2 sa-separator" data-animate>{{ page_title }}</h1>
       {% if section.settings.heading_text != blank %}
       <h2 class="custom-content__section-header text-center">{{ section.settings.heading_text | escape }}</h2>
       {% endif %}
