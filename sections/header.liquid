@@ -157,10 +157,10 @@
       </style>
       <div class="site-header__section site-header__section--button site-header__section-right">
         {% if customer %}
-          <a href="/account" class="btn btn--clear btn--square btn--hover-scale site-header__login" aria-expanded="false">
+          <a href="/account/logout" class="btn btn--clear btn--square btn--hover-scale site-header__login" aria-expanded="false">
           {%- assign icon = 'icon-user' %}
           {% include icon %}
-          <span class="icon__fallback-text">{{ 'layout.customer.log_out' | t }}</span>
+          <span class="icon__fallback-text">{{ 'layout.customer.log_in' | t }}</span>
         {% else %}
           <a href="/account" class="btn btn--clear btn--square btn--hover-scale site-header__login" aria-expanded="false">
           {%- assign icon = 'icon-user' %}

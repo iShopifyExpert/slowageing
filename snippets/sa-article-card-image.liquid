@@ -1,4 +1,4 @@
-{% assign img_url = type | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+{% assign img_url = type | img_url: '600x400', crop: 'center' %}
 
 {% if grid_style == 'grid' %}
    <div class="card__image-wrapper card__image-wrapper--aligned">

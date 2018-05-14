@@ -89,7 +89,8 @@
     {% if section.settings.show_view_all %}
       <div class="featured-blog__view-all">
         <a href="{{ blog.url }}" class="btn{% if section.settings.use_second_button %} btn--secondary{% endif %}">
-          {{ 'collections.general.view_all' | t }}
+          {% comment %}{{ 'collections.general.view_all' | t }}{% endcomment %}
+          Visit the Slow Community
         </a>
       </div>
     {% endif %}
@@ -165,7 +166,7 @@
     {
       "type": "checkbox",
       "id": "show_view_all",
-      "label": "Show 'View all' button",
+      "label": "Show 'Visit the Slow Community' button",
       "default": false
     },
     {

@@ -17,6 +17,7 @@
         data-sizes="auto"
         alt="{{ type.alt | escape }}"
         data-variant-image>
+      <div class="p-overlay"><span>Purchase</span></div>
   </div>
 {% else %}
   <div class="card__image-wrapper" style="padding-top:{{ 1 | divided_by: type.aspect_ratio | times: 100}}%">
@@ -28,9 +29,10 @@
       data-sizes="auto"
       alt="{{ type.alt | escape }}">
 
-    <noscript>
-      {% assign card_image = type | img_url: '1024x1024' %}
-      <img src="{{ card_image }}" alt="{{ type.alt | escape }}" class="card__image">
-    </noscript>
+      <noscript>
+        {% assign card_image = type | img_url: '1024x1024' %}
+        <img src="{{ card_image }}" alt="{{ type.alt | escape }}" class="card__image">
+      </noscript>
+    <div class="p-overlay"><span>Purchase</span></div>
   </div>
 {% endif %}
