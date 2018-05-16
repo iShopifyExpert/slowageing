@@ -332,7 +332,7 @@ html, body, .site-header__wrapper {
 .slideshow__buttons, button.slideshow__button--next, button.slideshow__button--previous {
     display: none;
 }
-.slideshow__slide {
+.sa-slide {
     transition: none;
         transition: none;
     animation: fadeout 2s;
@@ -439,6 +439,11 @@ html, body, .site-header__wrapper {
         min-height: fit-content;
         max-width: 100%;
         margin: 0 auto;
+        background-color: #f3f2ed;
+/*        background-image: url(banner-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;*/
     }
     body.template-index .slideshow .slideshow__slides{
       position: relative;

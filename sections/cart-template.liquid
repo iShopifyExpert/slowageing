@@ -25,6 +25,28 @@
   </div>
 
   <form action="/cart" method="post" novalidate class="cart__form">
+
+
+{% comment %}{% if cart.total_price >= 22000 %}
+    <input class="js-form-discount" type="hidden" name="discount" value="COLLECTION_FREE_SHIPPING_PLUS_GIFT" >
+{% endif %}{% endcomment %}
+
+    {% comment %}{% if customer.tags contains 'newsletter' %}   <input type="hidden" name="discount" value="FREE_SHIPPING_PLUS_GIFT" >   {% endif %}{% endcomment %}
+
+{% if customer.total_spent >= 100000 %}
+
+    <input class="js-form-discount" type="hidden" name="discount" value="DISCOUNT_10" >
+
+{% elsif customer.total_spent >= 22000 %}
+
+    <input class="js-form-discount" type="hidden" name="discount" value="FREE_SHIPPING_PLUS_GIFT" >
+
+{% elsif cart.total_price >= 22000 %}
+
+    <input class="js-form-discount" type="hidden" name="discount" value="COLLECTION_FREE_SHIPPING_PLUS_GIFT" >
+
+{% endif %}
+
     <table class="cart__table">
       <thead class="cart__table-header border-bottom">
         <th class="text-left" colspan="2">{{ 'cart.label.product' | t }}</th>
@@ -126,6 +148,9 @@
                   <p class="cart-item__discount text-small{% if discount == 'template' %} ajax-cart__template{% endif %}" data-cart-item-discount>{{ discount.title }}</p>
                 {% endfor %}
               </div>
+
+{% comment %}<div class="tabarnapp_discount_applied" style="display:none;"> A discount of <em>${discount_amount}</em> from <em>${discount_code}</em> coupon will be applied at checkout. </div>  {% endcomment %}
+
 
               <p class="small--hide">
                 <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small btn--clear btn--primary-color cart-item__remove" data-cart-item-delete>{{ 'cart.general.remove' | t }}</a>
