@@ -554,7 +554,53 @@ color: #ffffff;
 .custom-content-wrapper--ab-custom-content-1 .custom__item--1525189246237 .custom__block-heading-text::after{
  content: none;
 }
-
+.custom-content-wrapper--1526322472136 {
+    padding: 50px 0;
+}
+.sa-emailForm {
+    width: 100%;
+    height: auto;
+    float: none;
+    clear: both;
+    overflow: auto;
+}
+.sa-emailForm > div {
+    width: 50%;
+    float: left;
+}
+.sa-email{
+    padding-left: 15px;
+}
+.sa-emailForm label{
+    width: 80px;
+    float: left;
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-family: 'scotch_roman_mtregular'!important;
+}
+.sa-emailForm input{
+    width: calc( 100% - 80px );
+    float: left;
+    padding: 5px;
+}
+.sa-emailFormInfo .sa-formTerms {
+    width: calc( 100% - 100px );
+    float:left;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+.sa-emailFormInfo .sa-formSubmit {
+     text-align: right;
+    float: right;
+    width: 100px;
+    margin-top: -7px;
+}
+.sa-emailFormInfo .sa-formSubmit input{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 15px;
+}
 button.product__add-to-cart-button, span.product-quantity-button {
     line-height: 2.1;
 }
@@ -917,7 +963,10 @@ div#shopify-section-ab-custom-content-1 .custom__block-body-text p {
     padding: 5px 0px 5px 30px;
     margin: 0 0 12px;
 }
-
+div#shopify-section-st-feature-row-2 .featured-row__subtext p:last-child{
+    background-image: none!important;
+    padding-left: 0!important;
+}
 /*custom text style*/
 div#shopify-section-ab-gallery-1 .image-bar__text.hidden.visible {
     height: 70%;
@@ -1624,6 +1673,13 @@ div#shopify-section-ab-gallery-1 h3.h2.text-title.image-bar__caption {
             max-width: 100%;
             width: 100%;
             left: 0;
+        }
+        .sa-emailForm > div {
+            width: 100%;
+            float: left;
+        }
+        .sa-email {
+            padding-left: 0px;
         }
     }
 

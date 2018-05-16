@@ -4,9 +4,9 @@ assets/animate.css:
 assets/collection-feature-img.jpg:
   development: 2018-04-23T20:27:52+01:00   3f727e1ee5c3d3d5adac03d549eb4347
 assets/custom.css:
-  development: 2018-05-14T19:56:53+01:00   ae8f22724e7c9fb62be5c7cc3404572c
+  development: 2018-05-16T10:00:46+01:00   2b16d1790ea157369b877391b2463f9b
 assets/custom.js.liquid:
-  development: 2018-05-14T20:35:20+01:00   8fa22bd7ac6c40c42f997e23700d3842
+  development: 2018-05-16T10:00:41+01:00   51f4f3c91563a802748fdda25aad0484
 assets/ico-select.svg.liquid:
   development: 2018-04-19T08:08:39+01:00   765be6d2ef08d76aa0f1aab48a10e2b7
 assets/lazysizes.min.js.liquid:
@@ -172,7 +172,7 @@ sections/footer.liquid:
 sections/gallery.liquid:
   development: 2018-04-19T08:08:31+01:00   1f80893b2232040167fbb6f820d20ce8
 sections/header.liquid:
-  development: 2018-05-13T13:43:47+01:00   46821e66e7e20a193bb51ba60bb0195c
+  development: 2018-05-16T10:13:23+01:00   a911e3a239c718b5305c7cec7cc95b15
 sections/hero.liquid:
   development: 2018-04-19T08:08:32+01:00   4486bb5fbd9d6babb388820372c5fa21
 sections/highlight.liquid:
