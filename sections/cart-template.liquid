@@ -33,9 +33,26 @@
 
     {% comment %}{% if customer.tags contains 'newsletter' %}   <input type="hidden" name="discount" value="FREE_SHIPPING_PLUS_GIFT" >   {% endif %}{% endcomment %}
 
-{% if customer.total_spent >= 100000 %}
 
-    <input class="js-form-discount" type="hidden" name="discount" value="DISCOUNT_10" >
+
+    {% if customer.tags contains 'VIP_DISCOUNT' %}
+
+         <input class="js-form-discount" type="hidden" name="discount" value="VIP_DISCOUNT" >
+
+    {% elsif customer.total_spent >= 22000 or customer.tags contains 'VIP_FREE-SHIPPING_AND_GIFTBAG' %}
+
+    <input class="js-form-discount" type="hidden" name="discount" value="VIP_FREE-SHIPPING_AND_GIFTBAG" >
+
+    {% elsif cart.total_price >= 22000 %}
+
+        <input class="js-form-discount" type="hidden" name="discount" value="FREE-SHIPPING_AND_GIFTBAG" >
+
+    {% endif %}
+
+
+{% comment %}{% if customer.total_spent >= 050 %}
+
+    <input class="js-form-discount" type="hidden" name="discount" value="DISCOUNT_05" >
 
 {% elsif customer.total_spent >= 22000 %}
 
@@ -45,7 +62,7 @@
 
     <input class="js-form-discount" type="hidden" name="discount" value="COLLECTION_FREE_SHIPPING_PLUS_GIFT" >
 
-{% endif %}
+{% endif %}{% endcomment %}
 
     <table class="cart__table">
       <thead class="cart__table-header border-bottom">
@@ -213,6 +230,7 @@
       </div>
     </footer>
   </form>
+  {% comment %}{{ shipping_method.title }}{% endcomment %}
 </div>
 
 {% schema %}

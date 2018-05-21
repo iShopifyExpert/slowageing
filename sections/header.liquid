@@ -19,6 +19,33 @@
     }
   </style>
 {% endif %}
+
+
+
+
+
+ {% if customer.tags contains 'VIP_DISCOUNT' %}
+
+    <div class="discount-bar bar-VVIP">
+      <p>As a VIP member receive <b>10%</b> discount on all products and <b>FREE SHIPPING</b> with your order</p>
+    </div>
+
+ {% elsif customer.total_spent >= 22000 or customer.tags contains 'VIP_FREE-SHIPPING_AND_GIFTBAG' %}
+    <div class="discount-bar bar-VIP">
+      <p>As a VIP member receive a gift bag and <b>FREE SHIPPING</b> with your order</p>
+    </div>
+
+{% else %}
+
+    <div class="discount-bar bar-collection">
+      <p>Purchase the collection & receive a gift bag and <b>FREE SHIPPING</b></p>
+    </div>
+
+{% endif %}
+
+
+
+
 <div class="site-header{% if section.settings.enable_transparent and template.name == 'index' %} site-header--transparent{% endif %}{% if template.name == 'index' %} site-header--homepage{% endif %}" data-section-id="{{ section.id }}" data-section-type="header-section" data-drawer-push>
   <header class="site-header__wrapper">
     {% if section.settings.show_announcement %}
