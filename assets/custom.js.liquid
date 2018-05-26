@@ -1545,7 +1545,7 @@ function getParameterByName(name, url) {
 
 // This must be added to your checkout form 
 // <input class="js-form-discount" type="hidden" name="discount" value="RESELLERDISCOUNTCODE" >
-$discountInput = $("input.js-form-discount");
+$discountInput = $("input#js-form-discount");
 
 // set cookie with passed in coupon code to any URL
 $coupon = getParameterByName('coupon');
@@ -1570,6 +1570,7 @@ if($discountCode){
 
 // $('input:radio[name="checkout[shipping_rate][id]"][value="shopify-Free%20Shipping-0.00"]').prop('checked', false);
 // $('input:radio[name="checkout[shipping_rate][id]"][value="shopify-Standard%20Shipping-7.50"]').prop('checked', true);
-
+// element.style.display = "none";
+// element.style..setProperty("display", "none", "important");
 
 });
