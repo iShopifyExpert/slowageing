@@ -213,19 +213,29 @@
         {% if section.settings.cart_notes_enable %}
           <div class="grid__item medium-up--one-half cart-note">
             <label for="CartSpecialInstructions" class="cart-footer__note-label small--text-center">{{ 'cart.general.note' | t }}</label>
-            <textarea name="note" id="CartSpecialInstructions" class="cart-footer__note-input" rows="4" data-cart-note>{{ cart.note }}</textarea>
+            <textarea name="note" id="CartSpecialInstructions" placeholder="Message" class="cart-footer__note-input" rows="4" data-cart-note>{{ cart.note }}</textarea>
           </div>
         {% endif %}
 
         <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable %} medium-up--one-half{% endif %}">
-          <p>
-            <span class="cart__subtotal-title h4">{{ 'cart.general.subtotal' | t }}</span>
-            <span class="cart-footer__subtotal" data-cart-subtotal><span class="fox-original-cart-total"><span id="member-pricing-total" >{{cart.total_price | money}}</span></span><span class="fox-cart-total"></span><div class="additional-notes"><span class="fox-minimums-note"></span><span class="fox-extra-note "></span></div></span>
+          <p class="cart__subtotal-wrap">
+            <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
+            <span class="cart-footer__subtotal" data-cart-subtotal>
+              <span class="fox-original-cart-total">
+                <span id="member-pricing-total" ><span id="bk-cart-subtotal-price">{{cart.total_price | money}}</span></span>
+              </span>
+<!--               <span class="fox-cart-total">
+              </span>
+              <div class="additional-notes">
+                <span class="fox-minimums-note"></span>
+                <span class="fox-extra-note "></span>
+              </div> -->
+            </span>
           </p>
           <p class="text-small">{{ 'cart.general.shipping_at_checkout' | t }}</p>
           <div class="btn-group">
             <input type="submit" name="update" class="btn btn--secondary supports-no-js supports-js--hide" value="{{ 'cart.general.update' | t }}">
-            <button type="submit" name="checkout" class="btn btn--loader" data-cart-submit>
+            <button type="submit" name="checkout" class="btn btn-checkout btn--loader" data-cart-submit>
               {{ 'cart.general.checkout' | t }}
               <span class="btn--loader-balls"></span>
             </button>

@@ -1,57 +1,64 @@
 <style type="text/css">
   .product__add-to-cart-div {
-    max-width: 250px;
-}
-.product__add-to-cart-div .btn, .product__add-to-cart-div .btn--secondary{
-  padding: 0px 15px;
+    max-width: 265px;
+  }
+  .product__add-to-cart-div .btn, .product__add-to-cart-div .btn--secondary{
+    padding: 0px 10px;
 
-}
-.product__add-to-cart-div .product-quantity-button {
+  }
+  .product__add-to-cart-div .product-quantity-button {
     background-color: #f5a801;
-}
-.product__add-to-cart-div .product-quantity-button:hover:after {
+  }
+  .product__add-to-cart-div .product-quantity-button:hover:after {
     outline-color: #f5a801;
-}
-h2.h3.feature-row__heading_sub::after {
+  }
+  h2.h3.feature-row__heading_sub::after {
     margin-top: 5px;
-}
-.product__accordion .product__accordion-title {
+  }
+  .product__accordion .product__accordion-title {
     width: max-content;
     font-weight: normal;
-}
-.product__accordion p.product__accordion-title span.deactived,
-.product__accordion.active p.product__accordion-title span.actived{
-  display: inline-block;
-  color: #677980;
-  padding-left: 5px;
-  font-weight: normal;
-}
-.product__accordion.active p.product__accordion-title span.deactived,
-.product__accordion p.product__accordion-title span.actived{
-  display: none;
-}
-.product__accordion p.product__accordion-title:after{
-  content: ' ';
-}
-.product__accordion.active p.product__accordion-title:after{
-  content: ' ';
-  display: block;
-  width: 0;
-  height: 3px;
-  background-color: #f5a801;
-  transition: width 0.5s ease-out;
-  margin: 0 0 0;
-  margin-top: 5px;
-}
+  }
+  .product__accordion p.product__accordion-title span.deactived,
+  .product__accordion.active p.product__accordion-title span.actived{
+    display: inline-block;
+    color: #677980;
+    padding-left: 5px;
+    font-weight: normal;
+  }
+  .product__accordion.active p.product__accordion-title span.deactived,
+  .product__accordion p.product__accordion-title span.actived{
+    display: none;
+  }
+  .product__accordion p.product__accordion-title:after{
+    content: ' ';
+  }
+  .product__accordion.active p.product__accordion-title:after{
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #f5a801;
+    transition: width 0.5s ease-out;
+    margin: 0 0 0;
+    margin-top: 5px;
+  }
 
-input[type="number"].product-form__quantity-input {
+  input[type="number"].product-form__quantity-input {
     margin-bottom: 0;
     padding: 0;
-}
-form.product-form {
+  }
+  form.product-form {
     margin-bottom: 40px;
     margin-top: -15px;
-}
+  }
+  
+  @media screen and (max-width: 767px){
+    .product__add-to-cart-div {
+      margin: 0 auto;
+    }
+    .product__accordion .product__accordion-title{width:100%;}
+  }
 </style>
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {%- assign current_variant_sale = false -%}
@@ -121,6 +128,7 @@ form.product-form {
 				
             {% include 'product-form' %}
 
+            {% unless product.handle == 'gift-card' %}
             <div class="product__accordion active" data-accordion>
               <p class="product__accordion-title" data-animate>Results And Benefits <span class="actived">[-]</span><span class="deactived">[+]</span></p> 
               <div class="product__accordion-desc">{{product.metafields.product.result}}</div>
@@ -130,14 +138,16 @@ form.product-form {
               <p class="product__accordion-title" data-animate>Ingredients <span class="actived">[-]</span><span class="deactived">[+]</span> </p>
               <div class="product__accordion-desc">{{product.metafields.product.ingredient}}</div>
             </div>
-
-            <div class="product__accordion" data-accordion>
-              <p class="product__accordion-title" data-animate>Reviews <span class="actived">[-]</span><span class="deactived">[+]</span> </p>
-              <div class="product__accordion-desc">{{product.metafields.product.reviews}}</div>
+			
+            {% comment %}
+            <div class="product__accordion review_click">
+              <p class="product__accordion-title" >Reviews <span class="actived">[-]</span><span class="deactived">[+]</span> </p>
+              {% comment %}<!-- <div class="product__accordion-desc">{{product.metafields.product.reviews}}</div> -->{% endcomment %}
             </div>
+            {% endcomment %}
+			{% endunless %}
 
-
-{% comment %}            {% if section.settings.show_share_buttons %}
+			{% comment %} {% if section.settings.show_share_buttons %}
             {% if settings.share_facebook or settings.share_twitter or settings.share_pinterest %}
             <div class="product__share-wrapper small--hide">
               <div class="product__share">
@@ -145,7 +155,7 @@ form.product-form {
               </div>
             </div>
             {% endif %}
-            {% endif %}{% endcomment %}
+            {% endif %} {% endcomment %}
 
 
           </div>

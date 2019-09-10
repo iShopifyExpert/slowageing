@@ -1,3 +1,7 @@
+{%- comment %}<locksmith:b40b>{% endcomment -%}
+  {%- include 'locksmith' -%}
+{%- comment %}</locksmith:b40b>{% endcomment -%}
+
 {% if
   template.name == 'blog'
   or template.name == 'collection'
@@ -27,18 +31,24 @@
   </title>
 
   {% if page_description %}
-    <meta name="description" content="{{ page_description | escape }}">
+    {%- comment %}<locksmith:bffe>{% endcomment -%}
+      {%- include 'locksmith-variables', locksmith_hiding_scope: 'resource' %}{% if locksmith_transparent %}<meta name="description" content="{{ page_description | escape }}">{% endif -%}
+      {%- comment %}original: <meta name="description" content="{{ page_description | escape }}">{%- endcomment %}
+    {%- comment %}</locksmith:bffe>{% endcomment -%}
   {% endif %}
 
   {% include 'social-meta-tags' %}
 
   {{ content_for_header }}
+{%- include 'bold-common' -%}
 
   {% include 'critical-css' %}
   {% include 'google-fonts' %}
   {% include 'load-css' %}
   {{ 'animate.css' | asset_url | stylesheet_tag }}
   {{ 'custom.css' | asset_url | stylesheet_tag }}
+  {{ 'magnific-popup.css' | asset_url | stylesheet_tag }}
+  {{ 'dynamic.css' | asset_url | stylesheet_tag }}
 
   <script>
     var theme = {
@@ -85,8 +95,19 @@
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.asset.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'theme.asset.js' | asset_url }}"></script><![endif]-->
 
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'jquery.magnific-popup.min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'custom.js' | asset_url }}"></script><![endif]-->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'custom.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'custom.js' | asset_url }}"></script><![endif]-->
+{% include "tabarnapp_cm" %}   {% include 'qikify-navigator' %}
+  {{ 'qikify-smartmenu-data.js' | asset_url | script_tag }}
+  <script type="text/javascript" src="{{ 'qikify-smartmenu-v3.min.js?shop=' | append: shop.permanent_domain | asset_url }}" defer="defer"></script>
+  
+
+  
+    {% include 'sca-quick-view-init' %}
+   {{ shop.metafields.theme.cdn_css }}
 </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | split: '.' | first | handle }} data-animations">
@@ -94,6 +115,7 @@
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
   {% section 'header' %}
+  {% section 'topbar-dd' %}
 
   <div class="main-content" data-drawer-push>
     <div class="main-content__wrapper">
@@ -103,15 +125,21 @@
       </main>
 
       {% section 'footer' %}
+      
+      <div id="newsletter-modal">
+        {% section 'newsletter' %}
+      </div>
+      
     </div>
   </div>
 
   {% include 'cart-drawer' %}
 
-
-      {% if customer.tags.size > 0 %}
-        {% include 'fox-wholesale' %}
-      {% endif %}
+  {% if customer.tags.size > 0 %}
+  {% include 'fox-wholesale' %}
+  {% endif %}
     
-{% include 'talon-member-banner' %}{% include 'talon-member-price-template' %}</body>
+  {% include 'talon-member-banner' %}{% include 'talon-member-price-template' %}
+  
+ <!-- BEEKETINGSCRIPT CODE START -->{% include 'bk-tracking' %}<!-- BEEKETINGSCRIPT CODE END --></body>
 </html>

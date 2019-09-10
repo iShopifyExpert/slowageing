@@ -1,11 +1,17 @@
+{%- if product.type == 'GSC_HIDDEN_PRODUCT' -%}{%- break -%}{%- endif -%}
 {% comment %}
   The contents of the product.liquid template can be found in /sections/product-template/
 {% endcomment %}
 
 {% section 'product-template' %}
-{% section 'product-video-popup' %}
-{% section 'product-featured-slider' %}
-{% section 'product-review' %}
+
+{% unless product.handle == 'gift-card' %}
+  {% section 'product-video-popup' %}
+  {% section 'product-featured-slider' %}
+  {% section 'product-review' %}
+{% endunless %}
+
+
 {% comment %}{% section 'highlight' %}{% endcomment %}
 {% section 'featured-collection' %}
 

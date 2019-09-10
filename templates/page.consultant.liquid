@@ -1,0 +1,54 @@
+<style>
+.page-consultant .hero__btn{
+    background-color:#fff;
+    color:#2a5b6c;
+    border-color:#2a5b6c;
+    font-size: 18px;
+    padding: 0px 30px;
+    letter-spacing: 0;
+    font-weight: 500;
+    height: 44px;
+    line-height: 42px;
+    margin-top:15px;
+    box-shadow:8px 8px 8px rgba(0,0,0,0.3);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+</style>
+
+<div class="page-width page-consultant">
+  <header class="section-header text-center">
+    <h1 class="section-header__title h2">{{ page.title }}</h1>
+  </header>
+  
+<!--   <link rel="stylesheet" type="text/css" media="screen" href="https://isdone.ru/consultant/consultant.css" /> -->
+   <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.shopify.com/s/files/1/0013/1566/8028/t/26/assets/consultant-v0.4.5.css" />
+
+  <!-- for recommendation page -->
+  <script 
+          type="text/javascript" 
+          src="https://cdn.shopify.com/s/files/1/0013/1566/8028/t/26/assets/consultant-v3.6.38.js" 
+          defer="defer">
+  </script>
+
+  <div class="grid">
+    <div class="grid__item medium-up--four-fifths medium-up--push-one-tenth">
+      <div class="rte">  
+        {{ page.content }}
+      </div>
+      <div class="text-center " id='consultant_holder' style="display:none">
+      	<a href="#" class="btn hero__btn consultant__btn_general">Start Consultatant</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">!(function(){
+  if (location.href.endsWith('slow-ageing-skin-consultation?dev=1')) {
+    var _holder = document.getElementById('consultant_holder');
+    _holder.style.display = 'inherit'
+  }
+})()
+</script>

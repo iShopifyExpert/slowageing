@@ -1,0 +1,173 @@
+<div class="page-width">
+  <header class="section-header text-center">
+    <h1 class="section-header__title h2">{{ page.title }}</h1>
+  </header>
+  <div class="grid">
+    <div class="grid__item medium-up--four-fifths medium-up--push-one-tenth">
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+
+	<p id="showResult" style="text-align: justify" title="Result">You have told us your skin is dry so it is really important to keep it well hydrated, 
+      protected and nourished with vitamins. A botanical moisturiser gives you the best of both worlds; 
+      protecting skin from daily aggressors like the elements and ageing free radicals as well as reducing 
+      moisture loss during the day and adding natural nourishment. Loaded with skin-loving vitamin E, 
+      the algae in Face Moisturiser is a superb natural humectant, attracting nourishment like a magnet to increase 
+      moisture levels. Laden with antioxidant vitamins B and C to boost collagen and fight pigmentation plus magnesium 
+      and zinc to strengthen and protect a weak epidermis, algae helps maintain cell membranes too. 
+      To give thirsty skin an extra boost you may need to commit to using a treatment - around 3 times 
+      a week is ideal. Loaded with botanical butters, Face Balm has been specially developed to nourish 
+      and repair the skin’s upper layers as well as work deeper down to help ‘feed’ healthy new cells where 
+      they are formed in the epidermis. With shea butter – a concentrated source of oleic essential fatty acid 
+      to encourage skin regeneration - cocoa seed butter, which is rich in phytochemicals and forms a protective 
+      barrier over fragile skin, plus ultra hydrating and smoothing hazelnut seed oil, it transforms dry skin overnight. 
+      Increase its moisture-drenching capacity by applying using our ‘Skin’ergy self-massage’.
+	</p>
+  
+  
+
+      
+	<div>
+      
+      <input id="yourName" class="form-control" type="text" placeholder="Your Name" value="">
+      <input id="yourEmail" class="form-control" type="email" placeholder="Email Address" value="">
+      <button id="submitButton" class="btn" type="submit" onclick="sendEmail()">Send Recommendation</button>
+    
+      <script>
+        function sendEmail() {
+          _AVESTA_ENVIRONMENT
+          var fullName = document.getElementById("yourName").value;
+          var email = document.getElementById("yourEmail").value;
+          let myData = {
+            "email_address": email,
+            "status": "subscribed",
+            "merge_fields": {
+              "full_name": fullName
+            }
+          };
+          var settings = {
+
+            "async": true,
+            "crossDomain": true,
+            "url": "https://us20.api.mailchimp.com/3.0/lists/287e6d6c5c/members",
+            "method": "POST",
+
+            "headers": {
+              "Content-Type": "application/json",
+              "Authorization": "Basic 75bf7c0da5a39a63607093dbd52d18dd-us20",
+              "Accept": "*/*",
+              "Host": "us20.api.mailchimp.com",
+              "Cookie": "_mcid=1.5f5c18481113b44ab50816c0084b29ed; _AVESTA_ENVIRONMENT=prod",
+              "Accept-Encoding": "gzip, deflate",
+              "Content-Length": "122",
+              "Connection": "keep-alive",
+              "cache-control": "no-cache"
+            },
+
+            "processData": false,
+
+            "data": json.stringify(myData);
+
+          }
+
+          $.ajax(settings).done(function (response) {
+            console.log(response);
+          });
+        }
+
+      </script>
+        
+	</div>
+  
+  	<script src="https://www.powr.io/powr.js?platform=shopify"></script>
+  	<div class="powr-form-builder" id="30b70daf_1564057699"></div>
+
+  	
+
+ <!--manually adding the products-->
+  <div class="card-list grid" data-desktop-columns="4" data-mobile-columns="1" data-grid-style="collage">
+  	
+    <!--product name: essential-facial-essence-->
+    <div class="card-list__column grid grid__item medium-up--one-quarter">
+
+      <div class="card critical-clear has-animated card--reveal" id="Card-638328111164" data-animate="">
+        
+<!--         <div class="card__image-wrapper" style="padding-top:100.0%">
+          <div class="card__preloader"></div>
+          <img class="card__image fade-in lazyautosizes lazyloaded" data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="Essential Facial Essence" data-srcset="//cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_180x.jpg?v=1527295300 180w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_220x.jpg?v=1527295300 220w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_300x.jpg?v=1527295300 300w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_360x.jpg?v=1527295300 360w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_460x.jpg?v=1527295300 460w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_540x.jpg?v=1527295300 540w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_720x.jpg?v=1527295300 720w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_900x.jpg?v=1527295300 900w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1080x.jpg?v=1527295300 1080w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1296x.jpg?v=1527295300 1296w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1512x.jpg?v=1527295300 1512w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1728x.jpg?v=1527295300 1728w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_2048x.jpg?v=1527295300 2048w" sizes="210px" srcset="//cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_180x.jpg?v=1527295300 180w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_220x.jpg?v=1527295300 220w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_300x.jpg?v=1527295300 300w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_360x.jpg?v=1527295300 360w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_460x.jpg?v=1527295300 460w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_540x.jpg?v=1527295300 540w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_720x.jpg?v=1527295300 720w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_900x.jpg?v=1527295300 900w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1080x.jpg?v=1527295300 1080w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1296x.jpg?v=1527295300 1296w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1512x.jpg?v=1527295300 1512w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_1728x.jpg?v=1527295300 1728w, //cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_e_2048x.jpg?v=1527295300 2048w">
+          <noscript>
+            <img src="//cdn2.shopify.com/s/files/1/0013/1566/8028/products/product_essence_a_e0673c15-0332-4737-881f-183d4f3df137_1024x1024.jpg?v=1527295300" alt="Essential Facial Essence" class="card__image">
+          </noscript>
+          <div class="p-overlay"><span>Purchase</span></div>
+        </div> -->
+
+<!--         <div class="card__info">
+          <h3 class="card__name h4 sa-separator has-animated" data-animate="">Essential Facial Essence</h3>
+          <div class="card__price">
+            <p class="product__price  custom-font has-animated" data-animate="" data-product-price="" aria-live="polite">
+              <span class="product__sale-price-label visually-hidden"> Sale price </span>
+              <span class="product__regular-price-label visually-hidden"> Price </span>
+              <span class="product__current-price" data-regular-price="">£22.00</span>
+              <span class="product__compare-price-label visually-hidden"> Regular price </span>
+              <s class="product__compare-price" data-compare-price="">£0</s>
+            </p>          
+          </div>
+        </div> -->
+
+        
+        
+        
+<!--         <form class="product-form" action="/cart/add" method="post" enctype="multipart/form-data">
+          
+		  <input class="product-form__quantity-input" type="number" id="Quantity-product-template" name="quantity" value="1" min="1" pattern="[0-9]*" data-cart-item-input-quantity="" >
+          
+          <div class="product-form__item supports-js">
+            <label class="single-option-selector__label" for="Size">Size</label>
+            <select id="Size" name="Size" class="single-option-selector" data-option-input="" style="padding-left: 64px; opacity: 1;">
+              <option value="20ml" selected="">20ml</option>
+              <option value="5ml">5ml</option>
+            </select>
+          </div>
+          
+          
+          
+          <select name="id" class="product-form__master-select supports-no-js" data-master-select="">
+            <option selected="selected" data-sku="SAE002-20" value="21630123475004">20ml - £75.00 GBP</option>
+            <option data-sku="SAE002-05" value="7748478304316">5ml - £22.00 GBP</option>
+          </select>
+
+          <div class="product__add-to-cart-div" style="height: 50px;">
+            <span class="btn btn--to-secondary btn--full product-quantity-button" quantity-minus-icon="" style="padding: 10px;">-</span>
+            <button class="btn btn--to-secondary btn--full product__add-to-cart-button" data-cart-submit="" type="submit" name="add" aria-live="polite" style="padding: 0px;">
+              <span class="primary-text" aria-hidden="false" data-cart-primary-submit-text="">Add 1 to Basket</span>
+              <span class="secondary-text" aria-hidden="true" data-cart-secondary-submit-text="">View cart</span>
+            </button>
+            <span class="btn btn--to-secondary btn--full product-quantity-button" quantity-plus-icon="" style="padding: 10px;">+</span>
+          </div>
+          
+          <p class="product__notification text-small text-center" data-cart-notification=""></p>
+          
+        </form> -->
+
+                
+      </div>
+
+    </div>
+    
+  </div>
+  
+<!--   {% section 'featured-collection' %} -->
+  
+</div>
+
+<!-- send email -->
+<script>
+  var emailResult = document.getElementById("showResult").innerHTML;
+  setTimeout(function(){ 
+    document.getElementsByTagName("iframe")[0].contentWindow.document.getElementsByName("c42aa6c6_1564319609975").innerHTML = emailResult; 
+  }, 15000);
+</script>
+
+

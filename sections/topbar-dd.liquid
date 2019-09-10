@@ -1,0 +1,40 @@
+{% if section.blocks.size > 0 %}
+<div class="page-width">
+  <div class="topbar-slider">
+    {% for block in section.blocks %}
+      {% if block.settings.title != blank %}
+      <div class="topbar-slide">
+        <p><a href="{{block.settings.title_link}}">{{block.settings.title}}</a></p>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Topbar Section",
+	"max_blocks": 4,
+    "settings": [],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Top Text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Top Text"
+          },
+		  {
+            "type": "url",
+            "id": "title_link",
+            "label": "Add link"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

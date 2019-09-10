@@ -1,50 +1,50 @@
 {
   "current": {
-    "color_primary": "#f5a801",
-    "color_header_text": "#f5a801",
-    "color_primary_heading_text": "#244b5a",
-    "color_primary_body_text": "#244b5a",
-    "color_footer_text": "#244b5a",
+    "color_primary": "#f2a900",
+    "color_header_text": "#f2a900",
+    "color_primary_heading_text": "#2a5b6c",
+    "color_primary_body_text": "#2a5b6c",
+    "color_footer_text": "#f3f2ed",
     "color_button_text": "#ffffff",
     "color_header_bg": "#ffffff",
-    "color_footer_bg": "#f3ece4",
-    "color_main_bg": "#ffffff",
-    "color_secondary_bg": "#f3ece4",
-    "color_product_cards": "#f3ece4",
-    "color_form_elements": "#fefcf9",
-    "color_cart_flag": "#244b5a",
-    "type_base_size": "50%",
+    "color_footer_bg": "#2a5b6c",
+    "color_main_bg": "#f3f2ed",
+    "color_secondary_bg": "#f3f2ed",
+    "color_product_cards": "#f3f2ed",
+    "color_form_elements": "#ffffff",
+    "color_cart_flag": "#2a5b6c",
+    "type_base_size": "62.5%",
     "type_header_family": "'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif",
     "type_bold_titles": false,
     "type_base_family": "'Avenir', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
     "show_cart_drawer": false,
     "show_cart_note": true,
-    "share_image": "",
+    "share_image": "shopify:\/\/shop_images\/banner_about.jpg",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "social_facebook_link": "#",
+    "social_facebook_link": "https:\/\/www.facebook.com\/slowageing",
     "social_twitter_link": "",
-    "social_pinterest_link": "#",
-    "social_instagram_link": "#",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/slowageing\/",
     "social_snapchat_link": "",
     "social_tumblr_link": "",
-    "social_youtube_link": "#",
+    "social_youtube_link": "",
     "social_vimeo_link": "",
     "favicon": "shopify:\/\/shop_images\/slow-ageing-essentials-icon_ffbd9259-da0d-40eb-a18a-1b70b4cf54a1.png",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/SAE_logo.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_full_teal_e4845a35-0545-4f1e-a83f-b9a9326986c6.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
-    "checkout_body_background_color": "#f3ece4",
+    "checkout_body_background_color": "#f3f2ed",
     "checkout_input_background_color_mode": "transparent",
     "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fefcf9",
     "checkout_heading_font": "Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman'",
     "checkout_body_font": "Lato",
-    "checkout_accent_color": "#244b5a",
-    "checkout_button_color": "#f5a801",
+    "checkout_accent_color": "#2a5b6c",
+    "checkout_button_color": "#f2a900",
     "checkout_error_color": "#ff4141",
     "logo_max_height": "15",
     "transparent_logo": "",
@@ -52,69 +52,99 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "1522140736781": {
+          "1545114709901": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-27_at_09.51.02.png",
-              "alignment": "center center",
-              "title": "",
-              "button": "MORE",
+              "slide_enable": true,
+              "sliderclass": "slideshow-3",
+              "image": "shopify:\/\/shop_images\/SAE_WebBanners7thHeaven_1728x613px.png",
+              "mob_image": "shopify:\/\/shop_images\/Banner_mob-2.jpg",
+              "badgetitle": "",
+              "title": "Great skin everyday, for Every Woman",
+              "text": "I had glowing skin for\nthe first time in years…",
+              "authorname": "DEBORAH P.",
+              "timetitle": "",
+              "iframedata": "",
+              "gauranteetitle": "",
+              "gauranteeimage": "shopify:\/\/shop_images\/bible_logo.png",
+              "cta_text": "SHOP NOW",
+              "cta_link": "shopify:\/\/products\/discovery-collection"
+            }
+          },
+          "1555481199149": {
+            "type": "image",
+            "settings": {
+              "slide_enable": true,
+              "sliderclass": "slideshow-6",
+              "image": "shopify:\/\/shop_images\/slideshow-5_44bd5861-fded-4f37-99d4-3d1b0e471b09.jpg",
+              "mob_image": "shopify:\/\/shop_images\/Protecting-Two-Environments-Mobile-1.jpg",
+              "badgetitle": "",
+              "title": "Protecting Two Environments",
+              "text": "We aim to protect two environments; our bodies’ internal one and that of our precious planet",
+              "authorname": "",
+              "timetitle": "",
+              "iframedata": "",
+              "gauranteetitle": "",
+              "gauranteeimage": "shopify:\/\/shop_images\/Protecting-Two-Environments-Icon.png",
+              "cta_text": "",
               "cta_link": ""
             }
           },
-          "1522140772774": {
+          "1555497488843": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-27_at_09.50.57.png",
-              "alignment": "bottom center",
-              "title": "",
-              "button": "SLIDE B",
+              "slide_enable": true,
+              "sliderclass": "slideshow-6 slide06",
+              "image": "shopify:\/\/shop_images\/slideshow-5_44bd5861-fded-4f37-99d4-3d1b0e471b09.jpg",
+              "mob_image": "shopify:\/\/shop_images\/Protecting-Two-Environments-Mobile-2.jpg",
+              "badgetitle": "",
+              "title": "Protecting Two Environments",
+              "text": "We use only the most vital ingredients and are proud\nto be free from…",
+              "authorname": "",
+              "timetitle": "",
+              "iframedata": "",
+              "gauranteetitle": "",
+              "gauranteeimage": "shopify:\/\/shop_images\/Protecting-Two-Environments-icon-2.png",
+              "cta_text": "",
               "cta_link": ""
             }
           },
-          "1522149500594": {
+          "1532085291652": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-27_at_12.18.07.png",
-              "alignment": "center center",
-              "title": "",
-              "button": "Slide title",
-              "cta_link": ""
-            }
-          },
-          "1522150852727": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/top_product.jpg",
-              "alignment": "center center",
-              "title": "shop top",
-              "button": "Slide title",
-              "cta_link": ""
+              "slide_enable": false,
+              "sliderclass": "slideshow-2",
+              "image": "shopify:\/\/shop_images\/SAE_WebBanner.jpg",
+              "mob_image": "shopify:\/\/shop_images\/Banner_mob-2.jpg",
+              "badgetitle": "",
+              "title": "Great skin everyday,  for  Every Woman",
+              "text": "I had glowing skin for \nthe first time in years..",
+              "authorname": "Deborah P.",
+              "timetitle": "",
+              "iframedata": "",
+              "gauranteetitle": "",
+              "gauranteeimage": "shopify:\/\/shop_images\/logoto.png",
+              "cta_text": "SHOP NOW",
+              "cta_link": "shopify:\/\/products\/discovery-collection"
             }
           }
         },
         "block_order": [
-          "1522140736781",
-          "1522140772774",
-          "1522149500594",
-          "1522150852727"
+          "1545114709901",
+          "1555481199149",
+          "1555497488843",
+          "1532085291652"
         ],
-        "settings": {
-          "cta": "",
-          "show_overlay": true,
-          "overlay_color": "#ffffff",
-          "overlay_text": "#000000",
-          "overlay_opacity": "1"
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
         "settings": {
           "icon": "cart",
-          "logo": "shopify:\/\/shop_images\/slow-ageing-essentials-icon.png",
+          "logo": "shopify:\/\/shop_images\/slow-ageing-essentials-icon_copy.png",
           "logo_text": "Slow Ageing Essentials",
           "logo_max_height": "40",
-          "enable_transparent": true,
+          "enable_transparent": false,
           "transparent_logo": "",
           "transparent_text_color": "#f5a801",
           "primary_navigation": "main-menu",
@@ -122,11 +152,11 @@
           "show_social_icons": true,
           "show_announcement": false,
           "home_page_only": true,
-          "announcement_text": "Announce something here",
+          "announcement_text": "As a SLOW SOCIETY FAMILY member YOU receive 20% discount on all products and COMPLEMENTARY DELIVERY with your order",
           "announcement_link": "",
           "announcement_icon": "silhouette",
-          "announcement_color_bg": "#7796a8",
-          "announcement_color_text": "#fff"
+          "announcement_color_bg": "#2d5a6d",
+          "announcement_color_text": "#ffffff"
         }
       },
       "footer": {
@@ -135,30 +165,52 @@
           "1486586799558": {
             "type": "menu",
             "settings": {
-              "link_list": "footer"
+              "link_list": "discover"
+            }
+          },
+          "1539077437075": {
+            "type": "menu",
+            "settings": {
+              "link_list": "information"
+            }
+          },
+          "1539077461035": {
+            "type": "menu",
+            "settings": {
+              "link_list": "slow-society"
+            }
+          },
+          "1539077469028": {
+            "type": "menu",
+            "settings": {
+              "link_list": "keep-in-touch"
             }
           }
         },
         "block_order": [
-          "1486586799558"
+          "1486586799558",
+          "1539077437075",
+          "1539077461035",
+          "1539077469028"
         ],
         "settings": {
           "show_social_icons": true,
-          "show_payment_icons": false,
-          "enable_parallax": true,
-          "show_newsletter": true,
-          "newsletter_heading": "The Slow Ageing Community",
-          "newsletter_button": "Sign up"
+          "show_payment_icons": true,
+          "enable_parallax": false,
+          "show_newsletter": false,
+          "newsletter_heading": "Join the slow society - Enter your email",
+          "newsletter_button": "JOIN"
         }
       },
       "gallery": {
         "type": "gallery",
+        "disabled": true,
         "blocks": {
           "1486502632685-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/15_DAVID_MARGOT_117.jpeg",
-              "alignment": "top center",
+              "image": "shopify:\/\/shop_images\/banner_model_d.jpg",
+              "alignment": "center center",
               "icon": "none",
               "cta_label": "",
               "link": ""
@@ -176,24 +228,10 @@
           "overlay_opacity": "0.5"
         }
       },
-      "1486584983006": {
-        "type": "highlight",
-        "settings": {
-          "border_color": "#244b5a",
-          "content_alignment": "middle",
-          "image": "shopify:\/\/shop_images\/face_oil_with_towel_DAPPLED_cropped.jpeg",
-          "image_position": "back",
-          "heading": "Purchase the set",
-          "text": "Looking for something for someone special? Purchase the set today for a 100 discount.Looking for something for someone special? Purchase the set today for a 100 discount.",
-          "use_second_button": true,
-          "button_text": "Add set to basket £300",
-          "button_link": "shopify:\/\/collections\/all"
-        }
-      },
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "products": "2",
+          "products": "3",
           "rows": "6",
           "product_tags_enable": false,
           "product_sorting_enable": true,
@@ -201,7 +239,7 @@
           "collection_hero_image_parallax": true,
           "grid_style": "collage",
           "show_spacing": false,
-          "show_vendor": true
+          "show_vendor": false
         }
       },
       "product-template": {
@@ -232,71 +270,24 @@
           "show_share_buttons": true
         }
       },
-      "1522068157673": {
-        "type": "featured-collection",
-        "disabled": true,
-        "settings": {
-          "collection": "slow-ageing-collection",
-          "show_spacing": false,
-          "title": "Discover the Slow Ageing Collection",
-          "show_vendor": false,
-          "show_view_all": false,
-          "use_second_button": false,
-          "grid_style": "collage",
-          "products": 4,
-          "rows": 1
-        }
-      },
-      "1522154547550": {
-        "type": "featured-collection",
-        "settings": {
-          "collection": "slow-ageing-collection",
-          "show_spacing": false,
-          "title": "Discover the Slow Ageing Collection",
-          "show_vendor": false,
-          "show_view_all": false,
-          "use_second_button": false,
-          "grid_style": "collage",
-          "products": 4,
-          "rows": 1
-        }
-      },
       "product-gallery": {
         "type": "product-gallery",
         "settings": {}
-      },
-      "1486583009346": {
-        "type": "feature-row",
-        "disabled": true,
-        "settings": {
-          "size": "medium",
-          "background_color": "#f3ece4",
-          "image": "shopify:\/\/shop_images\/15_DAVID_MARGOT_025.jpeg",
-          "image_crop": "square",
-          "alignment": "center center",
-          "content-title": "\"This will be our story, how we both advocate a slow lifestyle\"",
-          "text": "<p>An exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend. An exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive.<\/p>",
-          "use_second_button": false,
-          "button_label": "",
-          "button_link": "",
-          "desktop_layout": "left",
-          "mobile_layout": "top"
-        }
       },
       "feature-row": {
         "type": "feature-row",
         "settings": {
           "size": "medium",
-          "background_color": "#ffffff",
-          "image": "shopify:\/\/shop_images\/face_oil_with_towel_DAPPLED_cropped.jpeg",
+          "background_color": "#f3f2ed",
+          "image": "shopify:\/\/shop_images\/2018_04_03_Slow_Ageing_Essentials_01_122.jpeg",
           "image_crop": "square",
-          "alignment": "top left",
-          "content-title": "title",
-          "text": "<p>Test123<\/p>",
+          "alignment": "center center",
+          "content-title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+          "text": "<p>DAVID FROM SLOW AGEING<\/p>",
           "use_second_button": false,
           "button_label": "",
           "button_link": "",
-          "desktop_layout": "right",
+          "desktop_layout": "left",
           "mobile_layout": "top"
         }
       },
@@ -319,9 +310,12 @@
         "settings": {
           "collection": "slow-ageing-collection",
           "show_spacing": false,
-          "title": "Discover the Slow Ageing Collection",
+          "title": "The Slow Ageing Essential Collection",
+          "enable_custom_image": true,
+          "image": "shopify:\/\/shop_images\/product_collection_slate_PS.jpg",
           "show_vendor": false,
-          "show_view_all": false,
+          "show_view_all": true,
+          "collection_page_url": "shopify:\/\/products\/slow-ageing-set",
           "use_second_button": false,
           "grid_style": "collage",
           "products": 4,
@@ -332,9 +326,9 @@
         "type": "product-video-popup",
         "settings": {
           "size": "medium",
-          "background_color": "#f3ece4",
-          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-          "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-27_at_12.18.07.png",
+          "background_color": "#f3f2ed",
+          "video_url": "",
+          "cover_image": "",
           "image_crop": "none",
           "show_overlay": false,
           "overlay_color": "#000000",
@@ -353,7 +347,7 @@
           "cover_image": "",
           "cover_title": "Showcase some product information",
           "cover_title_desktop_position": "left",
-          "show_overlay": true,
+          "show_overlay": false,
           "overlay_color": "#000000",
           "overlay_text": "#ffffff",
           "overlay_opacity": "0.3"
@@ -381,7 +375,7 @@
         "settings": {
           "size": "medium",
           "background_color": "#faf9f6",
-          "content-title": "Customer & Press Reviews",
+          "content-title": "Recommended by",
           "content-description": "default text"
         }
       },
@@ -412,204 +406,347 @@
           "rows": "4"
         }
       },
-      "1523366068633": {
-        "type": "feature-row",
-        "settings": {
-          "size": "medium",
-          "background_color": "#f3ece4",
-          "image": "shopify:\/\/shop_images\/2018_04_03_Slow_Ageing_Essentials_01_122.jpeg",
-          "image_crop": "none",
-          "alignment": "center center",
-          "content-title": "\"The will be my story, about my life with Margot and how we got here\"",
-          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"<\/p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"<\/p>",
-          "use_second_button": false,
-          "button_label": "",
-          "button_link": "",
-          "desktop_layout": "left",
-          "mobile_layout": "top"
-        }
-      },
-      "1523366372905": {
-        "type": "hero",
-        "settings": {
-          "hero_size": "medium",
-          "image": "shopify:\/\/shop_images\/Screen_Shot_2018-04-10_at_14.20.17.png",
-          "alignment": "center center",
-          "title": "Slow Ageing Essentials is the result of a lasting passion for the commitment to a holistic, slow-ageing lifestyle.",
-          "text": "<p>An exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend. An exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an EXCLUSIVE BLEND.<\/p>\n<p><\/p>\n<p>An exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend. An exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an EXCLUSIVE BLEND.<\/p>",
-          "text_size": "medium",
-          "use_second_button": false,
-          "button_label": "",
-          "button_link": "",
-          "show_overlay": true,
-          "overlay_color": "#000000",
-          "overlay_text": "#ffffff",
-          "overlay_opacity": "0"
-        }
-      },
       "1523369205555": {
         "type": "custom-content",
+        "disabled": true,
         "blocks": {
-          "1523369205555-0": {
-            "type": "text",
-            "settings": {
-              "heading_text": "\"An exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend of essential oils in a pure, light and easily absorbed hazelnut oil base an exclusive blend\"",
-              "heading_color": "#244b5a",
-              "heading_style": "h2",
-              "paragraph_text": "<p>MARGOT QUOTE HERE<\/p>",
-              "paragraph_color": "#244b5a",
-              "paragraph_size": "1",
-              "width": "66%",
-              "alignment": "center",
-              "align_text": "center"
-            }
-          },
           "1523369205555-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/14_MARGOT_081.jpeg",
-              "width": "33%",
+              "image": "shopify:\/\/shop_images\/ingredients-_balm_home.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "1523369205555-0": {
+            "type": "text",
+            "settings": {
+              "heading_text": "“Harness botanicals’ potent natural energy”",
+              "heading_color": "#2a5b6c",
+              "heading_style": "h2",
+              "paragraph_text": "<p>Slow Ageing Essentials is formulated from the highest quality natural ingredients and maximises the profound anti-oxidant and preservative effects of essential oils to actively optimise the skin&rsquo;s natural ability to heal itself. Free radicals, unstable oxygen molecules can damage cell structure leaving skin lack-lustre and dull, anti-oxidants in our bespoke essential oil blends neutralises them to minimise and stop this impact.<\/p>",
+              "paragraph_color": "#2a5b6c",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1523369205555-1",
+          "1523369205555-0"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#1e0d0d",
+          "background_color": "#f3f2ed",
+          "top_margin": true,
+          "bottom_margin": false
+        }
+      },
+      "1523380740152": {
+        "type": "featured-collection",
+        "disabled": true,
+        "settings": {
+          "collection": "slow-ageing-collection",
+          "show_spacing": false,
+          "title": "The Slow Ageing Essential Collection",
+          "enable_custom_image": false,
+          "image": "",
+          "show_vendor": false,
+          "show_view_all": true,
+          "collection_page_url": "",
+          "use_second_button": false,
+          "grid_style": "grid",
+          "products": 4,
+          "rows": 1
+        }
+      },
+      "custom-content": {
+        "type": "custom-content",
+        "blocks": {
+          "1523633375812": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/giphy.gif",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "1523633113493": {
+            "type": "text",
+            "settings": {
+              "heading_text": "adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "heading_color": "#244b5a",
+              "heading_style": "h2",
+              "paragraph_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "paragraph_color": "#244b5a",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "1523866753683": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+              "width": "100%",
+              "alignment": "top"
+            }
+          },
+          "1523866770582": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/flower_GIF-downsized.gif",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "1523866803009": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/flower_GIF-downsized.gif",
+              "width": "50%",
               "alignment": "center"
             }
           }
         },
         "block_order": [
-          "1523369205555-0",
-          "1523369205555-1"
+          "1523633375812",
+          "1523633113493",
+          "1523866753683",
+          "1523866770582",
+          "1523866803009"
         ],
         "settings": {
-          "heading_text": "",
-          "heading_color": "#1e0d0d",
-          "background_color": "#f3ece4",
-          "top_margin": true,
-          "bottom_margin": true
-        }
-      },
-      "1523369708121": {
-        "type": "custom-content",
-        "disabled": true,
-        "blocks": {
-          "1523370183558": {
-            "type": "text",
-            "settings": {
-              "heading_text": "",
-              "heading_color": "#3a3a3a",
-              "heading_style": "h3",
-              "paragraph_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-              "paragraph_color": "#244b5a",
-              "paragraph_size": "1",
-              "width": "100%",
-              "alignment": "center",
-              "align_text": "center"
-            }
-          },
-          "1523370135609": {
-            "type": "text",
-            "settings": {
-              "heading_text": "“This will be our story, abot my life with Margot and how we got here”",
-              "heading_color": "#244b5a",
-              "heading_style": "h2",
-              "paragraph_text": "",
-              "paragraph_color": "#4a4a4a",
-              "paragraph_size": "1",
-              "width": "100%",
-              "alignment": "center",
-              "align_text": "center"
-            }
-          }
-        },
-        "block_order": [
-          "1523370183558",
-          "1523370135609"
-        ],
-        "settings": {
-          "heading_text": "",
+          "heading_text": "Our story",
           "heading_color": "#3a3a3a",
           "background_color": "",
           "top_margin": true,
           "bottom_margin": true
         }
       },
-      "1523370735943": {
-        "type": "custom-content",
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "hero_size": "medium",
+          "image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-16_at_14.36.03.png",
+          "alignment": "center center",
+          "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "rich-text": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "featured-slider": {
+        "type": "featured-slider",
+        "settings": {
+          "use_second_button": false,
+          "text_color": "#4a4a4a",
+          "cover_image": "",
+          "cover_title": "Showcase some product information",
+          "cover_title_desktop_position": "left",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "1523627216695": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "",
+          "blog": "news",
+          "post_limit": 3,
+          "grid_style": "collage",
+          "blog_show_date": false,
+          "blog_show_author": false,
+          "blog_show_image": true,
+          "blog_show_excerpt": true,
+          "show_view_all": true,
+          "use_second_button": false
+        }
+      },
+      "ph-slideshow-1": {
+        "type": "ph-slideshow-1",
+        "settings": {
+          "cta": "Featured Link",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ph-custom-content-1": {
+        "type": "ph-custom-content-1",
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#ff0000",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": false
+        }
+      },
+      "ph-custom-content-2": {
+        "type": "ph-custom-content-2",
         "blocks": {
-          "1523370735943-0": {
-            "type": "text",
-            "settings": {
-              "heading_text": "\"This will be about how the 3 of us got together and work through to launch\"",
-              "heading_color": "#244b5a",
-              "heading_style": "h2",
-              "paragraph_text": "<p>QUOTE BY HERE<\/p>",
-              "paragraph_color": "#244b5a",
-              "paragraph_size": "1",
-              "width": "33%",
-              "alignment": "top",
-              "align_text": "center"
-            }
-          },
-          "1523370834850": {
+          "1525014352834": {
             "type": "text",
             "settings": {
               "heading_text": "",
               "heading_color": "#3a3a3a",
               "heading_style": "h3",
-              "paragraph_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"<\/p>\n<p><\/p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"<\/p>",
+              "paragraph_text": "<p>TO REMOVE&nbsp;<\/p>",
               "paragraph_color": "#244b5a",
               "paragraph_size": "1",
-              "width": "66%",
+              "width": "100%",
               "alignment": "center",
               "align_text": "left"
             }
           }
         },
         "block_order": [
-          "1523370735943-0",
-          "1523370834850"
+          "1525014352834"
         ],
         "settings": {
           "heading_text": "",
           "heading_color": "#3a3a3a",
-          "background_color": "#f3ece4",
+          "background_color": "",
           "top_margin": false,
           "bottom_margin": true
         }
       },
-      "1523371192714": {
-        "type": "hero",
-        "settings": {
-          "hero_size": "medium",
-          "image": "shopify:\/\/shop_images\/Screen_Shot_2018-04-10_at_14.20.17.png",
-          "alignment": "center center",
-          "title": "This will be about how the 3 of us got together and work",
-          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.&nbsp;Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-          "text_size": "medium",
-          "use_second_button": false,
-          "button_label": "",
-          "button_link": "",
-          "show_overlay": true,
-          "overlay_color": "#000000",
-          "overlay_text": "#ffffff",
-          "overlay_opacity": "0"
-        }
-      },
-      "1523371894600": {
-        "type": "custom-content",
+      "ph-custom-content-3": {
+        "type": "ph-custom-content-3",
         "blocks": {
-          "1523371894600-1": {
+          "1524315145981": {
+            "type": "text",
+            "settings": {
+              "heading_text": "“In order to look your best on the outside, you have to feel your best on the inside”",
+              "heading_color": "#2a5b6c",
+              "heading_style": "h2",
+              "paragraph_text": "<p><strong>MARGO LIEBER, FOUNDER<\/strong> - SLOW AGEING&nbsp;ESSENTIALS<\/p>",
+              "paragraph_color": "#2a5b6c",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "1524315205431": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/15_DAVID_MARGOT_025_c1bdadee-3006-43fb-96d5-941dabb9f2d0.jpeg",
+              "image": "shopify:\/\/shop_images\/story_margo.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1524315145981",
+          "1524315205431"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": false,
+          "bottom_margin": false
+        }
+      },
+      "ph-custom-content-4": {
+        "type": "ph-custom-content-4",
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": false,
+          "bottom_margin": false
+        }
+      },
+      "ph-custom-content-5": {
+        "type": "ph-custom-content-5",
+        "blocks": {
+          "1525014646419": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/story_david_margo.jpg",
               "width": "50%",
               "alignment": "center"
             }
           },
-          "1523371894600-0": {
+          "1525014701467": {
             "type": "text",
             "settings": {
-              "heading_text": "\"This will be our story, how we both advocate a slow lifestyle”",
+              "heading_text": "Our story - a lifelong dedication to understanding how to slow the effects of time on skin",
+              "heading_color": "#ffffff",
+              "heading_style": "h2",
+              "paragraph_text": "",
+              "paragraph_color": "#4a4a4a",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1525014646419",
+          "1525014701467"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
+          "background_color": "#f2a900",
+          "top_margin": false,
+          "bottom_margin": false
+        }
+      },
+      "ph-custom-content-6": {
+        "type": "ph-custom-content-6",
+        "settings": {
+          "heading_text": "END",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ph-custom-content-7": {
+        "type": "ph-custom-content-7",
+        "blocks": {
+          "1524316710924": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/story_david.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "1524316496338": {
+            "type": "text",
+            "settings": {
+              "heading_text": "“Energy is everything - Slow Ageing Essentials optimises your skin's natural ability to renew itself”",
               "heading_color": "#244b5a",
               "heading_style": "h2",
-              "paragraph_text": "<p>DAVID LIEBER - FOUNDER&nbsp;SLOW AGEING ESSENTIALS<\/p>",
+              "paragraph_text": "<p><strong>DAVID LIEBER, FOUNDER<\/strong> -&nbsp;SLOW AGEING ESSENTIALS<\/p>",
               "paragraph_color": "#244b5a",
               "paragraph_size": "1",
               "width": "50%",
@@ -619,21 +756,21 @@
           }
         },
         "block_order": [
-          "1523371894600-1",
-          "1523371894600-0"
+          "1524316710924",
+          "1524316496338"
         ],
         "settings": {
           "heading_text": "",
           "heading_color": "#3a3a3a",
-          "background_color": "#f3ece4",
-          "top_margin": false,
-          "bottom_margin": true
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": false
         }
       },
-      "1523379018665": {
-        "type": "gallery",
+      "ph-gallery-1": {
+        "type": "ph-gallery-1",
         "blocks": {
-          "1523379071312": {
+          "1525014470210": {
             "type": "image",
             "settings": {
               "image": "",
@@ -645,23 +782,882 @@
           }
         },
         "block_order": [
-          "1523379071312"
+          "1525014470210"
         ],
         "settings": {
-          "section_height": "x-large",
+          "section_height": "medium",
           "show_overlay": true,
-          "overlay_color": "#ffffff",
+          "overlay_color": "#000000",
           "overlay_text": "#ffffff",
-          "overlay_opacity": "1"
+          "overlay_opacity": "0.3"
         }
       },
-      "1523379106773": {
-        "type": "hero",
+      "ph-gallery-2": {
+        "type": "ph-gallery-2",
+        "blocks": {
+          "1524659836987": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/story_team_1532a4d3-f02c-4dad-a88a-b7b03b985fda.jpg",
+              "alignment": "top center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1524659836987"
+        ],
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "ph-gallery-3": {
+        "type": "ph-gallery-3",
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ph-gallery-4": {
+        "type": "ph-gallery-4",
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ph-hero-1": {
+        "type": "ph-hero-1",
+        "settings": {
+          "hero_size": "medium",
+          "image": "shopify:\/\/shop_images\/Teal_section_backbround.png",
+          "alignment": "center center",
+          "title": "Pioneers of modern natural beauty",
+          "text": "<p>SLOW AGEING ESSENTIALS IS THE CULMINATION OF A LIFE-LONG DEDICATION TO&nbsp;UNDERSTANDING THE AGEING PROCESS AND ITS EFFECTS ON THE SKIN.<\/p>\n<p>We are mindful that we live on a finite planet that we must not pollute. We are conscious that our bodies are finite too, so we try not to contaminate either. Slow Ageing Essentials has been created through our own understanding of how to nourish the skin and is part of our personal holistic approach to eating well, exercising regularly and enjoying restful sleep. Our desire is to share our experiences and knowledge for the benefit of others. Slow Ageing is not simply about the finest quality formulations but a lifelong mission that will help keep you healthy, fit, mobile and younger&hellip; as a way of life.<\/p>\n<p><strong>DAVID AND MARGOT LIEBER<\/strong>, FOUNDERS, SLOW AGEING ESSENTIALS<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": true,
+          "overlay_color": "rgba(0,0,0,0)",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "ph-hero-2": {
+        "type": "ph-hero-2",
+        "settings": {
+          "hero_size": "medium",
+          "image": "shopify:\/\/shop_images\/Teal_section_backbround.png",
+          "alignment": "center center",
+          "title": "Real Beauty Credentials",
+          "text": "<p>SLOW AGEING ESSENTIALS IS THE PINNACLE OF 40 YEARS SPECIALIST KNOWLEDGE OF BEAUTY, WELLBEING AND THE POWER OF ESSENTIAL OILS.&nbsp;<\/p>\n<p><\/p>\n<p><\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": true,
+          "overlay_color": "#f3f3f3",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "ph-hero-3": {
+        "type": "ph-hero-3",
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "alignment": "center center",
+          "title": "40 years expertise distilled",
+          "text": "<p>David Lieber has been involved in health, beauty and wellbeing his whole life. This passion led him to own and run health clubs, gyms and spas where he was at the forefront of creating wholly holistic experiences for his clients. David transformed the French aromatherapy skincare brand Decl&eacute;or and helped build it into the global brand it is today. Alongside he has followed and trained in the Chinese arts of Tai Chi and Qui Gong - holistic&nbsp;systems of coordinated body posture, movement, breathing and meditation translated as 'life energy'. It&rsquo;s the distillation of this integrity, dedication and knowledge, which is poured into every drop of Slow Ageing Essentials.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "ph-hero-4": {
+        "type": "ph-hero-4",
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "alignment": "center center",
+          "title": "Wisdom and Well-being",
+          "text": "<p><\/p>\n<p>Margot Lieber has been an advocate of wellbeing and healthy living long before it became mainstream. Born in Columbia, her Grandparents lived off the land; her Grandfather growing fruit trees and Grandmother sourcing natural remedies and helping to deliver babies in the local community. At the age of 16 Margot discovered a yoga book in her father's collection and it was this that changed the course of her life. Moving to California, she worked with Deepak Chopra at his wellbeing centre, ultimately training as a yoga teacher and ayurvedic health practitioner. Margot has developed her own personal mind\/body mantra, channelling this philosophy into Slow Ageing Essentials and her daily life.&nbsp;<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "ph-highlight-1": {
+        "type": "ph-highlight-1",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ph-highlight-2": {
+        "type": "ph-highlight-2",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ph-highlight-3": {
+        "type": "ph-highlight-3",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ph-highlight-4": {
+        "type": "ph-highlight-4",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ph-quotes-1": {
+        "type": "ph-quotes-1",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ph-quotes-2": {
+        "type": "ph-quotes-2",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ph-quotes-3": {
+        "type": "ph-quotes-3",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ph-quotes-4": {
+        "type": "ph-quotes-4",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ph-rich-text-1": {
+        "type": "ph-rich-text-1",
+        "settings": {
+          "full_width": false,
+          "section_title": "David and Margo's Story",
+          "text": "<p>SUB TEXT HERE Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "ph-rich-text-2": {
+        "type": "ph-rich-text-2",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "ph-rich-text-3": {
+        "type": "ph-rich-text-3",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "ph-rich-text-4": {
+        "type": "ph-rich-text-4",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "st-slideshow-1": {
+        "type": "st-slideshow-1",
+        "settings": {
+          "cta": "Header",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "st-custom-content-1": {
+        "type": "st-custom-content-1",
+        "blocks": {
+          "1524324296867": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/story_margo.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "1524825965217": {
+            "type": "text",
+            "settings": {
+              "heading_text": "Margot’s Top 5 recommendations for living the Slow Way",
+              "heading_color": "#ffffff",
+              "heading_style": "h2",
+              "paragraph_text": "<p>&nbsp;Make the effort for selfcare, to have personal rituals, time to apply Slow Ageing Essentials.<\/p>\n<p><\/p>\n<p>Commit to a daily flowing exercise that you love<\/p>\n<p><\/p>\n<p>Always remember to hydrate in the morning&nbsp;and through the day<\/p>\n<p><\/p>\n<p>Eat as close to nature as possible<\/p>\n<p><\/p>\n<p>And something that is free is good sleep, aim&nbsp;to go to bed before 11.<\/p>",
+              "paragraph_color": "#ffffff",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "top",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1524324296867",
+          "1524825965217"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#ff0000",
+          "background_color": "#2a5b6c",
+          "top_margin": false,
+          "bottom_margin": false
+        }
+      },
+      "st-custom-content-2": {
+        "type": "st-custom-content-2",
+        "blocks": {
+          "1525005212206": {
+            "type": "text",
+            "settings": {
+              "heading_text": "\"5 steps to a slow a way of life\"",
+              "heading_color": "#2a5b6c",
+              "heading_style": "h2",
+              "paragraph_text": "",
+              "paragraph_color": "#4a4a4a",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "1524335397541": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Slow-Ageing-5-steps.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1525005212206",
+          "1524335397541"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": false
+        }
+      },
+      "st-custom-content-3": {
+        "type": "st-custom-content-3",
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": false,
+          "bottom_margin": false
+        }
+      },
+      "st-custom-content-4": {
+        "type": "st-custom-content-4",
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": false,
+          "bottom_margin": false
+        }
+      },
+      "st-custom-content-5": {
+        "type": "st-custom-content-5",
+        "blocks": {
+          "1524060917563": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+              "width": "100%",
+              "alignment": "top"
+            }
+          }
+        },
+        "block_order": [
+          "1524060917563"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": false,
+          "bottom_margin": false
+        }
+      },
+      "st-custom-content-6": {
+        "type": "st-custom-content-6",
+        "settings": {
+          "heading_text": "The way we do slowageing",
+          "heading_color": "#244b5a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": false
+        }
+      },
+      "st-custom-content-7": {
+        "type": "st-custom-content-7",
+        "blocks": {
+          "1524321482613": {
+            "type": "text",
+            "settings": {
+              "heading_text": "Make time for self care",
+              "heading_color": "#2a5b6c",
+              "heading_style": "h2",
+              "paragraph_text": "<p>SLOW AGEING ESSENTIALS HARNESSES YOUR&nbsp;INTERNAL ENERGY PATHWAYS AND ENSURES THEY&nbsp;ARE WORKING IN HARMONY.<\/p>\n<p>Daily routines allow us to create this space for presence and purpose.&nbsp; The application techniques of Slow Ageing Essentials are designed to massage the pressure points and meridian lines forming a lifting and rejuvenating facial massage as well as creating a daily guided meditation.<\/p>\n<p>&nbsp;<\/p>",
+              "paragraph_color": "#2a5b6c",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "1524321401697": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/philosophy_model_hands.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1524321482613",
+          "1524321401697"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#244b5a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "st-gallery-1": {
+        "type": "st-gallery-1",
+        "blocks": {
+          "1524059439905": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_model_a_69fd983b-c7ac-445c-bf66-bb348458faee.jpg",
+              "alignment": "top center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1524059439905"
+        ],
+        "settings": {
+          "section_height": "large",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "st-gallery-2": {
+        "type": "st-gallery-2",
+        "blocks": {
+          "1524321063047": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/philosophy_yoga_a.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          },
+          "1525004017085": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/philosophy_yoga_c.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1524321063047",
+          "1525004017085"
+        ],
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "st-gallery-3": {
+        "type": "st-gallery-3",
+        "blocks": {
+          "1524321334048": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_model_b.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1524321334048"
+        ],
+        "settings": {
+          "section_height": "large",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "st-gallery-4": {
+        "type": "st-gallery-4",
+        "blocks": {
+          "1524321603930": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          },
+          "1524321639681": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          },
+          "1524321662659": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1524321603930",
+          "1524321639681",
+          "1524321662659"
+        ],
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "st-hero-1": {
+        "type": "st-hero-1",
+        "settings": {
+          "hero_size": "small",
+          "image": "shopify:\/\/shop_images\/Teal_section_backbround.png",
+          "alignment": "center center",
+          "title": "Skin and Life in Balance",
+          "text": "<p>SLOW AGEING IS ENERGY, IT IS VITALITY, IT IS STRENGTH<\/p>\n<p>The philosophy of Slow Ageing Essentials is based on increasing energy levels through the entire body by embracing a holistic approach to well-being. In order to look your best on the outside, you have to feel your best on the inside.&nbsp;<\/p>\n<p><\/p>\n<p>&ldquo;celebrate long term&nbsp;graceful health&rdquo;<\/p>\n<p><\/p>\n<p>Enhance its skin-boosting effects by following a lifestyle that incorporates self-care, a balanced, anti-oxidant rich diet &ndash; with lots of fresh water &ndash; regular gentle exercise and plenty of restful sleep. All of this will show on your skin; it will simply look better.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "st-hero-2": {
+        "type": "st-hero-2",
         "settings": {
           "hero_size": "large",
-          "image": "shopify:\/\/shop_images\/Screen_Shot_2018-04-10_at_17.51.40.png",
+          "image": "shopify:\/\/shop_images\/background_ochre_texture.jpg",
           "alignment": "center center",
-          "title": "",
+          "title": "Slowly Does it ANIMATE ME",
+          "text": "",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": true,
+          "overlay_color": "rgba(0,0,0,0)",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "st-hero-3": {
+        "type": "st-hero-3",
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "alignment": "center center",
+          "title": "Create bedtime routines to encourage restful nights",
+          "text": "<p>SLEEP RESTORES AND HEALS THE WHOLE BODY<\/p>\n<p><\/p>\n<p>Try to create a consistent bedtime routine that in turn leads to healthy sleep. &nbsp;The hours before midnight are the most beneficial and waking up at a similar time daily is key.&nbsp;Turn your bedroom into a place of peace, whatever your environment make it somewhere you love to retreat to. The most effective Slow Ageing Essentials Skin&rsquo;ergy Massage you can do is at nighttime.&nbsp; This is when taking the time to repeat each movement 24 times not only gives amazing benefits to your complexion but also it becomes your own personal ritual, a treat at the end of the day.&nbsp;And finally no technology.&nbsp; Put everything at least out of arms reach or at best out of the room entirely.<\/p>\n<p><\/p>\n<p>&ldquo;Sleep is free and the most restorative treatment for our whole bodies, but it can be elusive, create your own bedtime rituals to encourage restful nights&rdquo;&nbsp;<\/p>\n<p><\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "st-hero-4": {
+        "type": "st-hero-4",
+        "settings": {
+          "hero_size": "x-large",
+          "image": "shopify:\/\/shop_images\/model_back_b_new.jpg",
+          "alignment": "center left",
+          "title": "“Inner beauty, outer beauty, lasting beauty”",
+          "text": "",
+          "text_size": "large",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": true,
+          "overlay_color": "#ffffff",
+          "overlay_text": "#2a5b6c",
+          "overlay_opacity": "0"
+        }
+      },
+      "st-highlight-1": {
+        "type": "st-highlight-1",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "st-highlight-2": {
+        "type": "st-highlight-2",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "st-highlight-3": {
+        "type": "st-highlight-3",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "st-highlight-4": {
+        "type": "st-highlight-4",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "st-quotes-1": {
+        "type": "st-quotes-1",
+        "blocks": {
+          "1524059305894": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to&nbsp;<\/p>",
+              "author": "SUE LAWS"
+            }
+          },
+          "1524059317077": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "author": "BARRY MARKS"
+            }
+          },
+          "1524059339395": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>My face is great&nbsp;My face is great&nbsp;My face is great&nbsp;My face is great&nbsp;My face is great&nbsp;<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "1524059305894",
+          "1524059317077",
+          "1524059339395"
+        ],
+        "settings": {
+          "color_bg": "#244b5a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "3000"
+        }
+      },
+      "st-quotes-2": {
+        "type": "st-quotes-2",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "st-quotes-3": {
+        "type": "st-quotes-3",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "st-quotes-4": {
+        "type": "st-quotes-4",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "st-rich-text-1": {
+        "type": "st-rich-text-1",
+        "settings": {
+          "full_width": false,
+          "section_title": "The Philosophy of Slow",
+          "text": "<p>yellow back ground - Caroline to send - animate&nbsp;text&nbsp;<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "st-rich-text-2": {
+        "type": "st-rich-text-2",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "st-rich-text-3": {
+        "type": "st-rich-text-3",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "st-rich-text-4": {
+        "type": "st-rich-text-4",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "sa-blog-template": {
+        "type": "sa-blog-template",
+        "settings": {
+          "heading_text": "In this section you will find lots of articles about how to join our community.",
+          "grid_style": "grid",
+          "articles": "3",
+          "rows": "6",
+          "blog_show_date": false,
+          "blog_show_tags": true,
+          "blog_show_excerpt": true,
+          "blog_show_more": true
+        }
+      },
+      "sa-article-template": {
+        "type": "sa-article-template",
+        "settings": {
+          "image_parallax": false,
+          "show_date": false,
+          "show_author": false,
+          "show_share_buttons": true
+        }
+      },
+      "st-hero-5": {
+        "type": "st-hero-5",
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "alignment": "center center",
+          "title": "Place importance on what goes on to your skin",
+          "text": "<p>SKIN IS OUR BIGGEST ORGAN IN THE BODY, IT IS OUR FIRST LINE OF DEFENCE AND PROTECTION.<\/p>\n<p>This permeable layer absorbs essential oils into the epidermis, dermis and blood stream.&nbsp;It is therefore vital that we place the same importance on what goes onto our skin as what we put into our bodies. &nbsp;<\/p>\n<p>&ldquo;Slow Ageing Essentials optimises your skins natural ability to renew itself.&rdquo;&nbsp;<\/p>\n<p><\/p>\n<p>Slow Ageing Essentials contain bespoke blends of only the purest and most potent essential oils; these are the life force of botanicals and have been chosen for their skin boosting benefits.&nbsp;Easily absorbed, they actively improve the quality of skin cells, neutralising free radicals and encouraging optimum new skin cell growth &ndash; this means a more radiant, vital and luminous complexion. Each product can be applied using our &lsquo;Skin&rsquo;ergy Self-Massage Regime&rsquo; that employs the power of touch to stimulate acupressure and meridian energy pathways. This cleanses toxins out of the dermis whilst stimulating more blood, oxygen and nutrients to the surface of the skin. You can see the benefits - a stronger, plumper and more energised complexion.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "ph-featured-collection-1": {
+        "type": "ph-featured-collection-1",
+        "settings": {
+          "collection": "slow-ageing-collection",
+          "show_spacing": false,
+          "title": "The Slow Ageing Essential Collection",
+          "enable_custom_image": true,
+          "image": "shopify:\/\/shop_images\/product_collection_slate_PS.jpg",
+          "show_vendor": false,
+          "show_view_all": true,
+          "collection_page_url": "shopify:\/\/products\/slow-ageing-set",
+          "use_second_button": false,
+          "grid_style": "collage",
+          "products": 4,
+          "rows": 2
+        }
+      },
+      "st-featured-collection-1": {
+        "type": "st-featured-collection-1",
+        "settings": {
+          "collection": "slow-ageing-collection",
+          "show_spacing": false,
+          "title": "The Slow Ageing Essential Collection",
+          "enable_custom_image": true,
+          "image": "shopify:\/\/shop_images\/product_collection_slate_PS.jpg",
+          "show_vendor": false,
+          "show_view_all": true,
+          "collection_page_url": "shopify:\/\/products\/slow-ageing-set",
+          "use_second_button": false,
+          "grid_style": "collage",
+          "products": 4,
+          "rows": 2
+        }
+      },
+      "ab-slideshow-1": {
+        "type": "ab-slideshow-1",
+        "settings": {
+          "cta": "Featured Link",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ab-hero-1": {
+        "type": "ab-hero-1",
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "alignment": "center center",
+          "title": "Harness nature’s lifeforce",
           "text": "",
           "text_size": "medium",
           "use_second_button": false,
@@ -673,14 +1669,429 @@
           "overlay_opacity": "0.5"
         }
       },
-      "1523379173589": {
-        "type": "hero",
+      "ab-gallery-1": {
+        "type": "ab-gallery-1",
+        "blocks": {
+          "1525085088240": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_about_1d940dc8-06fd-438c-ad8d-c587b8977b34.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "Slow the effects of time on your skin",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1525085088240"
+        ],
+        "settings": {
+          "section_height": "large",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ab-hero-2": {
+        "type": "ab-hero-2",
+        "settings": {
+          "hero_size": "large",
+          "image": "shopify:\/\/shop_images\/model_skin.jpg",
+          "feelimage": "",
+          "alignment": "top center",
+          "title": "Skin’ergy",
+          "text": "<p>SLOW AGEING ESSENTIALS REDUCE THE&nbsp;EFFECTS OF TIME ON YOUR SKIN AND GIVE&nbsp;SKIN A RADIANT MORE VIBRANT GLOW.<\/p>\n<p>Our four products are stringently&nbsp;dermatologically tested to ensure they are kind&nbsp;to skin and suitable for all skin types and ages.&nbsp;They are for all people who wish their skin to&nbsp;look its very best, every day.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": true,
+          "overlay_color": "rgba(0,0,0,0)",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "ab-custom-content-7": {
+        "type": "ab-custom-content-7",
+        "settings": {
+          "heading_text": "remove",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ab-hero-4": {
+        "type": "ab-hero-4",
         "settings": {
           "hero_size": "medium",
-          "image": "shopify:\/\/shop_images\/Screen_Shot_2018-04-10_at_14.20.17.png",
+          "image": "",
           "alignment": "center center",
-          "title": "This will be something about the philosophy",
-          "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.<\/p>",
+          "title": "remove",
+          "text": "",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "ab-gallery-4": {
+        "type": "ab-gallery-4",
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ab-hero-3": {
+        "type": "ab-hero-3",
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "naturalimage": "shopify:\/\/shop_images\/ingredients-_balm_back_f7eb4a60-fa34-4abd-93ff-54afd341054f.jpg",
+          "alignment": "center center",
+          "title": "“Harness nature’s lifeforce”",
+          "text": "<p>ESSENTIALS OILS + THE HEART OF OUR BRAND<\/p>\n<p><\/p>\n<p>The energy and life force of plants, they enable us to connect with nature. The synergy of our bespoke protected formulations works harmoniously to give skin luminosity, as if &lsquo;lit&rsquo; from inside. The science of essential oils is well documented. They are absorbed deeply into the skin where their powerful anti-oxidant, anti-inflammatory and anti-microbial properties work to revive and renew skin, cell by cell.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "ab-gallery-2": {
+        "type": "ab-gallery-2",
+        "blocks": {
+          "1525094872709": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_energy.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "Energy is Everything",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1525094872709"
+        ],
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ab-hero-5": {
+        "type": "ab-hero-5",
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "alignment": "center center",
+          "title": "Only the most vital ingredients",
+          "text": "<p>SLOW AGEING ESSENTIALS USE THE VERY BEST PUREST 100% NATURAL ESSENTIAL OILS, EXTRACTS AND BOTANICALS.<\/p>\n<p><\/p>\n<p>&ldquo;Harness botanicals&nbsp;potent natural energy&rdquo;<\/p>\n<p>Every ingredient is meticulously sourced and carefully combined to boost the skin&rsquo;s ability renew, strengthen cells and promote elasticity and a more vital complexion. Blissfully fragrant,&nbsp;all our botanicals are carefully and slowly distilled in order to preserve their unique properties.<\/p>\n<p>Our formulations contain exacting amounts, precisely combined to utilise the power of some of the most potent natural actives.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.5"
+        }
+      },
+      "ab-gallery-3": {
+        "type": "ab-gallery-3",
+        "blocks": {
+          "1525094838072": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/model_smile.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          },
+          "1525188999386": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/sae_nature_d.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1525094838072",
+          "1525188999386"
+        ],
+        "settings": {
+          "section_height": "medium",
+          "show_overlay": false,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.3"
+        }
+      },
+      "ab-featured-collection-1": {
+        "type": "ab-featured-collection-1",
+        "settings": {
+          "collection": "slow-ageing-collection",
+          "show_spacing": false,
+          "title": "The Slow Ageing Essential Collection",
+          "enable_custom_image": true,
+          "image": "shopify:\/\/shop_images\/product_collection_slate_PS.jpg",
+          "show_vendor": false,
+          "show_view_all": true,
+          "collection_page_url": "shopify:\/\/products\/slow-ageing-set",
+          "use_second_button": false,
+          "grid_style": "collage",
+          "products": 4,
+          "rows": 2
+        }
+      },
+      "ab-custom-content-1": {
+        "type": "ab-custom-content-1",
+        "blocks": {
+          "1525189246237": {
+            "type": "text",
+            "settings": {
+              "heading_text": "“We aim to protect two environments; our bodies’ internal one and that of our precious planet”",
+              "heading_color": "#ffffff",
+              "heading_style": "h2",
+              "paragraph_text": "",
+              "paragraph_color": "#4a4a4a",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "1525189252415": {
+            "type": "text",
+            "settings": {
+              "heading_text": "Protecting Two Environments",
+              "heading_color": "#ffffff",
+              "heading_style": "h2",
+              "paragraph_text": "<p>We use the finest glass packaging to reduce our&nbsp;environmental impact.<\/p>\n<p>We do not use single use plastic.<\/p>\n<p>To minimise our packaging footprint we do not box our products.<\/p>\n<p>We wrap our products in a reusable cloth beauty bag instead.<\/p>\n<p>We are proudly British, manufacturing our products in the UK.<\/p>\n<p>We use sustainably sourced, 100% pure essential oils and&nbsp;naturally derived ingredients.<\/p>\n<p>We continually look at how we can improve!<\/p>",
+              "paragraph_color": "#ffffff",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1525189246237",
+          "1525189252415"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#ffffff",
+          "background_color": "#2a5b6c",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ab-custom-content-2": {
+        "type": "ab-custom-content-2",
+        "settings": {
+          "heading_text": "Custom content",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ab-custom-content-3": {
+        "type": "ab-custom-content-3",
+        "settings": {
+          "heading_text": "Custom content",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ab-custom-content-4": {
+        "type": "ab-custom-content-4",
+        "settings": {
+          "heading_text": "Custom content",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ab-custom-content-5": {
+        "type": "ab-custom-content-5",
+        "settings": {
+          "heading_text": "Custom content",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ab-custom-content-6": {
+        "type": "ab-custom-content-6",
+        "settings": {
+          "heading_text": "Custom content",
+          "heading_color": "#3a3a3a",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "ab-highlight-1": {
+        "type": "ab-highlight-1",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ab-highlight-2": {
+        "type": "ab-highlight-2",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ab-highlight-3": {
+        "type": "ab-highlight-3",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ab-highlight-4": {
+        "type": "ab-highlight-4",
+        "settings": {
+          "border_color": "#cbc8c1",
+          "content_alignment": "middle",
+          "image": "",
+          "image_position": "back",
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
+        }
+      },
+      "ab-quotes-1": {
+        "type": "ab-quotes-1",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ab-quotes-2": {
+        "type": "ab-quotes-2",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ab-quotes-3": {
+        "type": "ab-quotes-3",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ab-quotes-4": {
+        "type": "ab-quotes-4",
+        "settings": {
+          "color_bg": "#4a4a4a",
+          "color_text": "#ffffff",
+          "autoplay_speed": "4000"
+        }
+      },
+      "ab-rich-text-1": {
+        "type": "ab-rich-text-1",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "ab-rich-text-2": {
+        "type": "ab-rich-text-2",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "ab-rich-text-3": {
+        "type": "ab-rich-text-3",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "ab-rich-text-4": {
+        "type": "ab-rich-text-4",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "st-hero-6": {
+        "type": "st-hero-6",
+        "settings": {
+          "hero_size": "small",
+          "image": "shopify:\/\/shop_images\/Teal_section_backbround.png",
+          "alignment": "center center",
+          "title": "Move your body daily",
+          "text": "<p>FIND A MOVEMENT YOU LOVE AND COMMIT TO IT DAILY.&nbsp; CELEBRATE WHAT YOUR BODY CAN DO.<\/p>\n<p>Tai Chi, Qui Gong, Walking, Swimming; Regular exercise can make you happier by increasing production of endorphins, which help to produce positive feelings and reduce anxiety levels.<\/p>\n<p><\/p>\n<p>&ldquo;Energise, strengthen and&nbsp;take care of our bodies&rdquo;<\/p>\n<p><\/p>\n<p>The body also detoxifies via perspiration and circulation improves. Engaging in an activity you enjoy increases energy levels and provides anti-oxidant protection as well as promoting blood flow, which can protect skin and delay signs of ageing. Exercise can also help your memory and brain health as well as relaxation and sleep quality<\/p>",
           "text_size": "medium",
           "use_second_button": false,
           "button_label": "",
@@ -691,90 +2102,271 @@
           "overlay_opacity": "0"
         }
       },
-      "1523379299218": {
-        "type": "gallery",
-        "blocks": {
-          "1523379299218-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-04-10_at_17.49.23.png",
-              "alignment": "center center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1523379299218-0"
-        ],
+      "st-feature-row-1": {
+        "type": "st-feature-row-1",
         "settings": {
-          "section_height": "medium",
+          "size": "medium",
+          "background_color": "#f2a900",
+          "image": "shopify:\/\/shop_images\/sae_nature_b_54180839-19ac-487b-9d6e-65eb61bdd03a.jpg",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "Take time to eat and hydrate well",
+          "text": "<p>EAT AS CLOSE TO NATURE AS POSSIBLE; THE NUTRIENTS IN OUR FOOD ARE THE FUEL FOR OUR BODIES AND NOURISHMENT FOR OUR CELLS.<\/p>\n<p><\/p>\n<p>Aim to make food delicious. Eat whole foods in their most natural form and variety. Fill at least half your plate with colourful, high-fibre vegetables and include bright fruits like berries. These contain plenty of anti-oxidants and phytochemicals (plant based, naturally health boosting compounds), which contribute to your health in an infinite number of ways.<\/p>\n<p>Make water your new favourite drink! Start your day by hydrating your body with a large glass of water containing the juice of &frac12; a freshly squeezed lemon, or just plain water. Drink at least a litre of water a day.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "left",
+          "mobile_layout": "top"
+        }
+      },
+      "st-feature-row-2": {
+        "type": "st-feature-row-2",
+        "settings": {
+          "size": "medium",
+          "background_color": "#2a5b6c",
+          "image": "shopify:\/\/shop_images\/story_margo.jpg",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "Margot’s Top 5 recommendations for living the Slow Way",
+          "text": "<p>Make the effort to be healthy, have personal routines, enjoy time to apply Slow Ageing Essentials.<\/p>\n<p>Commit to a daily exercise that you love<\/p>\n<p>Remember to hydrate first thing in the morning&nbsp;and throughout the day<\/p>\n<p>Eat as close to nature as possible<\/p>\n<p>Finally something that is completely free; conscious breathing and quality sleep &ndash; the hours before midnight are the most restorative<\/p>\n<p><span>&ldquo;It's never too early to begin or too late to start&rdquo;&nbsp;<\/span><\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "left",
+          "mobile_layout": "top"
+        }
+      },
+      "st-feature-row-3": {
+        "type": "st-feature-row-3",
+        "settings": {
+          "size": "medium",
+          "background_color": "#faf9f6",
+          "image": "",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "default heading",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "right",
+          "mobile_layout": "top"
+        }
+      },
+      "ab-feature-row-1": {
+        "type": "ab-feature-row-1",
+        "settings": {
+          "size": "medium",
+          "background_color": "#2a5b6c",
+          "image": "shopify:\/\/shop_images\/model_skin.jpg",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "Skin’ergy",
+          "text": "<p>SLOW AGEING ESSENTIALS REDUCE THE&nbsp;EFFECTS OF TIME ON YOUR SKIN AND GIVE&nbsp;SKIN A RADIANT, MORE VIBRANT GLOW.<\/p>\n<p>Each product is stringently dermatologically tested to ensure it is kind to skin and suitable for all ages and skin types. They are for anyone wanting their skin to look its very best, every day, for all their life.<\/p>\n<p>The Slow Ageing Essentials products work in harmony to ensure the best possible results. Enhance their benefits by following our 'Skin'ergy Self-massage application' to ensure the formulas are absorbed deeply and to energise and exercise the muscles of the face.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "left",
+          "mobile_layout": "top"
+        }
+      },
+      "ab-feature-row-2": {
+        "type": "ab-feature-row-2",
+        "settings": {
+          "size": "medium",
+          "background_color": "#f3f2ed",
+          "image": "shopify:\/\/shop_images\/product_essence_a.jpg",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "Potency protected",
+          "text": "<p>100% NATURAL PRODUCTS CAN LOSE THEIR POTENCY OVER TIME AS THEY DEGRADE - SLOW AGEING ESSENTIALS DO NOT.<\/p>\n<p>We use stunningly beautiful deep violet glass, that is scientifically proven to block damaging UVB and UVC light. The revolutionary packaging preserves the oil&rsquo;s effectiveness, ensuring the last drop is as potent as the first.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "right",
+          "mobile_layout": "top"
+        }
+      },
+      "ab-feature-row-3": {
+        "type": "ab-feature-row-3",
+        "settings": {
+          "size": "medium",
+          "background_color": "#faf9f6",
+          "image": "",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "default heading",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "right",
+          "mobile_layout": "top"
+        }
+      },
+      "ph-feature-row-1": {
+        "type": "ph-feature-row-1",
+        "settings": {
+          "size": "x-large",
+          "background_color": "#f3f2ed",
+          "image": "shopify:\/\/shop_images\/story_david_margo_new_A.jpg",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "“Our story - a lifelong dedication to understanding how to slow the effects of time on skin”",
+          "text": "",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "left",
+          "mobile_layout": "top"
+        }
+      },
+      "ph-feature-row-2": {
+        "type": "ph-feature-row-2",
+        "settings": {
+          "size": "medium",
+          "background_color": "#faf9f6",
+          "image": "",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "default heading",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "right",
+          "mobile_layout": "top"
+        }
+      },
+      "ph-feature-row-3": {
+        "type": "ph-feature-row-3",
+        "settings": {
+          "size": "medium",
+          "background_color": "#faf9f6",
+          "image": "",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "default heading",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "right",
+          "mobile_layout": "top"
+        }
+      },
+      "st-hero-7": {
+        "type": "st-hero-7",
+        "settings": {
+          "hero_size": "x-large",
+          "image": "shopify:\/\/shop_images\/banner_model_b_adfd4fc6-a134-479f-8d46-e4bbf6ba0a6e.jpg",
+          "alignment": "center center",
+          "title": "“It is called beauty sleep for a reason”",
+          "text": "",
+          "text_size": "large",
+          "sub_title": "",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
           "show_overlay": false,
           "overlay_color": "#000000",
           "overlay_text": "#ffffff",
-          "overlay_opacity": "0.3"
+          "overlay_opacity": "1"
         }
       },
-      "1523379349145": {
-        "type": "custom-content",
+      "1525986480938": {
+        "type": "newsletter",
+        "settings": {
+          "caption_image": "shopify:\/\/shop_images\/live-slowly.png",
+          "placeholder_text": "Join the Slow Society - type your email here",
+          "heading": "Join the Slow Society",
+          "subtext": "Good things come to those who sign up!",
+          "desc": "<li>A meeting of minds<\/li><li>A sharing of stories<\/li><li>A bounty of benefits<\/li>",
+          "success_message": "Thanks for subscribing",
+          "text_color": "#f2a900",
+          "background_color": "#f3f2ed"
+        }
+      },
+      "1526030458888": {
+        "type": "ab-hero-1",
+        "settings": {
+          "hero_size": "medium",
+          "image": "shopify:\/\/shop_images\/banner_model_d.jpg",
+          "alignment": "center center",
+          "title": "“100% of Beauty Bible <br>testers gave us 5 stars”",
+          "text": "",
+          "text_size": "medium",
+          "use_second_button": true,
+          "button_label": "GET THE GLOW",
+          "button_link": "shopify:\/\/products\/slow-ageing-set",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "1526322472136": {
+        "type": "ab-custom-content-1",
+        "disabled": true,
         "blocks": {
-          "1523379349145-0": {
+          "1527110688772": {
             "type": "text",
             "settings": {
-              "heading_text": "\"This will be about my slow life with David and my yogaslow life with David and my yoga”",
-              "heading_color": "#244b5a",
-              "heading_style": "h2",
-              "paragraph_text": "<p>MARGO OR DAVID FOUNDER&nbsp;<\/p>",
-              "paragraph_color": "#244b5a",
+              "heading_text": "Sign up to find out more about our products and philosophy.",
+              "heading_color": "#ffffff",
+              "heading_style": "h3",
+              "paragraph_text": "",
+              "paragraph_color": "#ffffff",
               "paragraph_size": "1",
-              "width": "50%",
+              "width": "100%",
               "alignment": "center",
               "align_text": "center"
             }
           },
-          "1523379349145-1": {
-            "type": "image",
+          "1526322503638": {
+            "type": "html",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-04-10_at_14.41.18.png",
-              "width": "50%",
+              "code": "<!-- Start of signup -->\n<script language=\"javascript\">\n<!--\nfunction validate_signup(frm) {\n\tvar emailAddress = frm.Email.value;\n\tvar errorString = '';\n\t\n        \n    var checkBoxValue = frm.ci_userConsentCheckBox.checked;\n    if(checkBoxValue == false){\n        errorString = 'You must accept the terms';\n    }\n\n        if (emailAddress == '' || emailAddress.indexOf('@') == -1) {\n\t\terrorString = 'Please enter your email address';\n\t}\n\n    \nvar els = frm.getElementsByTagName('input');\nfor (var i = 0; i < els.length; i++)\n{\n    if (els[i].className == 'text' || els[i].className == 'date' || els[i].className == 'number')\n    {\n        if (els[i].value == '')\n            errorString = 'Please complete all required fields.';\n    }\n    else if (els[i].className == 'radio')\n    {\n        var toCheck = document.getElementsByName(els[i].name);\n        var radioChecked = false;\n        for (var j = 0; j < toCheck.length; j++)\n        {\n            if (toCheck[j].name == els[i].name && toCheck[j].checked)\n                radioChecked = true;\n        }\n        if (!radioChecked)\n            errorString = 'Please complete all required fields.';\n    }\n}\n\n\n\n\tvar isError = false;\n    if (errorString.length > 0)\n        isError = true;\n\n    if (isError)\n        alert(errorString);\n\treturn !isError;\n}\n\n\n\/\/-->\n<\/script>\n\n<form name=\"signup\" id=\"signup\" action=\"https:\/\/r1.dmtrk.net\/signup.ashx\" method=\"post\" onsubmit=\"return validate_signup(this)\">\n<input type=\"hidden\" name=\"addressbookid\" value=\"35086\">\n<input type=\"hidden\" name=\"ci_isconsentform\" value=\"true\">\n<input type=\"hidden\" name=\"userid\" value=\"225153\">\n<input type=\"hidden\" name=\"SIGe21100539e3d3f6ea8ef39163ec6050fb1b24ce72591b9c4fb3185814e043a92\" value=\"\">\n<!-- ReturnURL - when the user hits submit, they'll get sent here -->\n<input type=\"hidden\" name=\"ReturnURL\" value=\"https:\/\/slowageing.co.uk\/blogs\/news\">\n<!-- Email - the user's email address -->\n\n<div class=\"sa-emailForm\">\n\t<div class=\"sa-name\"> <label for=\"name\">Name:<\/label> <input id=\"name\" type=\"text\" name=\"cd_FULLNAME\">\n<\/div>\n\t<div class=\"sa-email\"> <label for=\"email\">Email:<\/label> <input id=\"email\" class=\"text\" type=\"email\" name=\"Email\">\n<\/div>\n<\/div>\n\n<div class=\"sa-emailFormInfo\">\n<input type=\"hidden\" name=\"ci_userConsentText\" value=\"Join+the+Slow+Ageing+Society.+By+joining+you+agree+for+us+to+send+you+marketing+materials+via+email.\">\n\n<div class=\"sa-formTerms\"> <input type=\"checkbox\" name=\"ci_userConsentCheckBox\"> Join the Slow Ageing Society. By joining you agree for us to send you updates and information about Slow Ageing Essentials via email.<\/div>\n<input type=\"hidden\" id=\"ci_consenturl\" name=\"ci_consenturl\" value=\"\">\n\n<div class=\"sa-formSubmit\"><input type=\"Submit\" name=\"Submit\" value=\"Subscribe\"><\/div>\n\n<\/div>\n\n<\/form>\n\n<script language=\"javascript\">\n\tvar urlInput = document.getElementById(\"ci_consenturl\");\n\t\n\tif (urlInput != null && urlInput != 'undefined') {\n\t\turlInput.value = encodeURI(window.location.href);\n    }\n<\/script>\n<!-- End of signup -->",
+              "width": "100%",
               "alignment": "center"
             }
           }
         },
         "block_order": [
-          "1523379349145-0",
-          "1523379349145-1"
+          "1527110688772",
+          "1526322503638"
         ],
         "settings": {
-          "heading_text": "",
-          "heading_color": "#3a3a3a",
-          "background_color": "#ffffff",
+          "heading_text": "Join the Slow Society",
+          "heading_color": "#ffffff",
+          "background_color": "#f2a900",
           "top_margin": false,
-          "bottom_margin": true
+          "bottom_margin": false
         }
       },
-      "1523379380758": {
-        "type": "rich-text",
+      "1526480176116": {
+        "type": "ab-rich-text-1",
+        "disabled": true,
         "settings": {
           "full_width": true,
-          "section_title": "This is the first section about something where titles",
-          "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.<\/p>\n<p><\/p>\n<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,<\/p>",
+          "section_title": "",
+          "text": "<p><\/p>\n<p><\/p>\n<p><\/p>\n<p>.<\/p>\n<p>.<\/p>\n<p><\/p>\n<p><\/p>\n<p><\/p>\n<p><\/p>\n<p>OR VERSION 2 VIA DOT MAILER&nbsp;<\/p>",
           "text_size": "medium"
         }
       },
-      "1523379697526": {
-        "type": "custom-content",
+      "1526480644838": {
+        "type": "st-custom-content-7",
+        "disabled": true,
         "blocks": {
-          "1523379697526-0": {
+          "1526480644838-0": {
             "type": "text",
             "settings": {
-              "heading_text": "This is the second section about something else",
-              "heading_color": "#ffffff",
+              "heading_text": "",
+              "heading_color": "#3a3a3a",
               "heading_style": "h2",
-              "paragraph_text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.<\/p>",
+              "paragraph_text": "<p>* By pressing JOIN&nbsp;you agree for us to send you marketing materials via email \/ you agree to our Privacy Policy<\/p>",
               "paragraph_color": "#ffffff",
-              "paragraph_size": "1.25",
+              "paragraph_size": "1",
               "width": "100%",
               "alignment": "center",
               "align_text": "left"
@@ -782,205 +2374,411 @@
           }
         },
         "block_order": [
-          "1523379697526-0"
+          "1526480644838-0"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#ffffff",
+          "background_color": "#f2a900",
+          "top_margin": false,
+          "bottom_margin": true
+        }
+      },
+      "1526480912810": {
+        "type": "ab-custom-content-1",
+        "disabled": true,
+        "blocks": {
+          "1526480912810-0": {
+            "type": "text",
+            "settings": {
+              "heading_text": "Join the Slow Society",
+              "heading_color": "#ffffff",
+              "heading_style": "h2",
+              "paragraph_text": "",
+              "paragraph_color": "#ffffff",
+              "paragraph_size": "1",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1526480912810-0"
         ],
         "settings": {
           "heading_text": "",
           "heading_color": "#3a3a3a",
-          "background_color": "#f5a801",
+          "background_color": "#f2a900",
           "top_margin": true,
-          "bottom_margin": true
+          "bottom_margin": false
         }
       },
-      "1523379819355": {
-        "type": "gallery",
-        "blocks": {
-          "1523379819355-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/1369862815790.jpg",
-              "alignment": "center center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          },
-          "1523379819355-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/1369862784741.jpg",
-              "alignment": "center center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          },
-          "1523379819355-2": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-16_at_14.51.18_copy.jpg",
-              "alignment": "center center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1523379819355-0",
-          "1523379819355-1",
-          "1523379819355-2"
-        ],
+      "1526941588440": {
+        "type": "ab-feature-row-1",
+        "disabled": true,
         "settings": {
-          "section_height": "medium",
-          "show_overlay": false,
-          "overlay_color": "#000000",
-          "overlay_text": "#ffffff",
-          "overlay_opacity": "0.3"
-        }
-      },
-      "1523380282794": {
-        "type": "rich-text",
-        "settings": {
-          "full_width": true,
-          "section_title": "This is the third section about something",
-          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.&nbsp;Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.&nbsp;Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.&nbsp;Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-          "text_size": "medium"
-        }
-      },
-      "1523380317419": {
-        "type": "gallery",
-        "blocks": {
-          "1523380317419-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/cae87247cea238f8795624314eff9985--orange-flowers-levis.jpg",
-              "alignment": "bottom center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          },
-          "1523380317419-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-16_at_13.37.20.png",
-              "alignment": "center center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1523380317419-0",
-          "1523380317419-1"
-        ],
-        "settings": {
-          "section_height": "medium",
-          "show_overlay": false,
-          "overlay_color": "#000000",
-          "overlay_text": "#ffffff",
-          "overlay_opacity": "0.3"
-        }
-      },
-      "1523380408963": {
-        "type": "rich-text",
-        "settings": {
-          "full_width": true,
-          "section_title": "Another section about the site",
-          "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,<\/p>",
-          "text_size": "medium"
-        }
-      },
-      "1523380457161": {
-        "type": "gallery",
-        "blocks": {
-          "1523380457161-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/09_Dec14_elemis_bathing_411_v3.jpg",
-              "alignment": "top left",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          },
-          "1523380457161-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Yogi-Tea-Blog-Yoga-Dictionary-300x225.jpg",
-              "alignment": "center center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          },
-          "1523380457161-2": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-03-16_at_14.36.03.png",
-              "alignment": "center center",
-              "icon": "none",
-              "cta_label": "",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1523380457161-0",
-          "1523380457161-1",
-          "1523380457161-2"
-        ],
-        "settings": {
-          "section_height": "medium",
-          "show_overlay": false,
-          "overlay_color": "#000000",
-          "overlay_text": "#ffffff",
-          "overlay_opacity": "0.3"
-        }
-      },
-      "1523380740152": {
-        "type": "featured-collection",
-        "settings": {
-          "collection": "slow-ageing-collection",
-          "show_spacing": false,
-          "title": "Purchase Slow Ageing Items",
-          "show_vendor": false,
-          "show_view_all": false,
+          "size": "medium",
+          "background_color": "#2a5b6c",
+          "image": "shopify:\/\/shop_images\/story_david_margo_new_A.jpg",
+          "image_crop": "none",
+          "alignment": "top center",
+          "content-title": "Skin’ergy - How does it work?",
+          "text": "<p>THE SLOW AGEING ESSENTIALS COLLECTION IS A NEW PARADIGM IN NATURAL SKINCARE.<\/p>\n<p>Just 4 powerful products means you no longer have to ask &lsquo;what do I need for my skin&rsquo;.&nbsp;They have been developed to work in unison, each product performing a specific function and working perfectly with each other.&nbsp;The products share a signature range of the finest quality essentials oils that work in synergy to fight the free radicals that damage cell health and age our appearance.&nbsp;Illuminate your skin from the inside out, give your complexion a radiant vital glow and energise your appearance, we call it Skin&rsquo;ergy!<\/p>",
           "use_second_button": false,
+          "button_label": "Find out more",
+          "button_link": "shopify:\/\/products\/slow-ageing-set",
+          "desktop_layout": "right",
+          "mobile_layout": "top"
+        }
+      },
+      "1527110932538": {
+        "type": "ab-hero-4",
+        "disabled": true,
+        "settings": {
+          "hero_size": "large",
+          "image": "shopify:\/\/shop_images\/collection-home-page_slate.1-compressor.jpg",
+          "alignment": "center center",
+          "title": "The Slow Ageing Collection",
+          "text": "<p>Receive a complimentary Essential Face Wash when you buy the collection.<\/p>",
+          "text_size": "medium",
+          "use_second_button": false,
+          "button_label": "Purchase the collection",
+          "button_link": "shopify:\/\/products\/slow-ageing-set",
+          "show_overlay": true,
+          "overlay_color": "#f3f2ed",
+          "overlay_text": "#2a5b6c",
+          "overlay_opacity": "0"
+        }
+      },
+      "1527111529834": {
+        "type": "ph-highlight-3",
+        "disabled": true,
+        "settings": {
+          "border_color": "#2a5b6c",
+          "content_alignment": "middle",
+          "image": "shopify:\/\/shop_images\/product_essence_e_copy.jpg",
+          "image_position": "front",
+          "heading": "Discover the Collection",
+          "text": "A COMPETE SKINCARE RANGE, UNIQUELY FORMULATED TO LEAVE YOUR SKIN FEELING SOFTER, SMOOTHER AND RADIATING AN ENERGETIC GLOW. WHEN YOU BUY THE COLLECTION TOGETHER RECEIVE A COMPLEMENTARY ESSENTIAL FACE WASH WORTH £35.",
+          "use_second_button": false,
+          "button_text": "BUY THE COLLECTION £299",
+          "button_link": ""
+        }
+      },
+      "1527111778104": {
+        "type": "ab-rich-text-1",
+        "disabled": true,
+        "settings": {
+          "full_width": false,
+          "section_title": "Welcome to Slow Ageing",
+          "text": "<p>A NEW NATURAL BOTANICAL SKINCARE REGIME FOR ALL SKIN TYPES AND AGES.<\/p>\n<p>This beautiful range of only the most essential products will transform the radiance of your complexion, help to slow the effects of time on your skin, whilst boosting your natural energy levels and enhancing your feelings of inner calm.<\/p>\n<p><\/p>\n<p>&ldquo;Inner Beauty, Outer Beauty, Lasting Beauty&rdquo;<\/p>",
+          "text_size": "large"
+        }
+      },
+      "1531922524167": {
+        "type": "st-hero-7",
+        "settings": {
+          "hero_size": "small",
+          "image": "shopify:\/\/shop_images\/BG_yellow_mandella_53f3cbdd-325e-4402-a4a8-eab192286755.jpg",
+          "alignment": "center center",
+          "title": "Welcome to Slow Ageing",
+          "text": "<p>A NEW NATURAL BOTANICAL SKINCARE REGIME FOR ALL SKIN TYPES AND AGES.<\/p>\n<p>This beautiful range of only the most essential products will transform the radiance of your complexion, help to slow the effects of time on your skin, whilst boosting your natural energy levels and enhancing your feelings of inner calm.<\/p>",
+          "text_size": "large",
+          "sub_title": "",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "shopify:\/\/products\/slow-ageing-set",
+          "show_overlay": true,
+          "overlay_color": "#080808",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0"
+        }
+      },
+      "1531923607278": {
+        "type": "st-feature-row-3",
+        "disabled": true,
+        "settings": {
+          "size": "medium",
+          "background_color": "#f3f2ed",
+          "image": "shopify:\/\/shop_images\/banner_model_d.jpg",
+          "image_crop": "none",
+          "alignment": "center right",
+          "content-title": "“Feeling beautiful is beautiful”",
+          "text": "<p>IT'S WRITTEN ALL OVER YOUR FACE<\/p>",
+          "use_second_button": false,
+          "button_label": "GET THE GLOW",
+          "button_link": "",
+          "desktop_layout": "right",
+          "mobile_layout": "top"
+        }
+      },
+      "1531925692736": {
+        "type": "ab-featured-slider-1",
+        "blocks": {
+          "1531925692736-0": {
+            "type": "slide",
+            "settings": {
+              "background_color": "#f3f2ed",
+              "show_image": true,
+              "slide_image": "shopify:\/\/shop_images\/step1.png",
+              "slide_title": "",
+              "slide_text": "<p>A LUXURIOUSLY CREAMY FOAMING WASH THAT CLEANSES IMPURITIES LEAVING SKIN PERFECTLY PRIMED TO ABSORB OUR ESSENTIAL FACIAL ESSENCE.<\/p>",
+              "slide_text_size": "medium",
+              "slide_button_text": "",
+              "slide_button_url": ""
+            }
+          },
+          "1531925692736-1": {
+            "type": "slide",
+            "settings": {
+              "background_color": "rgba(0,0,0,0)",
+              "show_image": true,
+              "slide_image": "shopify:\/\/shop_images\/step2.png",
+              "slide_title": "",
+              "slide_text": "<p>THE PURE ESSENCE AND LIFE FORCE OF 5 BOTANICALS BALANCED IN THE PERFECT SYNERGY OF ESSENTIAL OILS TO DELIVER VITALITY, ENERGY AND RADIANCE TO THE SKIN.<\/p>",
+              "slide_text_size": "medium",
+              "slide_button_text": "",
+              "slide_button_url": ""
+            }
+          },
+          "1531925692736-2": {
+            "type": "slide",
+            "settings": {
+              "background_color": "rgba(0,0,0,0)",
+              "show_image": true,
+              "slide_image": "shopify:\/\/shop_images\/step3.png",
+              "slide_title": "",
+              "slide_text": "<p>A DAY MOISTURISER THAT PROTECTS, SOFTENS AND SMOOTHS HELPING SKIN LOOK ITS VERY BEST EVERY DAY.<\/p>",
+              "slide_text_size": "medium",
+              "slide_button_text": "",
+              "slide_button_url": ""
+            }
+          },
+          "1532427255194": {
+            "type": "slide",
+            "settings": {
+              "background_color": "rgba(0,0,0,0)",
+              "show_image": true,
+              "slide_image": "shopify:\/\/shop_images\/step4.png",
+              "slide_title": "",
+              "slide_text": "<p><\/p>\n<p>A REGENERATING TREATMENT TO&nbsp;INTENSIVELY NOURISH, BRIGHTEN&nbsp;AND REVITALIZE THE SKIN<\/p>",
+              "slide_text_size": "medium",
+              "slide_button_text": "",
+              "slide_button_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1531925692736-0",
+          "1531925692736-1",
+          "1531925692736-2",
+          "1532427255194"
+        ],
+        "settings": {
+          "use_second_button": true,
+          "text_color": "#2a5b6c",
+          "cover_image": "shopify:\/\/shop_images\/BG_blue.jpg",
+          "cover_title": "From four to flawless",
+          "cover_title_desktop_position": "left",
+          "cover_text": "4 steps to 5 star skin ***** Each developed to work in perfect synergy; Illuminate your skin from the inside out, give your complexion a radiant vital glow and energise your appearance, we call it Skin’ergy!",
+          "cover_use_second_button": true,
+          "button_label": "Shop The Collection",
+          "button_link": "shopify:\/\/products\/slow-ageing-set",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0",
+          "caption_title": "The Wonder of Four"
+        }
+      },
+      "topbar-dd": {
+        "type": "topbar-dd",
+        "blocks": {
+          "1532088715105": {
+            "type": "text",
+            "settings": {
+              "title": "COMPLIMENTARY Essential Face Wash",
+              "title_link": "shopify:\/\/products\/essential-face-wash"
+            }
+          },
+          "1532088727211": {
+            "type": "text",
+            "settings": {
+              "title": "Next Day Delivery <br> As Standard",
+              "title_link": "shopify:\/\/pages\/shipping-details"
+            }
+          },
+          "1532088732247": {
+            "type": "text",
+            "settings": {
+              "title": "Discover The Difference 30 Day Guarantee",
+              "title_link": "shopify:\/\/products\/slow-ageing-set"
+            }
+          },
+          "1532088736903": {
+            "type": "text",
+            "settings": {
+              "title": "Slow Society <br> Join Today",
+              "title_link": "shopify:\/\/blogs\/news"
+            }
+          }
+        },
+        "block_order": [
+          "1532088715105",
+          "1532088727211",
+          "1532088732247",
+          "1532088736903"
+        ],
+        "settings": {}
+      },
+      "1532342101605": {
+        "type": "ab-hero-2",
+        "disabled": true,
+        "settings": {
+          "hero_size": "small",
+          "image": "shopify:\/\/shop_images\/BG_green_trees_a.jpg",
+          "feelimage": "shopify:\/\/shop_images\/fill-good.png",
+          "alignment": "center center",
+          "title": "Energy is <span>everything<\/span>",
+          "text": "<p>SLOW AGEING ESSENTIALS + BEAUTY IS ALWAYS MORE THAN SKIN DEEP<\/p>",
+          "text_size": "large",
+          "use_second_button": true,
+          "button_label": "FIND OUT WHY",
+          "button_link": "shopify:\/\/pages\/philosophy",
+          "show_overlay": true,
+          "overlay_color": "#ffffff",
+          "overlay_text": "#2a5b6c",
+          "overlay_opacity": "0.7"
+        }
+      },
+      "1532346550441": {
+        "type": "ab-hero-3",
+        "disabled": true,
+        "settings": {
+          "hero_size": "medium",
+          "image": "shopify:\/\/shop_images\/BG_green_trees_b.jpg",
+          "naturalimage": "shopify:\/\/shop_images\/natural-img.png",
+          "alignment": "center center",
+          "title": "“Harness botanicals' potent natural energy”",
+          "text": "<p>A NEW NATURAL BOTANICAL SKINCARE REGIME FOR ALL SKIN TYPES AND AGES.&nbsp;<\/p>\n<p>Slow Ageing Essentials use the very best purest 100% natural essential oils, extracts and botanicals specifically formulated for maximum anti-oxidant, anti-inflammatory and anti-microbial results.<\/p>",
+          "text_size": "medium",
+          "use_second_button": true,
+          "button_label": "FIND OUT FOR YOURSELF",
+          "button_link": "shopify:\/\/pages\/about",
+          "show_overlay": true,
+          "overlay_color": "#ffffff",
+          "overlay_text": "#2a5b6c",
+          "overlay_opacity": "0.7"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "caption_image": "shopify:\/\/shop_images\/live-slowly.png",
+          "placeholder_text": "Join the Slow Society - type your email here",
+          "heading": "Join the Slow Society",
+          "subtext": "Good things come to those who sign up!",
+          "desc": "<li>A meeting of minds<\/li><li>A sharing of stories<\/li><li>A bounty of benefits<\/li>",
+          "success_message": "Thanks for subscribing",
+          "text_color": "#f2a900",
+          "background_color": "#f3f2ed"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "1563268108209": {
+            "type": "collection",
+            "settings": {
+              "collection": "slow-ageing-collection"
+            }
+          }
+        },
+        "block_order": [
+          "1563268108209"
+        ],
+        "settings": {
+          "display_type": "selected",
           "grid_style": "grid",
-          "products": 4,
+          "products": "2",
+          "sort": "alphabetical",
+          "show_spacing": true,
+          "show_description": true
+        }
+      },
+      "consultant-img-with-text": {
+        "type": "consultant-img-with-text",
+        "settings": {
+          "size": "large",
+          "background_color": "#2a5b6c",
+          "image": "shopify:\/\/shop_images\/model_skin_9f7b3f1e-57b2-4f56-942c-92ce855248e4.jpg",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "Personal Skin Consultation",
+          "text": "<p>Everyone wants their &lsquo;best ever&rsquo; skin. The Slow Ageing range is compact but our &lsquo;4 to flawless&rsquo; collection of products can be used in many different ways to bring out the very best in your skin. Whatever your age or skincare concern, our simple Skin&rsquo;ergy Consultation takes less than 1 min to give you your personalised results and the perfect product combination for achieving 5-star skin. Just tick your skin type, click on how it behaves, your main skincare goal and how much time you have to instantly receive a tailor-made recommendation.<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "left",
+          "mobile_layout": "top"
+        }
+      },
+      "1567758624881": {
+        "type": "ph-highlight-3",
+        "settings": {
+          "border_color": "#2a5b6c",
+          "content_alignment": "middle",
+          "image": "shopify:\/\/shop_images\/product_essence_a.jpg",
+          "image_position": "front",
+          "heading": "Our Bestseller",
+          "text": "Discover the power of our Facial Essence to help enhance the skin’s elasticity, relax fine lines and stimulate skin renewal to reveal a glowing complexion. Our current best selling product from the range",
+          "use_second_button": false,
+          "button_text": "£75 - Discover more",
+          "button_link": "shopify:\/\/products\/essential-facial-essence"
+        }
+      },
+      "1567778091500": {
+        "type": "ab-featured-collection-1",
+        "disabled": true,
+        "settings": {
+          "collection": "frontpage",
+          "show_spacing": false,
+          "title": "",
+          "enable_custom_image": false,
+          "image": "",
+          "show_vendor": false,
+          "show_view_all": true,
+          "collection_page_url": "",
+          "use_second_button": false,
+          "grid_style": "collage",
+          "products": 3,
           "rows": 1
         }
       }
     },
     "content_for_index": [
-      "1522068157673",
-      "1523366068633",
-      "1523366372905",
+      "1531922524167",
+      "1531925692736",
+      "1526030458888",
+      "1567758624881",
+      "1532346550441",
+      "1532342101605",
+      "1527111778104",
+      "1526941588440",
       "1523369205555",
-      "1523370735943",
-      "1486583009346",
-      "1523371894600",
-      "1523371192714",
+      "1527110932538",
+      "1526322472136",
+      "1527111529834",
+      "1526480912810",
+      "1526480644838",
+      "1526480176116",
       "gallery",
-      "1523369708121",
-      "1522154547550",
-      "1523379018665",
-      "1523379106773",
-      "1523379173589",
-      "1523379299218",
-      "1523379380758",
-      "1523379349145",
-      "1523379697526",
-      "1523379819355",
-      "1486584983006",
-      "1523380282794",
-      "1523380317419",
-      "1523380408963",
-      "1523380457161",
-      "1523380740152"
+      "1531923607278",
+      "1523380740152",
+      "1567778091500",
+      "1525986480938",
+      "1523627216695"
     ]
   },
   "presets": {
@@ -1170,13 +2968,7 @@
             "1486649208703",
             "1486649267624"
           ],
-          "settings": {
-            "cta": "view more",
-            "show_overlay": true,
-            "overlay_color": "#313131",
-            "overlay_text": "#ffffff",
-            "overlay_opacity": "0.3"
-          }
+          "settings": {}
         },
         "1486649413883": {
           "type": "gallery",
@@ -1361,22 +3153,7 @@
       "sections": {
         "slideshow": {
           "type": "slideshow",
-          "blocks": {
-            "1486583739899": {
-              "type": "video",
-              "settings": {}
-            }
-          },
-          "block_order": [
-            "1486583739899"
-          ],
-          "settings": {
-            "cta": "Shop now",
-            "show_overlay": true,
-            "overlay_color": "#ffffff",
-            "overlay_text": "#000000",
-            "overlay_opacity": "0.5"
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",
@@ -1681,21 +3458,7 @@
       "sections": {
         "slideshow": {
           "type": "slideshow",
-          "blocks": {
-            "1486663529263": {
-              "type": "video",
-              "settings": {}
-            }
-          },
-          "block_order": [
-            "1486663529263"
-          ],
-          "settings": {
-            "show_overlay": true,
-            "overlay_color": "#000000",
-            "overlay_text": "#ffffff",
-            "overlay_opacity": "0.6"
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",

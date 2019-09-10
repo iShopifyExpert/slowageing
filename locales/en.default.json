@@ -324,5 +324,21 @@
   "video": {
     "play": "Play video",
     "close": "Stop video"
+  },
+  "shopify": {
+    "checkout": {
+      "customer_account": {
+        "save_my_information_label": "CREATE AN ACCOUNT - Sign up to review and track your orders. We will send you an email to active your account. "
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Join the Slow Society. I agree to receive marketing emails. "
+      },
+      "contact": {
+        "contact_method_title": "Pay via Credit & Debit Card"
+      },
+      "thank_you": {
+        "confirmed_description": "We've accepted your order, and we're getting it ready. Sign in to come back to this page for updates on your order status."
+      }
+    }
   }
 }

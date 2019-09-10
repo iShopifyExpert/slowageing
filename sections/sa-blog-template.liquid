@@ -68,10 +68,11 @@ header h2.custom-content__section-header.text-center {
 }
 .post-list-recent .card__image-wrapper {
   width: auto;
+  float:left;
 }
-.post-list-recent a.card__wrapper {
+/* .post-list-recent a.card__wrapper {
   display: flex;
-}
+} */
 .post-list-recent a.card__wrapper .card__image{
   position: initial;
   position: inherit;
@@ -80,8 +81,10 @@ header h2.custom-content__section-header.text-center {
   height: 94px;
 }
 .post-list-recent a.card__wrapper .card__info {
-  float: left;
+/*   float: left; */
   padding: 5px 15px!important;
+  overflow: hidden;
+  clear: none;
 }
 .post-list-recent h1.card__name {
   font-size: 1.5rem;
@@ -171,7 +174,7 @@ header h2.custom-content__section-header.text-center {
     <div class="blog-tags">
       <a href="{{ shop.url }}/blogs/news">All</a>
       {% for tag in blog.all_tags %}
-      <span>|</span> <a href="{{ shop.url }}/blogs/news/tagged/{{ tag }}">{{ tag }}</a>
+      <span>|</span> <a href="{{ shop.url }}/blogs/news/tagged/{{ tag | handle }}">{{ tag }}</a>
       {% endfor %}
     </div>
 
@@ -189,6 +192,9 @@ header h2.custom-content__section-header.text-center {
       <div class="post-list-last medium-up--two-thirds">
         <div class=" ">
           {% for article in blog.articles limit: 1%}
+          {%- comment %}<locksmith:0c76>{% endcomment -%}
+            {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: article, locksmith_subject_parent: blog %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:0c76>{% endcomment -%}
           {% include 'sa-article-last'%}
           {% endfor %}
         </div>
@@ -197,6 +203,9 @@ header h2.custom-content__section-header.text-center {
       <div class="post-list-recent medium-up--one-third">
         <div class=" ">
           {% for article in blog.articles limit: 3%}
+          {%- comment %}<locksmith:119b>{% endcomment -%}
+            {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: article, locksmith_subject_parent: blog %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:119b>{% endcomment -%}
           {% include 'sa-article-list'%}
           {% endfor %}
         </div>
@@ -220,6 +229,9 @@ header h2.custom-content__section-header.text-center {
     <div class="post-list-card card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}" data-grid-style="{{ section.settings.grid_style }}">
       <div class="card-list__column grid__item {% if blog.articles.size == 1 %}card-list__column--center{% endif %} {{ gridClasses }}">
         {% for article in blog.articles %}
+        {%- comment %}<locksmith:e16f>{% endcomment -%}
+          {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: article, locksmith_subject_parent: blog %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:e16f>{% endcomment -%}
         {% include 'sa-article-card', article: article, grid_style: section.settings.grid_style %}
         {% endfor %}
       </div>

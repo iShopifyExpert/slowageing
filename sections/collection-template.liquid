@@ -108,18 +108,24 @@
     {%- assign mobileColumns = '1' -%}
 
     {%- capture gridClasses -%}
-      {% if desktopColumns == '3' and totalProducts > 2 %}medium-up--one-third {% else %}medium-up--one-half {% endif %}
+      {% if desktopColumns == '3' and totalProducts > 2 %}medium-up--one-third {% else %}medium-up--one-whole {% endif %}
       {% if mobileColumns == '2' %}small--one-half {% endif %}
     {%- endcapture -%}
 
     <div class="card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}" data-grid-style="{{ section.settings.grid_style }}">
       <div class="card-list__column{% if totalProducts == 1 %} card-list__column--center{% endif %} grid grid__item {{ gridClasses }}">
         {% for product in collection.products %}
+	  
+
+          {%- comment %}<locksmith:bb87>{% endcomment -%}
+            {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: product, locksmith_subject_parent: collection %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:bb87>{% endcomment -%}
           {% include 'product-card', product: product, grid_style: section.settings.grid_style %}
+          
         {% endfor %}
       </div>
     </div>
-
+	
     {% if collection.products.size == 0 %}
       <p class="text-center">{{ 'collections.general.no_matches' | t }}</p>
     {% endif %}

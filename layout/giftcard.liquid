@@ -1,3 +1,7 @@
+{%- comment %}<locksmith:de79>{% endcomment -%}
+  {%- include 'locksmith' -%}
+{%- comment %}</locksmith:de79>{% endcomment -%}
+
 {% layout none %}
 <!doctype html>
 <!--[if IE 9]> <html class="ie9 supports-no-js" lang="{{ shop.locale }}"> <![endif]-->
@@ -16,7 +20,10 @@
   {% assign formatted_initial_value = gift_card.initial_value | money_without_trailing_zeros: gift_card.currency %}
   {% assign formatted_initial_value_stripped = formatted_initial_value | strip_html %}
   <title>{{ 'gift_cards.issued.title' | t: value: formatted_initial_value_stripped, shop: shop.name }}</title>
-  <meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">
+  {%- comment %}<locksmith:e76f>{% endcomment -%}
+    {%- include 'locksmith-variables', locksmith_hiding_scope: 'resource' %}{% if locksmith_transparent %}<meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">{% endif -%}
+    {%- comment %}original: <meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">{%- endcomment %}
+  {%- comment %}</locksmith:e76f>{% endcomment -%}
 
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
 
@@ -35,7 +42,10 @@
   <!--[if lte IE 9]><script src="{{ 'theme.min.js' | asset_url }}"></script><![endif]-->
 
   {{ content_for_header }}
-</head>
+  {% include 'qikify-navigator' %}
+  {{ 'qikify-smartmenu-data.js' | asset_url | script_tag }}
+  <script type="text/javascript" src="{{ 'qikify-smartmenu-v3.min.js?shop=' | append: shop.permanent_domain | asset_url }}" defer="defer"></script>
+    </head>
 
 <body class="template-giftcard">
   {{ content_for_layout }}

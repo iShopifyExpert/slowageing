@@ -27,12 +27,18 @@
           {% endcase %}
           {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
             {% for collection in collections %}
+              {%- comment %}<locksmith:e703>{% endcomment -%}
+                {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: collection %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+              {%- comment %}</locksmith:e703>{% endcomment -%}
               {% unless collection.handle == 'frontpage' %}
                 {% include 'collection-card', collection: collection, width: section.settings.products, grid_style: section.settings.grid_style %}
               {% endunless %}
             {% endfor %}
           {% else %}
             {% for collection in collections reversed %}
+              {%- comment %}<locksmith:138e>{% endcomment -%}
+                {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: collection %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+              {%- comment %}</locksmith:138e>{% endcomment -%}
               {% unless collection.handle == 'frontpage' %}
                 {% include 'collection-card', collection: collection, width: section.settings.products, grid_style: section.settings.grid_style %}
               {% endunless %}

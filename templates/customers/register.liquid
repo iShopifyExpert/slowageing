@@ -26,6 +26,16 @@
         <label for="CreatePassword" class="label--hidden">{{ 'customer.register.password' | t }}</label>
         <input type="password" name="customer[password]" id="CreatePassword" class="{% if form.errors contains 'password' %} input--error{% endif %}" placeholder="{{ 'customer.register.password' | t }}">
 
+        {% comment %}<input type="text" id="customer_tag" name="customer[tags][tag]" value="" />{% endcomment %}
+
+        <label for="customer_tag">Did a salon or spa refer you?</label>
+        <select id="customer_tag" name="customer[tags][tag]">
+          <option>Not Referred</option>
+          <option>London Salon</option>
+          <option>The Beauty Spa</option>
+          <option>Perfect Look Spa</option>
+        </select>
+
         <p>
           <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
           <a href="{{ shop.url }}" class="btn btn--clear">{{ 'customer.register.cancel' | t }}</a>
@@ -35,3 +45,4 @@
     </div>
   </div>
 </div>
+

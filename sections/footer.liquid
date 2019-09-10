@@ -23,7 +23,10 @@
 {%- endfor -%}
 
 <footer class="site-footer" role="contentinfo" data-section-type="footer" data-section-id="{{ section.id }}" {% if section.settings.enable_parallax %}data-footer-parallax{% endif %} data-section-id="{{ section.id }}" data-section-type="footer">
+  
+  {% comment %}
   <div class="page-width">
+    
     {% if menu_enabled or section.settings.show_newsletter %}
       <div class="flex-footer{% unless section.settings.show_newsletter %} flex-footer--full text-center{% endunless %}">
         {% for block in section.blocks %}
@@ -97,10 +100,63 @@
       {% endif %}
     </div>
   </div>
-
+  {% endcomment %}
+  
+  <div class="page-width">
+    <div class="grid">
+      {% for block in section.blocks %}
+       <div class="grid__item medium-up--one-quarter site-footer__link">
+        <h3 class="footer-title">{{ linklists[block.settings.link_list].title }}</h3>
+        <div class="site-footer__linkblock">
+          <ul class="site-footer__linklist">
+             {% for link in linklists[block.settings.link_list].links %}
+            <li class="site-footer__linklist-item h6"><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% if forloop.index == 4 %} 
+          {% if section.settings.show_social_icons %}
+          <div class="site-footer__social-icons flex-footer__item--one-third">
+            {% include 'social-links', disableTab: true, largeIcons: false %}
+          </div>
+          {% endif %}
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="grid">
+      <div class="grid__item medium-up--one-whole">
+        {% if section.settings.show_payment_icons %}
+        <div class="site-footer__payment-icons">
+          {% unless shop.enabled_payment_types == empty %}
+          {%- assign payment_icons_available = 'amazon_payments,american_express,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,jcb,klarna,litecoin,maestro,master,paypal,stripe,shopify_pay,visa' | split: ',' -%}
+          <ul class="payment-icons list--inline">
+            {% for type in shop.enabled_payment_types %}
+            {% if payment_icons_available contains type %}
+            <li class="payment-icon">
+              {%- assign icon_name = type | prepend: 'icon-' -%}
+              {% include icon_name %}
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          {% endunless %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="grid">
+      <div class="site-footer__copyright grid__item medium-up--one-whole">
+        <small>{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}</small>
+        {% comment %}<small class="site-footer__powered-by">{{ powered_by_link }}</small>{% endcomment %}
+      </div>
+    </div>
+  </div>
+  
   {% if section.settings.enable_parallax %}
     <div class="site-footer__drawer-cover"></div>
   {% endif %}
+  
 </footer>
 
 {% schema %}
@@ -154,7 +210,7 @@
     {
       "type": "menu",
       "name": "Menu",
-      "limit": 2,
+      "limit": 4,
       "settings": [
         {
           "id": "link_list",

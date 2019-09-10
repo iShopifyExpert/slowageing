@@ -119,6 +119,27 @@
   </div>
 </div>
 
+{% if product.metafields.product.common_review != blank %}
+	{% assign product_rev = product.metafields.product.common_review %}
+{% else %}
+	{% assign product_rev = product.id %}
+{% endif %}
+
+<div class="page-width reviews-prod">
+  <div class="grid text-center">
+    <div class="grid__item medium-up--ten-twelfths medium-up--push-one-twelfth">
+        <h2 class="feature-row__heading separator has-animated" data-animate="">Customer Reviews</h2>
+      </div>
+    <div class="grid__item">
+      <div class="rte">
+        <div id="enap-product-reviews" data-shop-id="{{shop.permanent_domain}}" data-product-id="{{product_rev}}"></div>
+        <div id="enap-product-reviews-header"></div>
+        <script src ="https://www.enormapps.com/productreviews/embed.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Product Review",

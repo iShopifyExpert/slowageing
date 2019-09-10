@@ -52,7 +52,13 @@
     </div>
 
     <div class="featured-slider__cover-content reveal-slider__cover-content side-scroller__cover-content{% if section.settings.cover_title_desktop_position == 'left' %} featured-slider__cover-content--left{% endif %}">
-      <h2 class="featured-slider__cover-title h3"{% if section.settings.show_overlay %} style="color: {{ section.settings.overlay_text }}; border-color: {{ section.settings.overlay_text }};"{% endif %} data-animate>{{ section.settings.cover_title }}</h2>
+      <h2 class="featured-slider__cover-title h1"{% if section.settings.show_overlay %} style="color: {{ section.settings.overlay_text }}; border-color: {{ section.settings.overlay_text }};"{% endif %} data-animate>{{ section.settings.cover_title }}</h2>
+      <div class="featured-slider__cover-text">{{ section.settings.cover_text }}</div>
+      {% if section.settings.button_label != blank %}
+        <a href="{{ section.settings.button_link }}" class="btn{% if section.settings.cover_use_second_button %} btn--secondary{% endif %} hero__btn">
+          {{ section.settings.button_label }}
+        </a>
+      {% endif %}
       <div class="pinch-indicators">
         <div class="pinch-indicator pinch-indicator--top"></div>
         <div class="pinch-indicator pinch-indicator--bottom"></div>
@@ -61,13 +67,24 @@
   </div>
 
   <div class="featured-slider__slides-container side-scroller__slides-container slider" tabindex="-1">
-
+    
     <button class="btn btn--clear featured-slider__close reveal-slider__close">
       <span class="featured-slider__close-icon">{% include 'icon-close' %}</span>
       <span class="featured-slider__close-circle" style="border-color: {{ section.settings.text_color }}"></span>
     </button>
+    
+    
+    {% if section.settings.caption_title != blank %}
+    <div class="guaranty-caption">
+      <div class="caption-table">
+        <div class="caption-middle">
+          {{section.settings.caption_title}}
+        </div>
+      </div>
+    </div>
+    {% endif %}
 
-    <div class="featured-slider__slide-list">
+    <div class="featured-slider__slide-list">     
       {% for block in section.blocks %}
         <div class="featured-slider__slide side-scroller__slide slider__slide{% if forloop.first %} slider__slide--active {% endif %}" data-background-color="{{ block.settings.background_color }}" {{ block.shopify_attributes }}>
           <div class="featured-slider__slide-content">
@@ -90,7 +107,9 @@
             {% if block.settings.slide_title != blank %}
               <h3 class="featured-slider__slide-title h6" style="color: {{ section.settings.text_color }}">{{ block.settings.slide_title }}</h3>
             {% endif %}
-
+            {% if block.settings.slide_text != blank %}
+            <div class="rte-setting featured-slider_subtitle{% if block.settings.slide_text_size == 'large' %} mega-subtitle--large{% endif %}">{{ block.settings.slide_text }}</div>
+            {% endif %}
             {% if block.settings.slide_button_text != blank %}
               <a class="btn featured-slider__slide-link{% if section.settings.use_second_button %} btn--secondary{% endif %}" href="{{ block.settings.slide_button_url }}">{{ block.settings.slide_button_text }}</a>
             {% endif %}
@@ -125,7 +144,7 @@
 {% schema %}
 {
   "name": "Featured slider",
-  "class": "index-section index-section--featured-sider",
+  "class": "index-section index-section--featured-sider section-featured",
   "settings": [
     {
       "type": "checkbox",
@@ -170,6 +189,28 @@
           "value": "center"
         }
       ]
+    },
+	{
+      "type": "textarea",
+      "id": "cover_text",
+      "label": "Text",
+      "default": "Showcase some product information"
+    },
+	{
+      "type": "checkbox",
+      "id": "cover_use_second_button",
+      "label": "Use secondary button style",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
     },
     {
       "type": "header",
@@ -272,6 +313,15 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Caption Section"
+    }, 
+    {
+      "type": "text",
+      "id": "caption_title",
+      "label": "Caption Heading"
     }
   ],
   "blocks": [
@@ -310,6 +360,28 @@
           "id": "slide_title",
           "label": "Heading",
           "default": "Featured variant"
+        },
+		{
+          "type": "richtext",
+          "id": "slide_text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+        },
+        {
+          "type": "select",
+          "id": "slide_text_size",
+          "label": "Text size",
+          "default": "medium",
+          "options": [
+            {
+              "label": "Medium",
+              "value": "medium"
+            },
+            {
+              "label": "Large",
+              "value": "large"
+            }
+          ]
         },
         {
           "type": "text",

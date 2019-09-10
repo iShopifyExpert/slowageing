@@ -194,6 +194,9 @@ h1.related-post{
         {% for tag in blog.all_tags %}
         {% assign articleCount = 0 %}
         {% for article in blogs.news.articles %}
+        {%- comment %}<locksmith:6c37>{% endcomment -%}
+          {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: article, locksmith_subject_parent: blogs.news %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:6c37>{% endcomment -%}
         {% if article.tags == articleTag %}
         {% capture articleCount %}{{ articleCount | plus: 1 }}{% endcapture %}
         {% endif %}
@@ -235,19 +238,26 @@ h1.related-post{
 
         <div class="card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}" data-grid-style="{{ section.settings.grid_style }}">
           <div class=" {% if blog.articles.size == 1 %}card-list__column--center{% endif %} {{ gridClasses }}">
+            {%- comment %}<locksmith:12ea>{% endcomment -%}
+              {%- assign locksmith_bf9e_forloop__size = 0 %}{% for article in blogs.news.articles %}{% include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: article %}{% if locksmith_transparent %}{% assign locksmith_bf9e_forloop__size = locksmith_bf9e_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_bf9e_forloop__index = nil -%}
+            {%- comment %}</locksmith:12ea>{% endcomment -%}
             {% for article in blogs.news.articles %}
+
+            {%- comment %}<locksmith:5268>{% endcomment -%}
+              {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: article, locksmith_subject_parent: blogs.news %}{% if locksmith_transparent %}{% if locksmith_bf9e_forloop__index == nil %}{% assign locksmith_bf9e_forloop__index = 1 %}{% assign locksmith_bf9e_forloop__index0 = 0 %}{% else %}{% assign locksmith_bf9e_forloop__index = locksmith_bf9e_forloop__index | plus: 1 %}{% assign locksmith_bf9e_forloop__index0 = locksmith_bf9e_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_bf9e_forloop__index == 1 %}{% assign locksmith_bf9e_forloop__first = true %}{% else %}{% assign locksmith_bf9e_forloop__first = false %}{% endif %}{% if locksmith_bf9e_forloop__index == locksmith_bf9e_forloop__size %}{% assign locksmith_bf9e_forloop__last = true %}{% else %}{% assign locksmith_bf9e_forloop__last = false %}{% endif %}{% assign locksmith_bf9e_forloop__rindex = locksmith_bf9e_forloop__size | minus: locksmith_bf9e_forloop__index | minus: 1 %}{% assign locksmith_bf9e_forloop__rindex0 = locksmith_bf9e_forloop__size | minus: locksmith_bf9e_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+            {%- comment %}</locksmith:5268>{% endcomment -%}
 
             {% if article.tags == articleTag %}
             
-            {% if forloop.index == randomA3 %}
+            {% if locksmith_bf9e_forloop__index == randomA3 %}
             {% include 'sa-article-related', article: article, grid_style: section.settings.grid_style %}
             {% endif %}
 
-            {% if forloop.index == randomA1%}
+            {% if locksmith_bf9e_forloop__index == randomA1%}
             {% include 'sa-article-related', article: article, grid_style: section.settings.grid_style %}
             {% endif %}
 
-            {% if forloop.index == randomA2 %}
+            {% if locksmith_bf9e_forloop__index == randomA2 %}
             {% include 'sa-article-related', article: article, grid_style: section.settings.grid_style %}
             {% endif %}
 

@@ -29,6 +29,9 @@
       {% if section.settings.text != blank %}
         <div class="rte-setting mega-subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>
       {% endif %}
+      {% if section.settings.sub_title != blank %}
+        <h4 class="hero__sub-text">{{ section.settings.sub_title }}</h4>
+      {% endif %}
       {% if section.settings.button_label != blank %}
         <a href="{{ section.settings.button_link }}" class="btn{% if section.settings.use_second_button %} btn--secondary{% endif %} hero__btn">
           {{ section.settings.button_label }}
@@ -41,7 +44,7 @@
 {% schema %}
 {
   "name": "Image with text overlay",
-  "class": "index-section index-section--image-with-text-overlay",
+  "class": "index-section index-section--image-with-text-overlay section-welcome",
   "settings": [
     {
       "type": "select",
@@ -147,6 +150,12 @@
           "value": "large"
         }
       ]
+    },
+	{
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Heading",
+      "default": "Talk about your brand"
     },
     {
       "type": "checkbox",

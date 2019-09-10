@@ -1,0 +1,134 @@
+/* ===> nav CSS -------------------------------------------------- */
+.navli{
+    position: relative;
+    display: inline !important;
+    color: white;
+    font-family: "Avenir","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 15px !important;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+
+.nava{
+    color: white;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.nava:link{
+    text-decoration: none;
+}
+
+.nava:visited{
+    text-decoration: none;
+}
+
+.nava:hover{
+    color: #2a5b6c;
+    text-decoration: none;
+}
+
+.nava:active{
+    text-decoration: none;
+}
+
+
+/* ===> top-bar CSS -------------------------------------------------- */
+.topbar{
+    position: relative;
+    color: #2a5b6c;
+    text-transform: uppercase;
+    font-family: "Avenir","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    /* padding: 0 20px !important; */
+    vertical-align: middle;
+    /* height: 45px; */
+    line-height: 1.625;
+    /* letter-spacing: 2px; */
+}
+
+
+/* ===> footer CSS -------------------------------------------------- */
+.recommendationh{
+    font-family: inherit;
+    color: #2a5b6c;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.recommendationdiv{
+    font-family: inherit;
+    padding: 10px;
+    background-color: #f5a801;
+    border: 1px solid #000"
+}
+
+.recommendationp{
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ===> footer CSS -------------------------------------------------- */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: inherit;
+    background-color: #2a5b6c;
+    text-align: center;
+}
+
+.footerli{
+    display: block;
+    font-family: "Avenir","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* position: relative; */
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.footera{
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.footera:link{
+    text-decoration: none;
+}
+
+.footera:visited{
+    text-decoration: none;
+}
+
+.footera:hover{
+    color: #f2a900;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footera:active{
+    text-decoration: none;
+}
+
+.footerh{
+    color: white;
+    font-family: "Avenir","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-bottom: 1px solid #f2a900;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+

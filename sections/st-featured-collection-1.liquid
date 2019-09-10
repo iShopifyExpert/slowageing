@@ -64,6 +64,9 @@
       <div class="card-list__column{% if totalProducts == 1 %} card-list__column--center{% endif %} grid grid__item {{ gridClasses }}">
         {% unless featuredCollection == blank %}
           {% for product in featuredCollection.products limit: limit %}
+            {%- comment %}<locksmith:0550>{% endcomment -%}
+              {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: product, locksmith_subject_parent: featuredCollection %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+            {%- comment %}</locksmith:0550>{% endcomment -%}
             {% include 'product-card', product: product, grid_style: section.settings.grid_style %}
           {% endfor %}
         {% else %}

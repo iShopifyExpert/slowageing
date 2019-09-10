@@ -100,6 +100,9 @@
       };
       window.foxdrive.product_collections = []
       {% for c in product.collections %}
+        {%- comment %}<locksmith:5664>{% endcomment -%}
+          {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: c, locksmith_subject_parent: product %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:5664>{% endcomment -%}
         window.foxdrive.product_collections.push({{c.id}})
       {% endfor %}
     {% endunless %}
@@ -117,6 +120,9 @@
       var foxCartItem = {{item | json}};
       foxCartItem["collection_ids"] = [];
       {% for c in item.product.collections %}
+        {%- comment %}<locksmith:04a4>{% endcomment -%}
+          {%- include 'locksmith-variables', locksmith_scope: 'subject', locksmith_subject: c, locksmith_subject_parent: item.product %}{% if locksmith_transparent %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:04a4>{% endcomment -%}
         foxCartItem["collection_ids"].push({{c.id}})
         {% endfor %}
       window.foxdrive.cart.items.push(foxCartItem);
