@@ -2204,6 +2204,24 @@
           "mobile_layout": "top"
         }
       },
+      "bottom-banner": {
+        "type": "bottom-banner",
+        "settings": {
+          "size": "medium",
+          "background_color": "#2a5b6c",
+          "image": "shopify:\/\/shop_images\/33.jpg",
+          "image_crop": "none",
+          "alignment": "center center",
+          "content-title": "discovery collection",
+          "content-title1": "£55 (WORTH £75)",
+          "text": "<p>discover the difference in 30 days<br>with our exclusive colloction of<br>trial size<\/p>",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "desktop_layout": "left",
+          "mobile_layout": "top"
+        }
+      },
       "ph-feature-row-1": {
         "type": "ph-feature-row-1",
         "settings": {
@@ -2290,14 +2308,14 @@
       "1526030458888": {
         "type": "ab-hero-1",
         "settings": {
-          "hero_size": "medium",
+          "hero_size": "large",
           "image": "shopify:\/\/shop_images\/banner_model_d.jpg",
           "alignment": "center center",
           "title": "“100% of Beauty Bible <br>testers gave us 5 stars”",
-          "text": "",
+          "text": "<p>&amp; voted our Essential Facial Essence the 2019 Award Winner!<\/p>",
           "text_size": "medium",
           "use_second_button": true,
-          "button_label": "GET THE GLOW",
+          "button_label": "DISCOVER MORE",
           "button_link": "shopify:\/\/products\/slow-ageing-set",
           "show_overlay": true,
           "overlay_color": "#000000",
@@ -2523,7 +2541,7 @@
               "show_image": true,
               "slide_image": "shopify:\/\/shop_images\/step1.png",
               "slide_title": "",
-              "slide_text": "<p>A LUXURIOUSLY CREAMY FOAMING WASH THAT CLEANSES IMPURITIES LEAVING SKIN PERFECTLY PRIMED TO ABSORB OUR ESSENTIAL FACIAL ESSENCE.<\/p>",
+              "slide_text": "<p>THE FRESHEST SKIN YOU&rsquo;VE EVER HAD; FEEL THE DEEP CLEAN WORKING WITH THIS ONE-OF-A-KIND CLEANSER.<\/p>",
               "slide_text_size": "medium",
               "slide_button_text": "",
               "slide_button_url": ""
@@ -2536,7 +2554,7 @@
               "show_image": true,
               "slide_image": "shopify:\/\/shop_images\/step2.png",
               "slide_title": "",
-              "slide_text": "<p>THE PURE ESSENCE AND LIFE FORCE OF 5 BOTANICALS BALANCED IN THE PERFECT SYNERGY OF ESSENTIAL OILS TO DELIVER VITALITY, ENERGY AND RADIANCE TO THE SKIN.<\/p>",
+              "slide_text": "<p>YOUR &lsquo;DESERT-ISLAND&rsquo; DAILY MIRACLE WORKER, FOR SKIN THAT&rsquo;S IN PERFECT BALANCE (TURBOCHARGES THE RADIANCE FACTOR OF MOISTURISER TOO).<\/p>",
               "slide_text_size": "medium",
               "slide_button_text": "",
               "slide_button_url": ""
@@ -2549,7 +2567,7 @@
               "show_image": true,
               "slide_image": "shopify:\/\/shop_images\/step3.png",
               "slide_title": "",
-              "slide_text": "<p>A DAY MOISTURISER THAT PROTECTS, SOFTENS AND SMOOTHS HELPING SKIN LOOK ITS VERY BEST EVERY DAY.<\/p>",
+              "slide_text": "<p>A POWER-MAGNET FOR HYDRATION &ndash; FOR A PLUMP, CUSHIONY COMPLEXION WITH A DAYLONG GLOW &amp; SMOOTHNESS LIKE NO OTHER.<\/p>",
               "slide_text_size": "medium",
               "slide_button_text": "",
               "slide_button_url": ""
@@ -2562,7 +2580,7 @@
               "show_image": true,
               "slide_image": "shopify:\/\/shop_images\/step4.png",
               "slide_title": "",
-              "slide_text": "<p><\/p>\n<p>A REGENERATING TREATMENT TO&nbsp;INTENSIVELY NOURISH, BRIGHTEN&nbsp;AND REVITALIZE THE SKIN<\/p>",
+              "slide_text": "<p>AN OVERNIGHT RADIANCE RESTORER THAT TRANSFORMS ALL SKIN TYPES INTO SMOOTHER, SOFTER, SUPPLER &amp; MORE ENERGISED VERSIONS OF THEMSELVES.<\/p>",
               "slide_text_size": "medium",
               "slide_button_text": "",
               "slide_button_url": ""
@@ -2654,13 +2672,12 @@
       },
       "1532346550441": {
         "type": "ab-hero-3",
-        "disabled": true,
         "settings": {
           "hero_size": "medium",
           "image": "shopify:\/\/shop_images\/BG_green_trees_b.jpg",
           "naturalimage": "shopify:\/\/shop_images\/natural-img.png",
           "alignment": "center center",
-          "title": "“Harness botanicals' potent natural energy”",
+          "title": "“Be a force of Nature!”",
           "text": "<p>A NEW NATURAL BOTANICAL SKINCARE REGIME FOR ALL SKIN TYPES AND AGES.&nbsp;<\/p>\n<p>Slow Ageing Essentials use the very best purest 100% natural essential oils, extracts and botanicals specifically formulated for maximum anti-oxidant, anti-inflammatory and anti-microbial results.<\/p>",
           "text_size": "medium",
           "use_second_button": true,
@@ -2715,8 +2732,8 @@
           "image": "shopify:\/\/shop_images\/model_skin_9f7b3f1e-57b2-4f56-942c-92ce855248e4.jpg",
           "image_crop": "none",
           "alignment": "center center",
-          "content-title": "Personal Skin Consultation",
-          "text": "<p>Everyone wants their &lsquo;best ever&rsquo; skin. The Slow Ageing range is compact but our &lsquo;4 to flawless&rsquo; collection of products can be used in many different ways to bring out the very best in your skin. Whatever your age or skincare concern, our simple Skin&rsquo;ergy Consultation takes less than 1 min to give you your personalised results and the perfect product combination for achieving 5-star skin. Just tick your skin type, click on how it behaves, your main skincare goal and how much time you have to instantly receive a tailor-made recommendation.<\/p>",
+          "content-title": "Personalised Skin’ergy Consultation",
+          "text": "<p>&ldquo;Invest just one minute into the future of your skin!&rdquo;<\/p>\n<p>Everyone wants their &lsquo;best ever&rsquo; skin. The Slow Ageing range is compact but our &lsquo;4 to flawless&rsquo; collection of products can be used in many different ways to bring out the very best in your skin. Whatever your age or skincare concern, our simple Skin&rsquo;ergy Consultation takes less than 1 min to give you your personalised results and the perfect product combination for achieving 5-star skin. Just tick your skin type, click on how it behaves, your main skincare goal and how much time you have to instantly receive a tailor-made recommendation.<\/p>",
           "use_second_button": false,
           "button_label": "",
           "button_link": "",
@@ -2726,6 +2743,7 @@
       },
       "1567758624881": {
         "type": "ph-highlight-3",
+        "disabled": true,
         "settings": {
           "border_color": "#2a5b6c",
           "content_alignment": "middle",
@@ -2755,12 +2773,26 @@
           "products": 3,
           "rows": 1
         }
+      },
+      "1568460224532": {
+        "type": "home-products",
+        "settings": {
+          "home-products": true,
+          "section-title": "Our Bestsellers",
+          "image1": "shopify:\/\/shop_images\/11.jpg",
+          "featured_product1": "essential-facial-essence",
+          "image2": "shopify:\/\/shop_images\/22.jpg",
+          "featured_product2": "essential-moisturiser",
+          "image3": "shopify:\/\/shop_images\/33.jpg",
+          "featured_product3": "discovery-collection"
+        }
       }
     },
     "content_for_index": [
       "1531922524167",
       "1531925692736",
       "1526030458888",
+      "1568460224532",
       "1567758624881",
       "1532346550441",
       "1532342101605",

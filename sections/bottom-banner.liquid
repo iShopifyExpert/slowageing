@@ -49,9 +49,12 @@
     {{ image_layout }}
   {% endif %}
 
-  <div class="feature-row__item feature-row__text feature-row__text-new">
+  <div class="feature-row__item feature-row__text" style="text-align: center">
     {% if section.settings.content-title != blank %}
-      <h2 class="feature-row__heading separator" data-animate>{{ section.settings.content-title | escape }}</h2>
+      <h4 class="feature-row__heading separator" data-animate>{{ section.settings.content-title | escape }}</h4>
+    {% endif %}
+    {% if section.settings.content-title1 != blank %}
+      <h6 class="feature-row__heading separator" data-animate>{{ section.settings.content-title1 | escape }}</h6>
     {% endif %}
     {% if section.settings.text != blank %}
       <div class="rte-setting featured-row__subtext">{{ section.settings.text }}</div>
@@ -61,9 +64,6 @@
         {{ section.settings.button_label }}
       </a>
     {% endif %}
-    <div class="" id='consultant_holder' style="display:none">
-      <a href="#" class="btn hero__btn consultant__btn_general">START YOUR CONSULTATION</a>
-    </div>
   </div>
 
   {% if section.settings.desktop_layout == 'right' %}
@@ -74,7 +74,7 @@
 {% schema %}
 {
   "name": "Image with text",
-  "class": "index-section index-section--image-with-text consultant-img-with-text",
+  "class": "index-section index-section--image-with-text",
   "settings": [
     {
       "type": "select",
@@ -186,6 +186,12 @@
     {
       "type": "text",
       "id": "content-title",
+      "label": "Heading",
+      "default": "default heading"
+    },
+    {
+      "type": "text",
+      "id": "content-title1",
       "label": "Heading",
       "default": "default heading"
     },

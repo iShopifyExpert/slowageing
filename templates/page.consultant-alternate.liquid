@@ -2,6 +2,7 @@
 {% section 'consultant-img-with-text' %}
 
 <style>
+  
 .page-consultant .hero__btn{
     background-color:#fff;
     color:#2a5b6c;
@@ -28,16 +29,12 @@
   </header>
   {% endcomment %}
 <!--   <link rel="stylesheet" type="text/css" media="screen" href="https://isdone.ru/consultant/consultant.css" /> -->
-     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.shopify.com/s/files/1/0013/1566/8028/t/26/assets/consultant-v0.4.5.css" />
-
+<!--   <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.shopify.com/s/files/1/0013/1566/8028/t/26/assets/consultant-v0.4.5.css" /> -->
+  {{ 'consultant-v0.4.5.css' | asset_url | stylesheet_tag }}
   
-  <!-- for recommendation page -->
-  <script 
-          type="text/javascript" 
-          src="https://cdn.shopify.com/s/files/1/0013/1566/8028/t/26/assets/consultant-v3.6.38.js" 
-          defer="defer">
-  </script>
-
+<!-- for recommendation page -->
+  <script src="{{ 'consultant-v3.6.40.js' | asset_url }}" defer="defer"></script>
+  
   {% comment %}
   <div class="grid">
     <div class="grid__item medium-up--four-fifths medium-up--push-one-tenth">
@@ -49,8 +46,16 @@
   {% endcomment %}
 </div>
 
-<script type="text/javascript">!(function(){
+<!-- <script type="text/javascript">!(function(){
   if (location.href.endsWith('slow-ageing-skin-consultation?dev=1')) {
+    var _holder = document.getElementById('consultant_holder');
+    _holder.style.display = 'inherit'
+  }
+})()
+</script> -->
+
+<script type="text/javascript">!(function(){
+  if (location.href.endsWith('skin-consultation')) {
     var _holder = document.getElementById('consultant_holder');
     _holder.style.display = 'inherit'
   }

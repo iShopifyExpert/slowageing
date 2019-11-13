@@ -58,7 +58,7 @@ input, textarea, select, button{outline:none;}
 .guaranty-caption{background-image:url('yellow-bg.png');background-repeat:no-repeat;background-size: 100%;width:240px;height:240px;text-align:center;color: #fff;font-size: 24px;text-transform: uppercase;line-height: normal;font-weight: 500;padding:35px 25px 30px 40px;position:absolute;right:20px;bottom:30px;opacity:0;}
 .guaranty-caption strong{font-weight:900;}
 .caption-table{width:100%;display:table;height:100%;}
-.caption-middle{display:table-cell;vertical-align:middle;padding-left:10px;}
+.caption-middle{display:table-cell;vertical-align:middle;padding-left:10px;position: relative;    left: -7px;}
 .slick-active .slideshow_heading.has-animated{-webkit-animation: fadeUp 0.5s ease-out 0.5s 1 forwards;animation: fadeUp 0.5s ease-out 0.5s 1 forwards;}
 .slick-active .slideshow_sub-title.has-animated{-webkit-animation: fadeUp 1s ease-out 1s 1 forwards;animation: fadeUp 1s ease-out 1s 1 forwards;}
 .slick-active .slideshow_btn.has-animated{-webkit-animation: fadeUp 1.5s ease-out 1.5s 1 forwards;animation: fadeUp 1.5s ease-out 1.5s 1 forwards;}
@@ -390,7 +390,7 @@ span.enap-cus-date{width: 100%;}
 .slideshow-3 .slideshow_sub-title p::before {color: #f5a800;content: open-quote;font-size: 60px;}
 .slideshow-3 .slideshow_sub-title p::after {color: #f5a800;content: close-quote;font-size: 60px;}
 .slideshow-3 .slideshow_author-name p {text-transform: uppercase;font-size: 30px;margin-bottom: 20px;}
-.slideshow-3 .guaranty-caption{left: 35%;top: 15%;}
+.slideshow-3 .guaranty-caption{left:40%;top: 10%;}
 
 /* .slideshow-3 .slideshow_heading{margin-bottom:4%;}
 .slideshow-3 .slideshow_sub-title{margin-bottom: 3%;}
@@ -473,6 +473,14 @@ span.enap-cus-date{width: 100%;}
 .enap-review-rating a {color: #2a5b6c;text-decoration: none;}
 .index-section--highlight .highlight{padding: 100px 0;}
 .shopify-section.index-section .featured-blog{padding: 0px 0px 50px;}
+.home-products .page-width {    display: flex;    table-layout: fixed;    justify-content: space-between;}
+.home-products {margin-top: 70px;}
+.home-product-box {padding: 0 10px;}
+.home-products.home_bestseller {text-align: center;    margin-top: 30px;margin-bottom: 32px;}
+.home-products.home_bestseller h2.feature-row__heading {margin: auto;    margin-bottom: 25px;}
+.home-products.home_bestseller .home-product-box p {    font-size: 1.6rem;    text-transform: uppercase;    text-align: center;}
+.home-products.home_bestseller img:hover {transition: all 500ms ease-out;transform: scale(1.03);}
+
 
 /*=====  Media Query  ======*/
 @media screen and (min-width: 750px){
@@ -531,7 +539,7 @@ span.enap-cus-date{width: 100%;}
   .badge-banner:after{border-top-width: 200px;border-left-width: 200px;}
   .guaranty-img{width:140px;height:140px;}
   .slideshow_heading {font-size: 5rem;}
-  .slideshow-3 .guaranty-caption, .slideshow-4 .guaranty-caption{left:30px;bottom:30px;}
+  .slideshow-3 .guaranty-caption, .slideshow-4 .guaranty-caption{left:40%;bottom:30px;}
   .slideshow-4 .slideshow_sub-title p {font-size: 36px;line-height: 45px;}
   .slideshow-4 .slideshow_heading {font-size: 4rem;line-height: 55px;}
   .slideshow-4 .slideshow_heading span {font-size: 35px;}
@@ -639,7 +647,7 @@ span.enap-cus-date{width: 100%;}
   .badge-banner span{font-size:12px;}
   .badge-banner:after{border-top-width: 140px;border-left-width: 140px;}
   .guaranty-img{width: 90px;height: 90px;}
-  .slideshow-3 .guaranty-caption, .slideshow-4 .guaranty-caption{left:20px;bottom:20px;}
+  .slideshow-3 .guaranty-caption, .slideshow-4 .guaranty-caption{bottom:20px;}
   .slideshow_heading {padding-bottom: 15px;margin-bottom: 10px !important;}
   .slideshow-2 .slideshow_sub-title p::before, .slideshow-2 .slideshow_sub-title p::after, .slideshow-3 .slideshow_sub-title p::before, .slideshow-3 .slideshow_sub-title p::after {top: 0;}
   .slideshow-5 .slideshow_sub-title p {max-width:300px;}
@@ -789,6 +797,10 @@ span.enap-cus-date{width: 100%;}
   .slide_left-ctr .slideshow_text-content {width: 90%;}
   .small_wishing {font-size: 9px;}
   .section-newsletter .agree-terms label.error{top:50px;}
+  .home-products .page-width {display: block;}
+  .home-product-box {padding: 10px;}
+  
+  
 }
 
 @media screen and (max-width: 480px){

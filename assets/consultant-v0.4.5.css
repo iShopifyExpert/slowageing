@@ -27,11 +27,13 @@ body {
 .consultant .consultant__btn {
   text-align: center;
   cursor: pointer;
-  padding: 13px;
+  padding: 5px;
   font-size: 17px;
   display: inline-block;
-  color: snow;
+  color: #ffffff;
   white-space: nowrap;
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
 }
 .consultant .consultant__btn_confirm {
   width: 50%;
@@ -74,7 +76,8 @@ body {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  cursor: pointer;
+  /*  OmID => hide cursor to all page*/
+  /*   cursor: pointer; */ 
   right: 0;
   background-color: transparent;
   background-color: #275b6c 85;
@@ -93,15 +96,68 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: snow;
+  background-color: #f3f2ed; /* OmID => the color is changed from snow to #f3f2ed */
 }
-.consultant__close {
+
+/* OmID => add consultant__popup__expand css*/
+.consultant__popup__expand {
+  width: 70vw;
+  height: 90vh;
+  margin: 5vh auto;
+  transition: top 1s;
+  position: relative;
+  z-index: 100501;
+  box-shadow: 0px 0px 17px #275b6c;
+  border-radius: 10px;
+  border-radius: 0px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f3f2ed; /* OmID => the color is changed from snow to #f3f2ed */
+}
+/* end fo add consultant__popup__expand css*/
+
+/* OmID => add consultant__title css*/
+.consultant__title {
+  padding: 0 10px;
+  color: #2d5a6d;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+/* end of add consultant__title css*/
+
+/* OmID => add consultant__resize css*/
+.consultant__resize {
+  cursor: pointer;
   top: -2px;
   position: absolute;
-  right: -2px;
+  right: 35px;
+  width: 35px;
+  height: 35px;
+  z-index: 5;
+}
+.consultant__resize i {
+  position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+}
+.fa {
+  font: 100 normal normal 18px/1 FontAwesome !important;
+  color: #295b6c;
+}
+/* end of add consultant__resize css*/
+
+.consultant__close {
+  /*  OmID => add cursor for close button*/
+  cursor: pointer; 
+  /*  end of add cursor for close button*/
+  top: -2px;
+  position: absolute;
+  right: 3px;
   background-color: rgba(0, 0, 0, 0);
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 0px 0px 0px 30px;
   z-index: 5;
 }
@@ -113,7 +169,7 @@ body {
   background-color: #295b6c;
   transform: rotateZ(45deg);
   top: 20px;
-  left: 10px;
+  left: 7px;
 }
 .consultant__close:after {
   content: '';
@@ -123,10 +179,10 @@ body {
   background-color: #295b6c;
   transform: rotateZ(-45deg);
   top: 20px;
-  left: 10px;
+  left: 7px;
 }
 .consultant__messages {
-  margin-top: 35px;
+/*   margin-top: 35px; */
   flex: 0 1 auto;
   overflow-y: auto;
   height: 100%;
@@ -150,12 +206,17 @@ body {
   left: 0;
 }
 .message img {
-  display: block;
+  display: contents;
   height: 200px;
   border-radius: 50%;
 }
 .message__question {
   text-align: left;
+  /*  OmID => add font-size, font-weight, letter-spacing*/
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  /*  end of add font-size, font-weight, letter-spacing*/
 }
 .message__question span {
   background-color: #f5a801;
@@ -165,7 +226,32 @@ body {
 }
 .message__answer span {
   background-color: #2c5b6b;
+  /*  OmID => add font-size, font-weight, letter-spacing*/
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  /*  end of add font-size, font-weight, letter-spacing*/
 }
+
+/* OmID => new css */
+.sa-quote-a {
+  font-family: 'scotch_roman_mtregular';
+}
+
+.sa-b-quote-b {
+  font-family: 'scotch_roman_mtregular';
+}
+
+.feature-row__text-new {
+  padding: 70px 0 !important;
+}
+/* end of new css */
+
+
+span.sa-sptext {
+  font-size: 3rem;
+}
+
 .message__answer span:before {
   border-radius: 0 0 0px 10px;
   left: auto;
@@ -221,8 +307,8 @@ body {
 }
 .consultant__ctrl .ctrl.ctrl--input input, .consultant__ctrl .ctrl.ctrl--email input {
   display: inline-block;
-  padding: 12px;
-  font-size: 18px;
+/*   padding: 12px; */
+/*   font-size: 18px; */
   width: 80%;
   box-sizing: border-box;
   margin-bottom: 0px;
@@ -270,21 +356,33 @@ body {
  ##Device = Desktops
  ##Screen = 1281px to higher resolution desktops
  */
+
+/*  OmID => add media to resize icon*/
+@media (max-width: 1024px) {
+    .consultant__resize {
+      display:  none;
+    }
+}
+/*  end of add media to resize icon*/
+
 @media (min-width: 1281px) {
   .consultant__popup {
-    margin: auto;
+    margin: auto 1vw;
     transition: top 1s;
     top: -50%;
-    position: absolute;
-    left: 50%;
-    width: 700px;
-    height: 500px;
-    margin-top: 250px;
-    margin-left: -25%;
+    position: relative;
+/*     right: 1%; */
+    /* OmID => change width from 700px to auto*/
+    width: 35vw;
+    height: 90vh;
+    margin-top: 30vh;
+    float: right;
+/* 	margin-left: -25%; */
     z-index: 100501;
   }
   .consultant.consultant__container.opened .consultant__popup {
-    top: -20%;
+	/* OmID => change top persent from -20% to -35%*/
+    top: -25vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {

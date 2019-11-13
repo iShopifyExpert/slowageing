@@ -1,0 +1,102 @@
+{% if section.settings.home-products %}
+<div class="home-products home_bestseller">
+  <div class="page-width">
+  	{% if section.settings.section-title != blank %}
+    <h2 class="feature-row__heading" data-animate>{{ section.settings.section-title | escape }}</h2>
+    {% endif %}
+  </div>
+  <div class="page-width">
+    {% if section.settings.image1 != blank %}
+    {% assign featuredpdp1 = all_products[section.settings.featured_product1] %}
+    <div class="home-product-box">
+      <a href="{{featuredpdp1.url}}">
+        <img src="{{section.settings.image1 | img_url: 'original' }}" alt="{{featuredpdp1.title}}"/>
+      </a>
+      <p>{{featuredpdp1.title}}</p>
+    </div>
+    {% endif %}
+    
+    {% if section.settings.image2 != blank %}
+    {% assign featuredpdp2 = all_products[section.settings.featured_product2] %}
+    <div class="home-product-box">
+      <a href="{{featuredpdp2.url}}">
+        <img src="{{section.settings.image2 | img_url: 'original' }}" alt="{{featuredpdp2.title}}"/>
+      </a>
+      <p>{{featuredpdp2.title}}</p>
+    </div>
+    {% endif %}
+    
+    {% if section.settings.image3 != blank %}
+    {% assign featuredpdp3 = all_products[section.settings.featured_product3] %}
+    <div class="home-product-box">
+      <a href="{{featuredpdp3.url}}">
+        <img src="{{section.settings.image3 | img_url: 'original' }}" alt="{{featuredpdp3.title}}"/>
+      </a>
+      <p>{{featuredpdp3.title}}</p>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "home-products",
+    "settings": [
+	{
+      "type": "checkbox",
+      "id": "home-products",
+      "label": "home products",
+      "default": true
+    },
+	{
+      "type": "text",
+      "id": "section-title",
+      "label": "Heading",
+      "default": "Our Bestsellers"
+    },
+	{
+      "type": "header",
+      "content": "Block 1"
+    },
+	{
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image"
+    },
+	{
+      "type": "product",
+      "id": "featured_product1",
+      "label": "Product"
+    },
+	{
+      "type": "header",
+      "content": "Block 2"
+    },
+	{
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image"
+    },
+	{
+      "type": "product",
+      "id": "featured_product2",
+      "label": "Product"
+    },
+	{
+      "type": "header",
+      "content": "Block 3"
+    },
+	{
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image"
+    },
+	{
+      "type": "product",
+      "id": "featured_product3",
+      "label": "Product"
+    }
+  ]
+}
+{% endschema %}
